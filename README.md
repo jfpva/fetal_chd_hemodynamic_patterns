@@ -10,9 +10,8 @@ Analyisis of fetal blood flow distribution patterns, measured using MRI, in late
 
 `./templates/results_template.xlsx` – Excel template for output of analysis
 
----
 
-## 1 Disease and Anatomy Nomenclature
+## 1 Disease and Anatomy Nomenclature
 
 ### 1.1 Congenital Heart Disease Sub-Types
 
@@ -55,7 +54,6 @@ Analyisis of fetal blood flow distribution patterns, measured using MRI, in late
 * __ICS__ – intracardiac shunt
 * __CVO__ – combined ventricular output
 
----
 
 ## 2 Derived Flows
 
@@ -127,7 +125,6 @@ __Ventricular Septal Defect, Overriding Aorta__
 HLHS MA AS, HLHS DORV, TGA VSD, TGA VSD PS, TOF  
 `Q_FO` unknown
 
----
 
 ## 3 Flow Distribution Models
 

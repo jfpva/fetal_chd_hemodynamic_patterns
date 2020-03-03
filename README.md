@@ -68,7 +68,7 @@ __Pulmonary Branch Junction:__ At the junction of the MPA and branch pulmonary a
 
 These relationships were used to derive missing measurements, first, directly from measured flows and second, using other derived flow.
 
-#### Outliers
+#### Outliers
 
 Any derived flows which produced retrograde flow in the MPA, AAo, DAo, SVC, PBF or UV were considered outliers and discarded, except for MPA flow in cases with Ebstein's anomaly with circular shunt and AAo flow in cases with aortic atresia. 
 In cases with Ebstein's anomaly or pulmonary atresia, derived antegrade DA flows were also considered outliers.
@@ -79,7 +79,7 @@ Furthermore, in sub-groups with sufficient number of measurements to estimate po
 
 Combined ventricular output (CVO) can be used to interpret the distribution of blood flow as a fraction of the total blood flow. 
 
-#### Normal Circulation
+#### Normal Circulation
 
 In normal circulation, `Q_CVO = Q_MPA + Q_AAo + Q_CA` and can be calculated as `Q_CVO = ( Q_MPA + Q_AAo ) / 0.97` where coronary blood flow is estimated as 3% of CVO [Rudulolph2001]. 
 Hence, coronary artery (CA) blood flow can be calculated as `Q_{CA} = 0.03 Q_CVO`, which is equal to coronary sinus (CS) flow.

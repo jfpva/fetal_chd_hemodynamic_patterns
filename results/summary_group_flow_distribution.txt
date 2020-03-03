@@ -1,0 +1,126 @@
+Group 01: Normal
+================
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)         50      50      50      48      50      49      50       0       0       0       0       0 
+    measured median (ml/min/kg)    241     200     125     183     246      68     131     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          50      50      50      50      50      50      50      50      50      50      50      50 
+    derived median (ml/min/kg)     241     200     125     185     246      68     131     141     246      14      14     457 
+    measured, N (%CVO)              50      50      50      48      50      49      50       0       0       0       0       0 
+    measured median (%CVO)          53      44      28      39      53      14      27     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    53      44      29      39      54      14      27      33      54       3       3     100 
+
+
+Group 02: HLHS
+==============
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)         41      12      41      32      41      25      41       0       0       0       0       0 
+    measured median (ml/min/kg)    380      74     133     320     227      56     116     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          41      39      41      40      41      36      41      30      41      39      39      39 
+    derived median (ml/min/kg)     380     -10     133     321     227      60     116     -35     227      13      13     418 
+    measured, N (%CVO)              39      12      39      32      39      24      39       0       0       0       0       0 
+    measured median (%CVO)         100      17      31      83      52      13      30     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+
+
+[Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>balance_flow_distribution', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1154)" style="font-weight:bold">script_analyze_fetal_chd_flows>balance_flow_distribution</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1154,0)">line 1154</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1126)" style="font-weight:bold">script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1126,0)">line 1126</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 602)" style="font-weight:bold">script_analyze_fetal_chd_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',602,0)">line 602</a>)] 
+
+
+Group 03: TGA
+=============
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)         43      43      43      29      43      23      43       0       0       0       0       0 
+    measured median (ml/min/kg)    198     275     148     115     260      60     136     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          43      43      43      41      43      38      43      31      43      43      43      43 
+    derived median (ml/min/kg)     198     275     148     120     260      69     136     111     260      15      15     486 
+    measured, N (%CVO)              43      43      43      29      43      23      43       0       0       0       0       0 
+    measured median (%CVO)          40      57      28      20      50      14      28     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    39      58      29      21      50      18      28      21      50       3       3     100 
+
+
+Group 04: TOF
+=============
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)         10      16      16       4      15       9      16       0       0       0       0       0 
+    measured median (ml/min/kg)    106     339     139      27     239      40     117     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          14      16      16      10      16      10      16       0      16      14      14      14 
+    derived median (ml/min/kg)      87     339     139      23     245      46     117     NaN     245      14      14     460 
+    measured, N (%CVO)              10      14      14       4      13       9      14       0       0       0       0       0 
+    measured median (%CVO)          22      77      31       6      55       8      27     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    20      77      31       9      55      11      27      69      55       3       3     100 
+
+
+Group 05: EA
+============
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)          0      15      14       3      15       3      14       0       0       0       0       0 
+    measured median (ml/min/kg)    NaN     248      86     -91     139      22      89     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          10      15      14      11      15       4      14       9      15      15      15      15 
+    derived median (ml/min/kg)       0     248      86     -77     139      25      89     227     139       8       8     256 
+    measured, N (%CVO)               0      15      14       3      15       3      14       0       0       0       0       0 
+    measured median (%CVO)         NaN      97      31     -25      50       9      34     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+
+
+[Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>balance_flow_distribution', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1154)" style="font-weight:bold">script_analyze_fetal_chd_flows>balance_flow_distribution</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1154,0)">line 1154</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1126)" style="font-weight:bold">script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1126,0)">line 1126</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 602)" style="font-weight:bold">script_analyze_fetal_chd_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',602,0)">line 602</a>)] 
+
+
+Group 06: TA
+============
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)          4       8       8       6       8       7       8       0       0       0       0       0 
+    measured median (ml/min/kg)    215     298     111      52     180      38      90     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           7       8       8       7       8       7       8       7       8       7       7       7 
+    derived median (ml/min/kg)     111     298     111      43     180      38      90     317     180      13      13     431 
+    measured, N (%CVO)               4       7       7       6       7       7       7       0       0       0       0       0 
+    measured median (%CVO)          52      73      28      12      46       9      19     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+
+
+[Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>balance_flow_distribution', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1154)" style="font-weight:bold">script_analyze_fetal_chd_flows>balance_flow_distribution</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1154,0)">line 1154</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1126)" style="font-weight:bold">script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1126,0)">line 1126</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 602)" style="font-weight:bold">script_analyze_fetal_chd_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',602,0)">line 602</a>)] 
+
+

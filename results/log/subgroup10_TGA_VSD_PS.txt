@@ -1,0 +1,122 @@
+Sub-Group 10: TGA VSD PS
+========================
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)          3       3       3       2       3       2       3       0       0       0       0       0 
+    measured median (ml/min/kg)    185     290     189     NaN     257     NaN     142     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           3       3       3       3       3       3       3       0       3       3       3       3 
+    derived median (ml/min/kg)     185     290     189     109     257      76     142     NaN     257      14      14     465 
+    measured, N (%CVO)               3       3       3       2       3       2       3       0       0       0       0       0 
+    measured median (%CVO)          31      66      32     NaN      52     NaN      24     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    31      66      32      18      52      13      24      18      52       3       3     100 
+
+
+Summary
+-------
+
+
+Measured (ml/min/kg)
+
+                                 MPA     AAo     SVC     DA      DAo     PBF     UV  
+                                 ____    ____    ____    ____    ____    ____    ____
+
+    N                              3       3       3       2       3       2       3 
+    mean                         202     282     168     NaN     247     NaN     134 
+    standard deviation            81     117      41     NaN      69     NaN      30 
+    median                       185     290     189     NaN     257     NaN     142 
+    median absolute deviation     55     105       5     NaN      53     NaN      17 
+    16th - 50th pct.              55     129      69     NaN      84     NaN      42 
+    84th - 50th pct.             105     105       5     NaN      53     NaN      17 
+
+
+Derived (ml/min/kg)
+
+                                 MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
+                                 ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    N                              3       3       3       3       3       3       3       0       3       3       3       3 
+    mean                         202     282     168     137     247      91     134     NaN     247      15      15     499 
+    standard deviation            81     117      41      64      69      44      30     NaN      69       3       3      87 
+    median                       185     290     189     109     257      76     142     NaN     257      14      14     465 
+    median absolute deviation     55     105       5      18      53      20      17     NaN      53       1       1      32 
+    16th - 50th pct.              55     129      69      18      84      20      42     NaN      84       1       1      32 
+    84th - 50th pct.             105     105       5     101      53      64      17     NaN      53       4       4     133 
+
+
+Measured (%CVO)
+
+                                 MPA     AAo     SVC     DA      DAo     PBF     UV  
+                                 ____    ____    ____    ____    ____    ____    ____
+
+    N                              3       3       3       2       3       2       3 
+    mean                          41      56      34     NaN      49     NaN      27 
+    standard deviation            18      18       9     NaN       8     NaN       6 
+    median                        31      66      32     NaN      52     NaN      24 
+    median absolute deviation      1       1       7     NaN       3     NaN       1 
+    16th - 50th pct.               1      31       7     NaN      12     NaN       1 
+    84th - 50th pct.              31       1      11     NaN       3     NaN      10 
+
+
+Derived (%CVO)
+
+                                 MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
+                                 ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    N                              3       3       3       3       3       3       3       0       3      3       3  
+    mean                          41      56      34      28      49      19      27     NaN      49      3       3  
+    standard deviation            18      18       9      15       8      10       6     NaN       8      0       0  
+    median                        31      66      32      21      52      13      24     NaN      52      3       3  
+    median absolute deviation      1       1       7       3       3       0       1     NaN       3      0       0  
+    16th - 50th pct.               1      31       7       3      12       0       1     NaN      12      0       0  
+    84th - 50th pct.              31       1      11      24       3      17      10     NaN       3      0       0  
+
+
+Flows
+-----
+
+
+Measured (ml/min/kg)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    ______    ____    ____    ____    ____    ____    ____    ____
+
+      1       290     161     120     210     257     140     159 
+      2       130     290     189      91     173      56     100 
+      3       185     395     194     NaN     310     NaN     142 
+
+
+Derived (ml/min/kg)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
+    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+      1       290     161     120     210     257     140     159     NaN     257      14      14     465 
+      2       130     290     189      91     173      56     100     NaN     173      13      13     433 
+      3       185     395     194     109     310      76     142     NaN     310      18      18     598 
+
+
+Measured (%CVO)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    ______    ____    ____    ____    ____    ____    ____    ____
+
+      1        62      35      26      45      55      30      34 
+      2        30      67      44      21      40      13      23 
+      3        31      66      32     NaN      52     NaN      24 
+
+
+Derived (%CVO)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
+    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+      1        62      35      26      45      55      30      34     NaN      55      3       3  
+      2        30      67      44      21      40      13      23     NaN      40      3       3  
+      3        31      66      32      18      52      13      24     NaN      52      3       3  
+
+

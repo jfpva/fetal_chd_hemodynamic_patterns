@@ -1,0 +1,174 @@
+Group,SubGroup,CaseNo,CirculationType,MPA,AAo,SVC,DA,DAo,PBF,UV
+Normal,Normal,1,normal,211,230,118,134,265,95,128
+Normal,Normal,2,normal,229,177,156,223,264,14,163
+Normal,Normal,3,normal,264,187,150,NaN,277,48,165
+Normal,Normal,4,normal,241,206,134,182,220,87,97
+Normal,Normal,5,normal,236,236,83,192,310,43,95
+Normal,Normal,6,normal,263,281,165,117,230,169,110
+Normal,Normal,7,normal,273,218,121,210,302,107,126
+Normal,Normal,8,normal,216,174,166,209,316,132,144
+Normal,Normal,9,normal,238,145,110,145,226,44,137
+Normal,Normal,10,normal,297,189,114,169,210,74,141
+Normal,Normal,11,normal,313,137,138,211,235,85,126
+Normal,Normal,12,normal,216,210,179,149,187,61,114
+Normal,Normal,13,normal,242,225,130,173,300,93,130
+Normal,Normal,14,normal,241,198,189,145,257,64,141
+Normal,Normal,15,normal,190,195,120,137,205,38,108
+Normal,Normal,16,normal,254,236,70,174,184,79,93
+Normal,Normal,17,normal,240,158,125,209,237,32,115
+Normal,Normal,18,normal,251,219,163,159,191,79,128
+Normal,Normal,19,normal,265,254,155,216,274,68,196
+Normal,Normal,20,normal,260,162,125,NaN,293,22,156
+Normal,Normal,21,normal,223,201,189,165,254,82,156
+Normal,Normal,22,normal,192,184,98,129,183,31,192
+Normal,Normal,23,normal,341,132,125,183,246,78,161
+Normal,Normal,24,normal,239,168,192,172,182,68,98
+Normal,Normal,25,normal,201,126,90,154,201,97,142
+Normal,Normal,26,normal,221,241,140,203,297,32,85
+Normal,Normal,27,normal,291,152,79,229,275,58,143
+Normal,Normal,28,normal,238,215,160,135,154,12,93
+Normal,Normal,29,normal,306,166,119,258,266,84,120
+Normal,Normal,30,normal,253,236,133,217,221,NaN,131
+Normal,Normal,31,normal,203,239,112,129,247,50,139
+Normal,Normal,32,normal,270,173,140,187,181,40,109
+Normal,Normal,33,normal,276,159,97,187,198,63,117
+Normal,Normal,34,normal,206,274,112,176,291,56,131
+Normal,Normal,35,normal,202,167,138,148,194,52,88
+Normal,Normal,36,normal,210,223,138,211,322,52,181
+Normal,Normal,37,normal,212,212,108,203,288,82,120
+Normal,Normal,38,normal,232,280,162,200,262,28,95
+Normal,Normal,39,normal,233,209,95,190,317,54,180
+Normal,Normal,40,normal,271,247,104,179,233,130,163
+Normal,Normal,41,normal,323,206,83,224,292,57,175
+Normal,Normal,42,normal,310,188,116,197,242,105,134
+Normal,Normal,43,normal,231,168,151,200,257,73,142
+Normal,Normal,44,normal,267,174,98,186,220,83,104
+Normal,Normal,45,normal,196,201,88,120,190,126,148
+Normal,Normal,46,normal,277,172,161,194,341,76,135
+Normal,Normal,47,normal,347,178,187,206,246,98,102
+Normal,Normal,48,normal,259,131,106,153,203,33,100
+Normal,Normal,49,normal,202,215,93,161,281,90,156
+Normal,Normal,50,normal,303,251,161,164,221,76,134
+HLHS,HLHS RAS,1,hlhs_aortic_atresia,400,NaN,195,384,300,NaN,98
+HLHS,HLHS RAS,2,hlhs_aortic_atresia,320,NaN,177,302,120,23,117
+HLHS,HLHS RAS,3,hlhs_aortic_atresia,479,NaN,120,427,307,38,251
+HLHS,HLHS RAS,4,hlhs_aortic_atresia,414,NaN,105,393,169,56,146
+HLHS,HLHS MA AS,1,normal,360,87,124,NaN,174,NaN,97
+HLHS,HLHS MA AS,2,normal,380,NaN,133,253,198,60,144
+HLHS,HLHS MS AS,1,normal,433,NaN,80,308,229,95,111
+HLHS,HLHS MS AS,2,normal,442,NaN,127,272,256,73,158
+HLHS,HLHS MS AS,3,normal,329,51,107,266,202,51,108
+HLHS,HLHS MS AS,4,normal,373,120,160,275,192,100,174
+HLHS,HLHS MS AS,5,normal,352,47,168,316,272,85,111
+HLHS,HLHS MS AS,6,normal,334,6,172,380,138,NaN,105
+HLHS,HLHS MS AS,7,normal,373,101,143,306,271,60,116
+HLHS,HLHS MS AS,8,normal,291,33,133,198,195,NaN,104
+HLHS,HLHS MS AS,9,normal,348,60,113,NaN,167,NaN,112
+HLHS,HLHS MS AS,10,normal,366,124,268,332,263,22,108
+HLHS,HLHS MS AS,11,normal,509,NaN,140,NaN,243,70,104
+HLHS,HLHS MS AS,12,normal,407,NaN,238,NaN,279,NaN,140
+HLHS,HLHS MS AS,13,normal,400,NaN,175,361,285,84,152
+HLHS,HLHS MS AA,1,hlhs_aortic_atresia,412,NaN,129,356,227,44,131
+HLHS,HLHS MS AA,2,hlhs_aortic_atresia,330,NaN,129,NaN,180,NaN,83
+HLHS,HLHS MS AA,3,hlhs_aortic_atresia,420,NaN,180,NaN,212,28,152
+HLHS,HLHS MS AA,4,hlhs_aortic_atresia,261,NaN,111,242,131,NaN,100
+HLHS,HLHS MS AA,5,hlhs_aortic_atresia,299,NaN,136,279,156,22,71
+HLHS,HLHS MS AA,6,hlhs_aortic_atresia,389,NaN,102,NaN,227,NaN,90
+HLHS,HLHS MA AA,1,hlhs_aortic_atresia,422,NaN,120,336,276,NaN,116
+HLHS,HLHS MA AA,2,hlhs_aortic_atresia,350,NaN,84,323,257,32,151
+HLHS,HLHS MA AA,3,hlhs_aortic_atresia,414,NaN,70,300,238,NaN,134
+HLHS,HLHS MA AA,4,hlhs_aortic_atresia,433,NaN,231,403,165,NaN,144
+HLHS,HLHS MA AA,5,hlhs_aortic_atresia,444,NaN,113,456,243,140,132
+HLHS,HLHS MA AA,6,hlhs_aortic_atresia,438,NaN,159,366,266,80,165
+HLHS,HLHS MA AA,7,hlhs_aortic_atresia,514,NaN,148,410,216,NaN,116
+HLHS,HLHS MA AA,8,hlhs_aortic_atresia,358,NaN,148,292,239,72,107
+HLHS,HLHS MA AA,9,hlhs_aortic_atresia,330,NaN,76,298,226,53,105
+HLHS,HLHS MA AA,10,hlhs_aortic_atresia,366,NaN,111,415,187,102,98
+HLHS,HLHS MA AA,11,hlhs_aortic_atresia,423,NaN,211,401,233,28,73
+HLHS,HLHS MA AA,12,hlhs_aortic_atresia,422,NaN,93,NaN,298,NaN,89
+HLHS,HLHS MA AA,13,hlhs_aortic_atresia,358,NaN,182,311,337,NaN,119
+HLHS,HLHS DORV,1,double_outlet_right_ventricle,200,112,145,185,161,48,104
+HLHS,HLHS DORV,2,double_outlet_right_ventricle,380,49,153,331,190,54,150
+HLHS,HLHS DORV,3,double_outlet_right_ventricle,244,161,131,NaN,184,NaN,154
+TGA,TGA IVS,1,transposition,315,440,140,120,290,NaN,155
+TGA,TGA IVS,2,transposition,215,247,260,195,234,58,154
+TGA,TGA IVS,3,transposition,178,230,110,139,183,57,118
+TGA,TGA IVS,4,transposition,210,261,84,83,313,10,138
+TGA,TGA IVS,5,transposition,191,239,156,NaN,241,NaN,135
+TGA,TGA IVS,6,transposition,182,271,134,69,306,46,96
+TGA,TGA IVS,7,transposition,253,319,118,80,299,160,186
+TGA,TGA IVS,8,transposition,220,319,128,51,260,146,156
+TGA,TGA IVS,9,transposition,195,275,137,40,234,105,188
+TGA,TGA IVS,10,transposition,156,203,173,NaN,202,NaN,75
+TGA,TGA IVS,11,transposition,166,274,91,122,294,NaN,163
+TGA,TGA IVS,12,transposition,151,200,234,117,320,NaN,125
+TGA,TGA IVS,13,transposition,244,361,215,NaN,322,NaN,105
+TGA,TGA IVS,14,transposition,209,339,136,121,325,NaN,69
+TGA,TGA IVS,15,transposition,155,403,151,43,296,NaN,94
+TGA,TGA IVS,16,transposition,255,415,144,138,286,240,200
+TGA,TGA IVS,17,transposition,212,395,240,90,246,112,202
+TGA,TGA IVS,18,transposition,152,165,120,99,140,NaN,105
+TGA,TGA IVS,19,transposition,105,142,69,NaN,142,NaN,136
+TGA,TGA IVS,20,transposition,153,198,89,112,226,32,146
+TGA,TGA IVS,21,transposition,219,465,148,122,342,100,228
+TGA,TGA IVS,22,transposition,288,477,161,151,316,96,213
+TGA,TGA IVS,23,transposition,198,308,123,102,242,56,125
+TGA,TGA IVS,24,transposition,171,241,143,NaN,171,NaN,111
+TGA,TGA IVS,25,transposition,297,279,143,139,230,NaN,226
+TGA,TGA IVS,26,transposition,312,290,175,NaN,290,NaN,116
+TGA,TGA VSD,1,transposition,272,213,145,215,249,70,174
+TGA,TGA VSD,2,transposition,214,235,103,NaN,129,NaN,114
+TGA,TGA VSD,3,transposition,130,290,189,91,173,56,100
+TGA,TGA VSD,4,transposition,167,306,127,84,262,84,142
+TGA,TGA VSD,5,transposition,236,404,203,115,317,120,137
+TGA,TGA VSD,6,transposition,153,154,120,NaN,267,NaN,111
+TGA,TGA VSD,7,transposition,195,292,280,77,277,NaN,110
+TGA,TGA VSD,8,transposition,189,175,194,NaN,195,55,102
+TGA,TGA VSD,9,transposition,151,276,177,NaN,209,NaN,86
+TGA,TGA VSD PS,1,transposition,290,161,120,210,257,140,159
+TGA,TGA VSD PS,2,transposition,130,290,189,91,173,56,100
+TGA,TGA VSD PS,3,transposition,185,395,194,NaN,310,NaN,142
+TGA,TGA COA,1,transposition,159,298,189,122,220,33,110
+TGA,TGA COA,2,transposition,225,161,171,NaN,283,60,165
+TGA,TGA COA,3,transposition,352,167,194,380,342,21,144
+TGA,TGA COA,4,transposition,413,111,150,NaN,258,NaN,96
+TGA,TGA COA,5,transposition,336,229,151,NaN,326,NaN,161
+TOF,TOF ONLY,1,normal,79,310,91,25,353,56,125
+TOF,TOF ONLY,2,normal,92,362,126,77,NaN,38,160
+TOF,TOF ONLY,3,normal,94,376,82,NaN,206,NaN,143
+TOF,TOF ONLY,4,normal,40,312,157,NaN,232,20,79
+TOF,TOF ONLY,5,normal,118,321,142,NaN,204,52,111
+TOF,TOF ONLY,6,normal,82,314,188,14,175,NaN,80
+TOF,TOF ONLY,7,normal,131,352,136,NaN,191,NaN,147
+TOF,TOF ONLY,8,normal,NaN,418,73,NaN,239,NaN,128
+TOF,TOF ONLY,9,normal,128,394,161,29,250,128,107
+TOF,TOF ONLY,10,normal,125,307,120,NaN,266,89,109
+TOF,TOF ONLY,11,normal,161,352,158,NaN,291,NaN,155
+TOF,TOF ONLY,12,normal,NaN,307,60,NaN,223,NaN,122
+TOF,TOF PA,1,normal,NaN,468,150,NaN,270,40,167
+TOF,TOF PA,2,normal,NaN,571,242,NaN,308,23,78
+TOF,TOF PA,3,normal,NaN,263,93,NaN,156,15,62
+TOF,TOF PA,4,normal,NaN,325,146,NaN,366,NaN,96
+EA,Ebstein's no Circular Shunt,1,normal,NaN,216,106,NaN,153,NaN,102
+EA,Ebstein's no Circular Shunt,2,normal,NaN,144,35,NaN,109,NaN,74
+EA,Ebstein's no Circular Shunt,3,normal,NaN,237,118,-22,106,22,92
+EA,Ebstein's no Circular Shunt,4,normal,NaN,248,92,NaN,129,NaN,83
+EA,Ebstein's no Circular Shunt,5,normal,NaN,174,125,NaN,97,NaN,65
+EA,Ebstein's no Circular Shunt,6,normal,NaN,264,71,-206,146,51,106
+EA,Ebstein's no Circular Shunt,7,normal,NaN,151,56,NaN,139,NaN,88
+EA,Ebstein's no Circular Shunt,8,normal,NaN,302,84,NaN,200,18,NaN
+EA,Ebstein's no Circular Shunt,9,normal,NaN,283,74,NaN,132,NaN,73
+EA,Ebstein's no Circular Shunt,10,normal,NaN,146,NaN,NaN,116,NaN,87
+EA,Ebstein's Circular Shunt,1,ebsteins_circular_shunt,NaN,590,46,NaN,156,NaN,90
+EA,Ebstein's Circular Shunt,2,ebsteins_circular_shunt,NaN,469,87,NaN,173,NaN,123
+EA,Ebstein's Circular Shunt,3,ebsteins_circular_shunt,NaN,209,35,NaN,68,NaN,56
+EA,Ebstein's Circular Shunt,4,ebsteins_circular_shunt,NaN,357,151,-91,168,NaN,96
+EA,Ebstein's Circular Shunt,5,ebsteins_circular_shunt,NaN,299,128,NaN,139,NaN,93
+TA,TA VA Concordance,1,normal,NaN,216,106,NaN,153,NaN,102
+TA,TA VA Concordance,2,normal,NaN,342,110,38,159,38,82
+TA,TA VA Concordance,3,normal,198,269,104,NaN,259,76,97
+TA,TA VA Concordance,4,normal,NaN,475,203,32,254,32,72
+TA,TA VA Concordance,5,normal,NaN,326,111,31,194,31,99
+TA,TA VA Concordance,6,normal,111,329,187,66,170,34,61
+TA,TA VA Discordance,1,transposition,231,123,120,184,175,100,70
+TA,TA VA Discordance,2,transposition,308,90,105,203,185,96,106

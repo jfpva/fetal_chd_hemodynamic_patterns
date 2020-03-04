@@ -35,9 +35,6 @@ Flow Distribution Model
 
 
 [Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>balance_flow_distribution', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1154)" style="font-weight:bold">script_analyze_fetal_chd_flows>balance_flow_distribution</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1154,0)">line 1154</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1126)" style="font-weight:bold">script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1126,0)">line 1126</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 602)" style="font-weight:bold">script_analyze_fetal_chd_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',602,0)">line 602</a>)] 
 
 
 Group 03: TGA
@@ -95,9 +92,6 @@ Flow Distribution Model
 
 
 [Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>balance_flow_distribution', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1154)" style="font-weight:bold">script_analyze_fetal_chd_flows>balance_flow_distribution</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1154,0)">line 1154</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1126)" style="font-weight:bold">script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1126,0)">line 1126</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 602)" style="font-weight:bold">script_analyze_fetal_chd_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',602,0)">line 602</a>)] 
 
 
 Group 06: TA
@@ -119,8 +113,4 @@ Flow Distribution Model
 
 
 [Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>balance_flow_distribution', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1154)" style="font-weight:bold">script_analyze_fetal_chd_flows>balance_flow_distribution</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1154,0)">line 1154</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 1126)" style="font-weight:bold">script_analyze_fetal_chd_flows>generate_balanced_flow_distribution_model_using_median_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',1126,0)">line 1126</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('script_analyze_fetal_chd_flows', '/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m', 602)" style="font-weight:bold">script_analyze_fetal_chd_flows</a> (<a href="matlab: opentoline('/Users/joshuavanamerom/Research/analyze_fetal_chd_flows/script_analyze_fetal_chd_flows.m',602,0)">line 602</a>)] 
-
 

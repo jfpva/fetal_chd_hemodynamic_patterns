@@ -162,7 +162,7 @@ EA,Ebstein's no Circular Shunt,10,normal,NaN,146,NaN,NaN,116,NaN,87
 EA,Ebstein's Circular Shunt,1,ebsteins_circular_shunt,NaN,590,46,NaN,156,NaN,90
 EA,Ebstein's Circular Shunt,2,ebsteins_circular_shunt,NaN,469,87,NaN,173,NaN,123
 EA,Ebstein's Circular Shunt,3,ebsteins_circular_shunt,NaN,209,35,NaN,68,NaN,56
-EA,Ebstein's Circular Shunt,4,ebsteins_circular_shunt,NaN,357,151,-91,168,NaN,96
+EA,Ebstein's Circular Shunt,4,ebsteins_circular_shunt,NaN,357,63,-91,168,NaN,96
 EA,Ebstein's Circular Shunt,5,ebsteins_circular_shunt,NaN,299,128,NaN,139,NaN,93
 TA,TA VA Concordance,1,normal,NaN,216,106,NaN,153,NaN,102
 TA,TA VA Concordance,2,normal,NaN,342,110,38,159,38,82

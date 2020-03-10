@@ -8,11 +8,11 @@ Flow Distribution Model
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
     measured, N (ml/min/kg)          0       5       5        1      5       0       5       0       0       0       0       0 
-    measured median (ml/min/kg)    NaN     357      87      NaN    156     NaN      93     NaN     NaN     NaN     NaN     NaN 
+    measured median (ml/min/kg)    NaN     357      63      NaN    156     NaN      93     NaN     NaN     NaN     NaN     NaN 
     derived, N (ml/min/kg)           0       5       5        5      5       0       5       0       5       5       5       5 
-    derived median (ml/min/kg)     NaN     357      87     -106    156     NaN      93     NaN     156      11      11     368 
+    derived median (ml/min/kg)     NaN     357      63     -106    156     NaN      93     NaN     156      11      11     368 
     measured, N (%CVO)               0       5       5        1      5       0       5       0       0       0       0       0 
-    measured median (%CVO)         NaN      97      18      NaN     36     NaN      26     NaN     NaN     NaN     NaN     NaN 
+    measured median (%CVO)         NaN      97      17      NaN     36     NaN      26     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN      NaN    NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
@@ -26,12 +26,12 @@ Measured (ml/min/kg)
                                  ____    ____    ____    ____    ____    ____    ____
 
     N                              0       5       5       1       5       0       5 
-    mean                         NaN     385      89     NaN     141     NaN      92 
-    standard deviation           NaN     149      50     NaN      43     NaN      24 
-    median                       NaN     357      87     NaN     156     NaN      93 
-    median absolute deviation    NaN     112      41     NaN      17     NaN       3 
-    16th - 50th pct.             NaN     121      49     NaN      67     NaN      27 
-    84th - 50th pct.             NaN     197      57     NaN      16     NaN      22 
+    mean                         NaN     385      72     NaN     141     NaN      92 
+    standard deviation           NaN     149      37     NaN      43     NaN      24 
+    median                       NaN     357      63     NaN     156     NaN      93 
+    median absolute deviation    NaN     112      24     NaN      17     NaN       3 
+    16th - 50th pct.             NaN     121      25     NaN      67     NaN      27 
+    84th - 50th pct.             NaN     197      53     NaN      16     NaN      22 
 
 
 Derived (ml/min/kg)
@@ -40,12 +40,12 @@ Derived (ml/min/kg)
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
     N                              0       5       5        5      5       0       5       0       5       5       5       5 
-    mean                         NaN     385      89     -165    141     NaN      92     NaN     141      12      12     397 
-    standard deviation           NaN     149      50      140     43     NaN      24     NaN      43       5       5     153 
-    median                       NaN     357      87     -106    156     NaN      93     NaN     156      11      11     368 
-    median absolute deviation    NaN     112      41       74     17     NaN       3     NaN      17       3       3     115 
-    16th - 50th pct.             NaN     121      49      228     67     NaN      27     NaN      67       4       4     125 
-    84th - 50th pct.             NaN     197      57       56     16     NaN      22     NaN      16       6       6     203 
+    mean                         NaN     385      72     -165    141     NaN      92     NaN     141      12      12     397 
+    standard deviation           NaN     149      37      140     43     NaN      24     NaN      43       5       5     153 
+    median                       NaN     357      63     -106    156     NaN      93     NaN     156      11      11     368 
+    median absolute deviation    NaN     112      24       74     17     NaN       3     NaN      17       3       3     115 
+    16th - 50th pct.             NaN     121      25      228     67     NaN      27     NaN      67       4       4     125 
+    84th - 50th pct.             NaN     197      53       56     16     NaN      22     NaN      16       6       6     203 
 
 
 Measured (%CVO)
@@ -54,12 +54,12 @@ Measured (%CVO)
                                  ____    ____    ____    ____    ____    ____    ____
 
     N                              0       5       5       1       5       0       5 
-    mean                         NaN      97      25     NaN      37     NaN      24 
-    standard deviation           NaN       0      15     NaN       9     NaN       6 
-    median                       NaN      97      18     NaN      36     NaN      26 
-    median absolute deviation    NaN       0      10     NaN       9     NaN       1 
-    16th - 50th pct.             NaN       0       8     NaN       8     NaN       8 
-    84th - 50th pct.             NaN       0      23     NaN      10     NaN       3 
+    mean                         NaN      97      20     NaN      37     NaN      24 
+    standard deviation           NaN       0      13     NaN       9     NaN       6 
+    median                       NaN      97      17     NaN      36     NaN      26 
+    median absolute deviation    NaN       0       1     NaN       9     NaN       1 
+    16th - 50th pct.             NaN       0       7     NaN       8     NaN       8 
+    84th - 50th pct.             NaN       0      17     NaN      10     NaN       3 
 
 
 Derived (%CVO)
@@ -68,12 +68,12 @@ Derived (%CVO)
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
     N                              0       5       5       5       5       0       5       0       5      5       5  
-    mean                         NaN      97      25     -38      37     NaN      24     NaN      37      3       3  
-    standard deviation           NaN       0      15      21       9     NaN       6     NaN       9      0       0  
-    median                       NaN      97      18     -43      36     NaN      26     NaN      36      3       3  
-    median absolute deviation    NaN       0      10      19       9     NaN       1     NaN       9      0       0  
-    16th - 50th pct.             NaN       0       8      16       8     NaN       8     NaN       8      0       0  
-    84th - 50th pct.             NaN       0      23      29      10     NaN       3     NaN      10      0       0  
+    mean                         NaN      97      20     -38      37     NaN      24     NaN      37      3       3  
+    standard deviation           NaN       0      13      21       9     NaN       6     NaN       9      0       0  
+    median                       NaN      97      17     -43      36     NaN      26     NaN      36      3       3  
+    median absolute deviation    NaN       0       1      19       9     NaN       1     NaN       9      0       0  
+    16th - 50th pct.             NaN       0       7      16       8     NaN       8     NaN       8      0       0  
+    84th - 50th pct.             NaN       0      17      29      10     NaN       3     NaN      10      0       0  
 
 
 Flows
@@ -88,7 +88,7 @@ Measured (ml/min/kg)
       1       NaN     590      46     NaN     156     NaN      90 
       2       NaN     469      87     NaN     173     NaN     123 
       3       NaN     209      35     NaN      68     NaN      56 
-      4       NaN     357     151     -91     168     NaN      96 
+      4       NaN     357      63     -91     168     NaN      96 
       5       NaN     299     128     NaN     139     NaN      93 
 
 
@@ -100,7 +100,7 @@ Derived (ml/min/kg)
       1       NaN     590      46     -388    156     NaN      90     NaN     156      18      18     608 
       2       NaN     469      87     -209    173     NaN     123     NaN     173      15      15     484 
       3       NaN     209      35     -106     68     NaN      56     NaN      68       6       6     215 
-      4       NaN     357     151      -91    168     NaN      96     NaN     168      11      11     368 
+      4       NaN     357      63      -91    168     NaN      96     NaN     168      11      11     368 
       5       NaN     299     128      -32    139     NaN      93     NaN     139       9       9     308 
 
 
@@ -112,7 +112,7 @@ Measured (%CVO)
       1       NaN      97       8     NaN      26     NaN      15 
       2       NaN      97      18     NaN      36     NaN      25 
       3       NaN      97      16     NaN      32     NaN      26 
-      4       NaN      97      41     -25      46     NaN      26 
+      4       NaN      97      17     -25      46     NaN      26 
       5       NaN      97      42     NaN      45     NaN      30 
 
 
@@ -124,7 +124,7 @@ Derived (%CVO)
       1       NaN      97       8     -64      26     NaN      15     NaN      26      3       3  
       2       NaN      97      18     -43      36     NaN      25     NaN      36      3       3  
       3       NaN      97      16     -49      32     NaN      26     NaN      32      3       3  
-      4       NaN      97      41     -25      46     NaN      26     NaN      46      3       3  
+      4       NaN      97      17     -25      46     NaN      26     NaN      46      3       3  
       5       NaN      97      42     -10      45     NaN      30     NaN      45      3       3  
 
 

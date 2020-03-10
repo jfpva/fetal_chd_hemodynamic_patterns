@@ -164,7 +164,7 @@
     {'EA'    }    {'Ebstein's Circular Shunt'   }       1      NaN     590      46     -388    156     NaN      90      NaN    156      18      18     608 
     {'EA'    }    {'Ebstein's Circular Shunt'   }       2      NaN     469      87     -209    173     NaN     123      NaN    173      15      15     484 
     {'EA'    }    {'Ebstein's Circular Shunt'   }       3      NaN     209      35     -106     68     NaN      56      NaN     68       6       6     215 
-    {'EA'    }    {'Ebstein's Circular Shunt'   }       4      NaN     357     151      -91    168     NaN      96      NaN    168      11      11     368 
+    {'EA'    }    {'Ebstein's Circular Shunt'   }       4      NaN     357      63      -91    168     NaN      96      NaN    168      11      11     368 
     {'EA'    }    {'Ebstein's Circular Shunt'   }       5      NaN     299     128      -32    139     NaN      93      NaN    139       9       9     308 
     {'TA'    }    {'TA VA Concordance'          }       1      NaN     216     106       43    153     NaN     102      NaN    153     NaN     NaN     NaN 
     {'TA'    }    {'TA VA Concordance'          }       2       76     342     110       38    159      38      82      282    159      13      13     431 

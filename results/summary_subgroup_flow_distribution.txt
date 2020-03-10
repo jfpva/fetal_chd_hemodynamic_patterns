@@ -263,11 +263,11 @@ Flow Distribution Model
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
     measured, N (ml/min/kg)          0       5       5        1      5       0       5       0       0       0       0       0 
-    measured median (ml/min/kg)    NaN     357      87      NaN    156     NaN      93     NaN     NaN     NaN     NaN     NaN 
+    measured median (ml/min/kg)    NaN     357      63      NaN    156     NaN      93     NaN     NaN     NaN     NaN     NaN 
     derived, N (ml/min/kg)           0       5       5        5      5       0       5       0       5       5       5       5 
-    derived median (ml/min/kg)     NaN     357      87     -106    156     NaN      93     NaN     156      11      11     368 
+    derived median (ml/min/kg)     NaN     357      63     -106    156     NaN      93     NaN     156      11      11     368 
     measured, N (%CVO)               0       5       5        1      5       0       5       0       0       0       0       0 
-    measured median (%CVO)         NaN      97      18      NaN     36     NaN      26     NaN     NaN     NaN     NaN     NaN 
+    measured median (%CVO)         NaN      97      17      NaN     36     NaN      26     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN      NaN    NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 

@@ -967,7 +967,7 @@ for iV = 1:numel(vesselNames)
         Q.group.calc.(vesselNames{iV}).(groupNames{iG})(1:numel(q)) = q;
         Q.group.calc.(vesselNames{iV}).(groupNames{iG})((numel(q)+1):end) = NaN;
     end
-    writetable( Q.group.calc.(vesselNames{iV}), fullfile( outputDataDirPath, sprintf('data_prism_groups_derived_%s.csv',lower(vesselNames{iV})) ) )
+    writetable( Q.group.calc.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('data_prism_groups_derived_%s.csv',lower(vesselNames{iV})) ) )
 end
 
 

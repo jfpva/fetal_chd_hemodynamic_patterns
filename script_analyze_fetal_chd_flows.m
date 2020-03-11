@@ -1,4 +1,13 @@
-% script_analyze_fetal_chd_flows.m
+%% script_analyze_fetal_chd_flows.m
+%
+% Analyisis of fetal blood flow distribution patterns, measured using MRI, in late gestation human 
+% fetuses with a spectrum of congenital heart disease (CHD) subtypes presenting with neonatal 
+% cyanosis and age-matched fetuses with normal hearts.
+%
+% See README.md for additional information.
+
+% NOTE: balance_fetal_flow_distribution function requires Matlab R2019b or later due to use of 
+%       arguments code block for argument validation
 
 
 %% Options
@@ -971,6 +980,9 @@ for iV = 1:numel(vesselNames)
 end
 
 
+%% Local Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %% derive_flows
 function T = derive_flows( T, F, isAA, isPA, isEACS, L, U, isVerbose )
 
@@ -1425,6 +1437,8 @@ function [ optFlow, unoptFlow, wgt, exitFlag ] = balance_fetal_flow_distribution
 %         the active set algorithm as described in Prsa2014.
 %
 %   See also fmincon.
+
+% NOTE: requires Matlab R2019b or later due to use of arguments code block for argument validation
 
 % TODO: add note to help text re. Qref for unique cirulations
 

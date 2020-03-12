@@ -22,7 +22,7 @@ Lower
     {'TOF ONLY'                   }      4     221       4      -6     107       0      43 
     {'TOF PA'                     }      0       0      21     NaN      76       0      11 
     {'Ebstein's no Circular Shunt'}      0       0       0     NaN      48       4      29 
-    {'Ebstein's Circular Shunt'   }    NaN       0       0     NaN      80       0      80 
+    {'Ebstein's Circular Shunt'   }    NaN       0       0     NaN       0       0      41 
     {'TA VA Concordance'          }      0     165      86      19      66      21      41 
     {'TA VA Discordance'          }      0       0       0     NaN       0       0       0 
 
@@ -46,7 +46,7 @@ Upper
     {'TOF ONLY'                   }    208     452     258      60     357     165     204 
     {'TOF PA'                     }    NaN     852     275       0     502      59     163 
     {'Ebstein's no Circular Shunt'}    NaN     469     182       0     213      40     145 
-    {'Ebstein's Circular Shunt'   }      0     855     170       0     232     NaN     106 
+    {'Ebstein's Circular Shunt'   }      0     855     143       0     314     NaN     139 
     {'TA VA Concordance'          }    NaN     490     135      51     298      47     138 
     {'TA VA Discordance'          }    NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
@@ -189,9 +189,9 @@ Group: TGA                           43     198     275     148     115     260 
 Group: TOF                           16     106     339     139      27     239      40     117      87     339     139      23     245      46     117             245      14      14     460  
     TOF ONLY                         12     106     337     131      27     232      54     124     106     337     131      25     236      56     124             236      14      14     460  
     TOF PA                            4             397     148             289      23      87       0     397     148     -21     289      23      87             289      12      12     409  
-Group: EA                            15             248      79     -91     139      22      89       0     248      79     -77     139      25      89     227     139       8       8     256  
+Group: EA                            15             248      77             132      22      88       0     248      77     -77     132      25      88     227     132       8       8     256  
     Ebstein's no Circular Shunt      10             227      84             131      22      87       0     227      84     -25     131      25      87     227     131       7       7     234  
-    Ebstein's Circular Shunt          5             357      63             156              93             357      63    -106     156              93             156      11      11     368  
+    Ebstein's Circular Shunt          5             357      63             132              90             357      63    -162     132              90             132      11      11     368  
 Group: TA                             8     215     298     111      52     180      38      90     111     298     111      43     180      38      90     317     180      13      13     431  
     TA VA Concordance                 6             328     111      35     182      34      90      76     328     111      38     182      34      90     371     182      14      14     454  
     TA VA Discordance                 2                                                                                                                                                          
@@ -219,9 +219,9 @@ Group: TGA                           43      40      57      28      20      50 
 Group: TOF                           16      22      77      31       6      55       8      27      20      77      31       5      55      10      27              55       3       3     100  
     TOF ONLY                         12      22      75      29       6      46      13      27      22      75      29       6      51      14      27              51       3       3     100  
     TOF PA                            4              97      38              57       6      26       0      97      38      -5      57       6      26              57       3       3     100  
-Group: EA                            15              97      27     -25      50       9      34       0      97      27     -25      50      10      34      95      50       3       3     100  
+Group: EA                            15              97      26              50       9      34       0      97      26     -26      50      10      34      95      50       3       3     100  
     Ebstein's no Circular Shunt      10              97      36              59       9      39       0      97      36     -10      59      10      39      95      59       3       3     100  
-    Ebstein's Circular Shunt          5              97      17              36              26              97      17     -43      36              26              36       3       3     100  
+    Ebstein's Circular Shunt          5              97      17              32              26              97      17     -44      32              26              32       3       3     100  
 Group: TA                             8      52      73      28      12      46       9      19      24      73      28      12      46       9      19      79      46       3       3     100  
     TA VA Concordance                 6              79      28       8      46       8      19      18      79      28       8      46       8      19      79      46       3       3     100  
     TA VA Discordance                 2                                                                                                                                                     100  

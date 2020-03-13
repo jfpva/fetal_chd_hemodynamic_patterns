@@ -1111,7 +1111,7 @@ end
 for iV = 1:numel(vesselNames)
     Q.group.calc.(vesselNames{iV}) = table('Size',[max([G.NumCases]),numel(G)],'VariableNames',groupNames,'VariableTypes',variableTypes);
     for iG = 1:numel(groupNames)
-        q = S(iG).Tcalc.(vesselNames{iV});
+        q = G(iG).Tcalc.(vesselNames{iV});
         if sum( ~isnan( q ) ) < minMeasToSummarize
             q = nan( size( q ) );
         end

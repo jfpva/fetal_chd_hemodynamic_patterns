@@ -920,8 +920,8 @@ T.AAo(iR)  = 'meas';
 T.SVC(iR)  = 'meas';
 T.DAo(iR)  = 'meas';
 T.UV(iR)   = 'meas';
-T.DA(iR)   = 'meas';
-T.PBF(iR)  = 'meas';
+T.DA(iR)   = 'meas+calc';
+T.PBF(iR)  = 'meas+calc';
 T.FO(iR)   = 'calc';
 T.CVO(iR)  = 'calc';
 
@@ -1133,8 +1133,8 @@ F = cell2table( { ...
         num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'SVC')).SVC ) ),...
         num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'DAo')).DAo ) ),...
         num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'UV')).UV ) ),...
-        num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'DA')).DA ) ),...
-        num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'PBF')).PBF ) ),...
+        num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'DA')).DA ) ),...
+        num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'PBF')).PBF ) ),...
         num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'FO')).FO ) ),...
         num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'CVO')).CVO ) )...
     } );
@@ -1144,6 +1144,9 @@ for iV = 1:numel(varName)
     if isequal(F.(varName{iV}),"NaN")
         F.(varName{iV}) = "N/A";
     end
+    % if ismissing(F.(varName{iV}))
+    % 	F.(varName{iV}) = "";
+    % end    
 end
 
 end  % extract_flow_median(...)
@@ -1159,9 +1162,9 @@ F = table('Size',[1,numel(varName)],'VariableNames',varName,'VariableTypes',varT
 for iV = 1:numel(varName)
     
     switch varName{iV}
-        case {'MPA','AAo','SVC','DAo','UV','DA','PBF'}
+        case {'MPA','AAo','SVC','DAo','UV'}
             T = Tmeas;
-        case {'FO','CVO'}
+        case {'DA','PBF','FO','CVO'}
             T = Tcalc;
         otherwise
             error( 'variable %s not recognized', varName{iV} )

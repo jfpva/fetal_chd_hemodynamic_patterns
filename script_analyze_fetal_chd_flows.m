@@ -855,7 +855,14 @@ for iS = 1:numel(S)
     end
 end
 
-fprintf( 'Modelled Flow Distribution (%%CVO)\n' )
+if isLogResults
+    diary( logFilePath );
+end
+
+descStr = sprintf( 'Modelled Flow Distribution Diagram Info' );
+fprintf( '\n\n%s\n%s\n\n', descStr, repmat( '=', size(descStr) ) );
+fprintf( '%s\n', 'Modelled Flow (%CVO)' )
+
 fprintf( '%-32s %6s  %6s  %6s  %6s  %6s  %6s  %6s  %6s\n', '', 'MPA ', 'AAo ', 'SVC ', 'DA  ', 'DAo ', 'PBF ', 'UV  ', 'FO/ICS' )
 fprintf( '%-32s %6s  %6s  %6s  %6s  %6s  %6s  %6s  %6s\n', '', '------', '------', '------', '------', '------', '------', '------', '------' )
 for iR = 1:size(Qmeas,1)
@@ -874,7 +881,7 @@ for iR = 1:size(Qmeas,1)
     end
     fprintf( '\b\n' )
 end
-fprintf( '\n' )
+fprintf( '\n\n' )
 
 fprintf( '             ?    flow distribution model undetermined\n' )
 fprintf( '            { }   flow distribution model deviates from measured median\n' )
@@ -892,7 +899,11 @@ for iR = 1:size(Qmeas,1)
     end
     fprintf( '\b\n' )
 end
-fprintf( '\n' )
+fprintf( '\n\n' )
+
+if isLogResults
+    diary off
+end
 
 
 %% Save Results Formatted for Manuscript Table

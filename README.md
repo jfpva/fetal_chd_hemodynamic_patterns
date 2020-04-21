@@ -1,12 +1,16 @@
-# analyze_fetal_chd_flows
+# analyze_fetal_hemodynamics
 
-Analyisis of fetal blood flow distribution patterns, measured using MRI, in late gestation human fetuses with a spectrum of congenital heart disease (CHD) subtypes presenting with neonatal cyanosis and age-matched fetuses with normal hearts.
+Analyisis of fetal blood flow distribution patterns and blood oxygen saturations, measured using MRI, in late gestation human fetuses with a spectrum of congenital heart disease (CHD) subtypes presenting with neonatal cyanosis and age-matched fetuses with normal hearts.
 
-`script_analyze_fetal_chd_flows.m` – Matlab script to run the analysis
+`script_prep_data.m` – Matlab script to prepare data
+
+`script_analyze_fetal_chd_flows.m` – Matlab script to run the flow analysis
+
+`statistics.pzfx` – Prism 8 statisitcal analysis
 
 `./results` – output of the analysis  
 
-`./data/data_measured.csv` – measured flow data  
+`./data/flow.csv` – measured flow data  
 
 `./templates/results_template.xlsx` – Excel template for output of analysis
 

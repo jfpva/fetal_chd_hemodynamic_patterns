@@ -15,7 +15,7 @@
 isLogResults = true;  % Log results flag    
 isShowFigs = true;    % Create figures flag
 
-dataFilePath   = fullfile( 'data', 'data_measured.csv' );  % Path to file with measured flows
+dataFilePath   = fullfile( 'data', 'flow.csv' );  % Path to file with measured flows
 
 minMeasToSummarize = 3;  % Minimum number of measurements per subgroup to summarize flows
 
@@ -63,7 +63,7 @@ outputDirPath = 'results';
 outputDataDirPath = fullfile( outputDirPath, 'tables' );
 outputLogDirPath = fullfile( outputDirPath, 'log' );
 outputFigDirPath = fullfile( outputDirPath, 'figures' );
-outputPrismDirPath = fullfile( outputDirPath, 'prism_data' );
+outputPrismDirPath = fullfile( outputDirPath, 'prism' );
 
 logFilePath = fullfile( outputDirPath, 'log.txt' );
 
@@ -107,64 +107,6 @@ switch dataFileExt
     case '.csv'   % Load from comma-separated values file
         
         M = readtable( dataFilePath );
-    
-    case '.xlsx'  % Load from Excel File
-        
-        sheetName = 'Flows';
-
-        optsRef = detectImportOptions( dataFilePath );
-
-        nVarsToRead = 11;
-
-        opts = spreadsheetImportOptions('Sheet',sheetName,'NumVariables',nVarsToRead,'DataRange','A3:K222','VariableNamesRange','A2:K2');
-
-        opts.VariableNames = optsRef.VariableNames(1:nVarsToRead);
-        opts.VariableTypes = optsRef.VariableTypes(1:nVarsToRead);
-
-        R = readtable( dataFilePath, opts );  % reported flows
-
-        % Remove Empty Rows
-        tf = all( ismissing(R), 2 );
-        R(tf,:) = [];
-
-
-        % Initialize Table of Measured Values
-
-        M = R;  % measured flows
-
-
-        % Remove Reported Flows That Appear to be Derived
-
-        % DA
-        isDerivedDA = ( R.DA == R.DAo - R.AAo + R.SVC );
-        M.DA( isDerivedDA ) = NaN;
-
-        % PBF
-        isDerivedPBF = ( R.PBF == R.MPA - R.DA );  % NOTE: if Q_PBF == Q_MPA + Q_DA, it's assumed that Q_PBF and not Q_DA or Q_MPA
-        M.PBF( isDerivedPBF ) = NaN;
-
-
-        % Display Changes
-        if isLogResults
-            diary( logFilePath )
-        end
-        descStr = sprintf( 'Reported Derived Flows' );
-        fprintf( '\n%s\n%s\n\n', descStr, repmat( '=', size(descStr) ) );
-        fprintf( 'DA\n\n%i cases where reported Q_DA = Q_DAo - Q_AAo + Q_SVC\n\n', sum(isDerivedDA) )
-        display_table(R(isDerivedDA,{'SubGroup','CaseNo','MPA','AAo','SVC','DA','DAo','PBF','UV'}))
-        fprintf( 'PBF\n\n%i cases where reported Q_PBF = Q_MPA - Q_DA\n\n', sum(isDerivedPBF) )
-        display_table(R(isDerivedPBF,{'SubGroup','CaseNo','MPA','AAo','SVC','DA','DAo','PBF','UV'}))
-        if isLogResults
-            diary off
-            clean_log_file( logFilePath )
-        end
-
-
-        % Write Measured Data to CSV
-
-        if isLogResults
-            writetable( M, fullfile( outputDataDirPath, 'data_measured.csv' ) )
-        end
 
     otherwise
     
@@ -1069,7 +1011,7 @@ for iV = 1:numel(vesselNames)
         Q.subgroup.meas.(vesselNames{iV}).(subGroupNames{iS})(1:numel(q)) = q;
         Q.subgroup.meas.(vesselNames{iV}).(subGroupNames{iS})((numel(q)+1):end) = NaN;
     end
-    writetable( Q.subgroup.meas.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('data_prism_subgroups_measured_%s.csv',lower(vesselNames{iV})) ) )
+    writetable( Q.subgroup.meas.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('flow_subgroups_measured_%s.csv',lower(vesselNames{iV})) ) )
 end
 
 % Measured Flows by Group
@@ -1089,7 +1031,7 @@ for iV = 1:numel(vesselNames)
         Q.group.meas.(vesselNames{iV}).(groupNames{iG})(1:numel(q)) = q;
         Q.group.meas.(vesselNames{iV}).(groupNames{iG})((numel(q)+1):end) = NaN;
     end
-    writetable( Q.group.meas.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('data_prism_groups_measured_%s.csv',lower(vesselNames{iV})) ) )
+    writetable( Q.group.meas.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('flow_groups_measured_%s.csv',lower(vesselNames{iV})) ) )
 end
 
 % Derived Flows by Sub-Group
@@ -1109,7 +1051,7 @@ for iV = 1:numel(vesselNames)
         Q.subgroup.calc.(vesselNames{iV}).(subGroupNames{iS})(1:numel(q)) = q;
         Q.subgroup.calc.(vesselNames{iV}).(subGroupNames{iS})((numel(q)+1):end) = NaN;
     end
-    writetable( Q.subgroup.calc.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('data_prism_subgroups_derived_%s.csv',lower(vesselNames{iV})) ) )
+    writetable( Q.subgroup.calc.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('flow_subgroups_derived_%s.csv',lower(vesselNames{iV})) ) )
 end
 
 % Derived Flows by Group
@@ -1129,7 +1071,7 @@ for iV = 1:numel(vesselNames)
         Q.group.calc.(vesselNames{iV}).(groupNames{iG})(1:numel(q)) = q;
         Q.group.calc.(vesselNames{iV}).(groupNames{iG})((numel(q)+1):end) = NaN;
     end
-    writetable( Q.group.calc.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('data_prism_groups_derived_%s.csv',lower(vesselNames{iV})) ) )
+    writetable( Q.group.calc.(vesselNames{iV}), fullfile( outputPrismDirPath, sprintf('flow_groups_derived_%s.csv',lower(vesselNames{iV})) ) )
 end
 
 
@@ -1559,8 +1501,8 @@ for iV = iMpa+(0:7)
         set(gca,'XLim',105*[-1,+1],'YLim',[0,maxFrq])
         statStrCell = cell(0);
         statStrCell{1} = sprintf( '%-6s = %3i\n', 'N', round(S.(T.Properties.VariableNames{iV})(1)) );
-        statStrCell{2} = sprintf( '%-6s � %s\n   %3i � %2i', 'mean', 'std.', round(S.(T.Properties.VariableNames{iV})(2)), round(S.(T.Properties.VariableNames{iV})(3)) );
-        statStrCell{3} = sprintf( '%-6s � %s\n   %3i � %2i', 'median', 'm.a.d.', round(S.(T.Properties.VariableNames{iV})(4)), round(S.(T.Properties.VariableNames{iV})(5)) );
+        statStrCell{2} = sprintf( '%-6s %s %s\n   %3i %s %2i', 'mean', char(177), 'std.', round(S.(T.Properties.VariableNames{iV})(2)), char(177), round(S.(T.Properties.VariableNames{iV})(3)) );
+        statStrCell{3} = sprintf( '%-6s %s %s\n   %3i %s %2i', 'median', char(177), 'm.a.d.', round(S.(T.Properties.VariableNames{iV})(4)), char(177), round(S.(T.Properties.VariableNames{iV})(5)) );
         statStrCell{4} = sprintf( '%-6s\n   %3i', 'model', B.(strrep(T.Properties.VariableNames{iV},'FO','ICS'))(end) );
         statsStr = sprintf( '%s\n%s\n%s\n%s', statStrCell{1}, statStrCell{2}, statStrCell{3}, statStrCell{4} );
         text( -100, 0.6*maxFrq, statsStr, 'FontSize', 10, 'FontName', 'FixedWidth' )
@@ -1579,6 +1521,7 @@ fid = fopen(fileName,'r');
 f = fread(fid,'*char')';
 fclose(fid);
 f = strrep( strrep( f, '<strong>', '' ), '</strong>', '');
+f = regexprep(f,'In <a href="matlab:matlab.internal.language.introspective.errorDocCallback\(.+line \d+</a>\)','','dotexceptnewline');
 fid = fopen(fileName,'w');
 fprintf(fid,'%s',f);
 fclose(fid);

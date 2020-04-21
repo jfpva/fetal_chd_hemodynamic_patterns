@@ -25,16 +25,19 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)         41      12      41      32      41      25      41       0       0       0       0       0 
-    measured median (ml/min/kg)    380      74     133     320     227      56     116     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          41      39      41      40      41      36      41      30      41      39      39      39 
-    derived median (ml/min/kg)     380     -10     133     321     227      60     116     -35     227      13      13     418 
-    measured, N (%CVO)              39      12      39      32      39      24      39       0       0       0       0       0 
-    measured median (%CVO)         100      17      31      83      52      13      30     NaN     NaN     NaN     NaN     NaN 
+    measured, N (ml/min/kg)         40      12      41      32      41      24      41       0       0       0       0       0 
+    measured median (ml/min/kg)    380      74     133     320     227      55     116     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          40      39      41      40      41      36      41      30      41      38      38      38 
+    derived median (ml/min/kg)     380     -10     133     321     227      60     116     -35     227      13      13     419 
+    measured, N (%CVO)              38      11      38      31      38      23      38       0       0       0       0       0 
+    measured median (%CVO)         100      19      31      80      52      13      30     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
 [Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
+[> 
+  
+  ] 
 
 
 Group 03: TGA
@@ -46,13 +49,13 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)         43      43      43      29      43      23      43       0       0       0       0       0 
-    measured median (ml/min/kg)    198     275     148     115     260      60     136     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          43      43      43      41      43      38      43      31      43      43      43      43 
-    derived median (ml/min/kg)     198     275     148     120     260      69     136     111     260      15      15     486 
-    measured, N (%CVO)              43      43      43      29      43      23      43       0       0       0       0       0 
-    measured median (%CVO)          40      57      28      20      50      14      28     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    39      58      29      21      50      18      28      21      50       3       3     100 
+    measured, N (ml/min/kg)         44      45      45      29      45      23      45       0       0       0       0       0 
+    measured median (ml/min/kg)    204     276     148     112     258      60     136     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          44      45      45      43      45      39      45      32      45      44      44      44 
+    derived median (ml/min/kg)     204     276     148     117     258      70     136     108     258      15      15     487 
+    measured, N (%CVO)              44      44      44      29      44      23      44       0       0       0       0       0 
+    measured median (%CVO)          41      56      28      20      49      14      28     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    40      57      29      22      50      18      28      22      50       3       3     100 
 
 
 Group 04: TOF
@@ -64,13 +67,13 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)         10      16      16       4      15       9      16       0       0       0       0       0 
-    measured median (ml/min/kg)    106     339     139      27     239      40     117     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          14      16      16      10      16      10      16       0      16      14      14      14 
-    derived median (ml/min/kg)      87     339     139      23     245      46     117     NaN     245      14      14     460 
-    measured, N (%CVO)              10      14      14       4      13       9      14       0       0       0       0       0 
-    measured median (%CVO)          22      77      31       6      55       8      27     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    20      77      31       9      55      11      27      69      55       3       3     100 
+    measured, N (ml/min/kg)         11      18      19       4      18       9      19       0       0       0       0       0 
+    measured median (ml/min/kg)    118     339     136      27     245      40     111     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          17      18      19      10      19      10      19       0      19      16      16      16 
+    derived median (ml/min/kg)      82     339     136      23     250      46     111     NaN     250      14      14     460 
+    measured, N (%CVO)              11      16      16       4      15       9      16       0       0       0       0       0 
+    measured median (%CVO)          24      77      30       6      55       8      25     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    21      76      30       9      55      12      25      67      55       3       3     100 
 
 
 Group 05: EA
@@ -92,6 +95,9 @@ Flow Distribution Model
 
 
 [Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
+[> 
+  
+  ] 
 
 
 Group 06: TA
@@ -103,14 +109,18 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)          4       8       8       6       8       7       8       0       0       0       0       0 
-    measured median (ml/min/kg)    215     298     111      52     180      38      90     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)           7       8       8       7       8       7       8       7       8       7       7       7 
-    derived median (ml/min/kg)     111     298     111      43     180      38      90     317     180      13      13     431 
+    measured, N (ml/min/kg)          4       7       7       6       7       7       7       0       0       0       0       0 
+    measured median (ml/min/kg)    215     326     111      52     185      38      82     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           7       7       7       6       7       7       7       7       7       7       7       7 
+    derived median (ml/min/kg)     111     326     111      52     185      38      82     317     185      13      13     431 
     measured, N (%CVO)               4       7       7       6       7       7       7       0       0       0       0       0 
     measured median (%CVO)          52      73      28      12      46       9      19     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
 [Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
+[> 
+  
+  ] 
+
 

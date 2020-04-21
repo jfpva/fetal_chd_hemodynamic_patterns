@@ -11,19 +11,19 @@ Lower
     {'Normal'                     }    119      71       7      71      75       0      35 
     {'HLHS RAS'                   }    231     NaN       0     293       0       0      25 
     {'HLHS MA AS'                 }      0       0       0     NaN       0       0       0 
-    {'HLHS MS AS'                 }    222       0      14     158      83      15      84 
+    {'HLHS MS AS'                 }    237       0      14     158      83      15      84 
     {'HLHS MS AA'                 }    108     NaN      73     114      58       1      15 
-    {'HLHS MA AA'                 }    324     NaN       0     122     137       0      36 
+    {'HLHS MA AA'                 }    173     NaN       0     122     137       0      36 
     {'HLHS DORV'                  }     48       0     109     NaN     157       0     132 
-    {'TGA IVS'                    }     30      35      50       6      97       0       8 
+    {'TGA IVS'                    }     18      61      41      -4     100       0       0 
     {'TGA VSD'                    }     29      94      35      29      71       8      62 
-    {'TGA VSD PS'                 }      0       0     167     NaN      21       0      66 
+    {'TGA VSD PS'                 }      0      88       0     NaN       0       0      16 
     {'TGA COA'                    }      0       0      82     NaN      92       0      51 
-    {'TOF ONLY'                   }      4     221       4      -6     107       0      43 
-    {'TOF PA'                     }      0       0      21     NaN      76       0      11 
+    {'TOF ONLY'                   }      2     183       0      -6      98       0      55 
+    {'TOF PA'                     }      0       0       0     NaN     116       0      32 
     {'Ebstein's no Circular Shunt'}      0       0       0     NaN      48       4      29 
     {'Ebstein's Circular Shunt'   }    NaN       0       0     NaN       0       0      41 
-    {'TA VA Concordance'          }      0     165      86      19      66      21      41 
+    {'TA VA Concordance'          }      0     271      80      19      38      21      15 
     {'TA VA Discordance'          }      0       0       0     NaN       0       0       0 
 
 
@@ -35,19 +35,19 @@ Upper
     {'Normal'                     }    363     328     243     294     417     153     227 
     {'HLHS RAS'                   }    583       0     309     484     541     105     238 
     {'HLHS MA AS'                 }    NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'HLHS MS AS'                 }    524     207     272     456     403     131     138 
+    {'HLHS MS AS'                 }    509     207     272     456     403     131     138 
     {'HLHS MS AA'                 }    611       0     185     444     334      55     175 
-    {'HLHS MA AA'                 }    520       0     280     580     341     205     196 
+    {'HLHS MA AA'                 }    671       0     280     580     341     169     196 
     {'HLHS DORV'                  }    440     330     181     NaN     211     NaN     168 
-    {'TGA IVS'                    }    377     519     233     223     449     274     266 
+    {'TGA IVS'                    }    400     497     245     228     420     274     285 
     {'TGA VSD'                    }    349     458     319     153     427     132     160 
-    {'TGA VSD PS'                 }    430     757     211     NaN     493     NaN     218 
+    {'TGA VSD PS'                 }    430     556     319     NaN     480     NaN     226 
     {'TGA COA'                    }    678     416     260     NaN     474      86     237 
-    {'TOF ONLY'                   }    208     452     258      60     357     165     204 
-    {'TOF PA'                     }    NaN     852     275       0     502      59     163 
+    {'TOF ONLY'                   }    234     459     273      60     373     165     189 
+    {'TOF PA'                     }    NaN     816     297       0     437      59     160 
     {'Ebstein's no Circular Shunt'}    NaN     469     182       0     213      40     145 
     {'Ebstein's Circular Shunt'   }      0     855     143       0     314     NaN     139 
-    {'TA VA Concordance'          }    NaN     490     135      51     298      47     138 
+    {'TA VA Concordance'          }    NaN     387     142      51     350      47     149 
     {'TA VA Discordance'          }    NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
@@ -76,11 +76,13 @@ Derived Using Arch Junction: Q_AAo - Q_SVC + Q_DA = Q_DAo
     {'TOF ONLY'                   }       8      -106
     {'TOF ONLY'                   }      11        97
     {'TOF ONLY'                   }      12       -24
-    {'TOF PA'                     }       4       187
+    {'TOF ONLY'                   }      13        79
+    {'TOF PA'                     }       5       187
+    {'TOF PA'                     }       6        17
     {'Ebstein's no Circular Shunt'}       1        43
     {'Ebstein's no Circular Shunt'}       5        48
     {'Ebstein's no Circular Shunt'}       7        44
-    {'TA VA Concordance'          }       3        94
+    {'TA VA Concordance'          }       2        94
 
 
 Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
@@ -88,7 +90,7 @@ Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
           SubGroup           CaseNo    DA 
     _____________________    ______    ___
 
-    {'TA VA Concordance'}      3       122
+    {'TA VA Concordance'}      2       122
 
 
 Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
@@ -96,7 +98,6 @@ Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
                SubGroup                CaseNo    PBF
     _______________________________    ______    ___
 
-    {'HLHS MS AS'                 }       6      -46
     {'TGA IVS'                    }      10      -16
     {'TGA COA'                    }       4      116
     {'TGA COA'                    }       5       88
@@ -107,16 +108,18 @@ Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
 Missing CVO Values
 ==================
 
-    Cannot derive CVO flow in 5 cases.
+    Cannot derive CVO flow in 7 cases.
 
-     Group            SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      CVO 
-    ________    _____________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____
+     Group         SubGroup       CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      CVO 
+    ________    ______________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    {'HLHS'}    {'HLHS MS AS'       }      11      509     NaN     140     439     243      70     104     NaN     NaN 
-    {'HLHS'}    {'HLHS MS AS'       }      12      407     NaN     238     NaN     279     NaN     140     NaN     NaN 
-    {'TOF' }    {'TOF ONLY'         }       8      NaN     418      73     NaN     239     NaN     128     NaN     NaN 
-    {'TOF' }    {'TOF ONLY'         }      12      NaN     307      60     NaN     223     NaN     122     NaN     NaN 
-    {'TA'  }    {'TA VA Concordance'}       1      NaN     216     106      43     153     NaN     102     NaN     NaN 
+    {'HLHS'}    {'HLHS MS AS'}       6      NaN       6     172      380    138     NaN     105     NaN     NaN 
+    {'HLHS'}    {'HLHS MS AS'}      11      509     NaN     140      439    243      70     104     NaN     NaN 
+    {'HLHS'}    {'HLHS MS AS'}      12      407     NaN     238      NaN    279     NaN     140     NaN     NaN 
+    {'TGA' }    {'TGA VSD PS'}       4      NaN     354     112     -104    138     NaN      95     NaN     NaN 
+    {'TOF' }    {'TOF ONLY'  }       8      NaN     418      73      NaN    239     NaN     128     NaN     NaN 
+    {'TOF' }    {'TOF ONLY'  }      12      NaN     307      60      NaN    223     NaN     122     NaN     NaN 
+    {'TOF' }    {'TOF PA'    }       3        0     NaN     168      NaN    236     NaN     107     NaN     NaN 
 
 
 
@@ -130,13 +133,13 @@ Group Flow Difference, balanced - measured
 
     01 Normal      0       0       1       0       1       0       0 
     02 HLHS      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    03 TGA        -1       1       1       1       0       4       0 
-    04 TOF        -2       0       0       3       0       3       0 
+    03 TGA        -1       1       1       2       1       4       0 
+    04 TOF        -3      -1       0       3       0       4       0 
     05 EA        NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     06 TA        NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    mean          -1       0       1       2       1       2       0 
-    median        -1       0       1       1       0       3       0 
-    max abs.       2       1       1       3       1       4       0 
+    mean          -1       0       1       2       1       3       0 
+    median        -1       0       1       2       1       4       0 
+    max abs.       3       1       1       3       1       4       0 
 
 
 Sub-Group Flow Difference, balanced - measured
@@ -148,22 +151,22 @@ Sub-Group Flow Difference, balanced - measured
     01 Normal                           0       0       1       0       1       0       0 
     02 HLHS RAS                         0     NaN       1      -1       1      -2       0 
     03 HLHS MA AS                     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    04 HLHS MS AS                       0       0      -1       1       0       0       0 
+    04 HLHS MS AS                       1       2       0       0       0       0       0 
     05 HLHS MS AA                       0     NaN      -1       2      -1      -2       0 
-    06 HLHS MA AA                       0     NaN      -2       0      -2      -7       0 
+    06 HLHS MA AA                       0     NaN      -3       3      -2      -5       0 
     07 HLHS DORV                        0       0       0     NaN       0     NaN       0 
-    08 TGA IVS                          0       0       1       1       1       6       0 
+    08 TGA IVS                          0       0       2       1       1       6       0 
     09 TGA VSD                         -2       2      -3       5      -3       0       0 
     10 TGA VSD PS                       0       0       0     NaN       0     NaN       0 
     11 TGA COA                          0       0       0     NaN       0      -2       0 
-    12 TOF ONLY                         0       0       2      -2       2       5       0 
-    13 TOF PA                         NaN       0      -1     NaN      -1      -2       0 
+    12 TOF ONLY                         0       0       1       0       1       5       0 
+    13 TOF PA                         NaN       0       0     NaN       0      -1       0 
     14 Ebstein's no Circular Shunt    NaN       0      -2     NaN      -1      -4       0 
     15 Ebstein's Circular Shunt       NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     16 TA VA Concordance              NaN      -2       4      -4       3       8       0 
     17 TA VA Discordance              NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    mean                                0       0       0       0       0       0       0 
-    median                              0       0       0       0       0      -1       0 
+    mean                                0       0       0       1       0       0       0 
+    median                              0       0       0       0       0       0       0 
     max abs.                            2       2       4       5       3       8       0 
 
 
@@ -174,26 +177,26 @@ Summary Flows, absolute units
                                   Cases    MPA     AAo     SVC     DA      DAo     PBF     UV      MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO   
                                   ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------
     Normal                           50     241     200     125     183     246      68     131     241     200     125     185     246      68     131     141     246      14      14     457  
-Group: HLHS                          41     380      74     133     320     227      56     116     380     -10     133     321     227      60     116     -35     227      13      13     418  
+Group: HLHS                          41     380      74     133     320     227      55     116     380     -10     133     321     227      60     116     -35     227      13      13     419  
     HLHS RAS                          4     407             149     389     235      38     132     407     -12     149     389     235      31     132     -31     235      12      12     407  
     HLHS MA AS                        2                                                                                                                                                          
-    HLHS MS AS                       13     373      56     143     307     243      73     111     373      60     143     307     243      84     111      21     243      13      13     447  
+    HLHS MS AS                       13     373      56     143     307     243      73     111     373      60     143     307     243      84     111      21     243      14      14     468  
     HLHS MS AA                        6     360             129     279     196      28      95     360     -11     129     330     196      25      95     -25     196      11      11     360  
-    HLHS MA AA                       13     422             120     351     239      72     116     422     -13     120     366     239      76     116     -76     239      13      13     422  
+    HLHS MA AA                       13     422             120     351     239      63     116     422     -13     120     366     239      76     116     -76     239      13      13     422  
     HLHS DORV                         3     244     112     145             184             150     244     112     145     185     184      54     150             184      13      13     418  
-Group: TGA                           43     198     275     148     115     260      60     136     198     275     148     120     260      69     136     111     260      15      15     486  
-    TGA IVS                          26     204     277     142     115     273      96     137     204     277     142     119     273      88     137      96     273      15      15     504  
+Group: TGA                           45     204     276     148     112     258      60     136     204     276     148     117     258      70     136     108     258      15      15     487  
+    TGA IVS                          27     209     279     143     112     260      96     138     209     279     143     117     260      92     138      96     260      16      16     522  
     TGA VSD                           9     189     276     177      91     249      70     111     189     276     177     110     249      70     111             249      14      14     463  
-    TGA VSD PS                        3     185     290     189             257             142     185     290     189     109     257      76     142             257      14      14     465  
+    TGA VSD PS                        4     185     322     155             215             121     185     322     155     100     215      76     121             215      14      14     465  
     TGA COA                           5     336     167     171             283      33     144     336     167     171     293     283      33     144     293     283      16      16     535  
-Group: TOF                           16     106     339     139      27     239      40     117      87     339     139      23     245      46     117             245      14      14     460  
-    TOF ONLY                         12     106     337     131      27     232      54     124     106     337     131      25     236      56     124             236      14      14     460  
-    TOF PA                            4             397     148             289      23      87       0     397     148     -21     289      23      87             289      12      12     409  
+Group: TOF                           19     118     339     136      27     245      40     111      82     339     136      23     250      46     111             250      14      14     460  
+    TOF ONLY                         13     118     321     126      27     236      54     122     118     321     126      25     239      56     122             239      14      14     468  
+    TOF PA                            6             367     148             277      23      96       0     367     148     -21     277      23      96             277      11      11     378  
 Group: EA                            15             248      77             132      22      88       0     248      77     -77     132      25      88     227     132       8       8     256  
     Ebstein's no Circular Shunt      10             227      84             131      22      87       0     227      84     -25     131      25      87     227     131       7       7     234  
     Ebstein's Circular Shunt          5             357      63             132              90             357      63    -162     132              90             132      11      11     368  
-Group: TA                             8     215     298     111      52     180      38      90     111     298     111      43     180      38      90     317     180      13      13     431  
-    TA VA Concordance                 6             328     111      35     182      34      90      76     328     111      38     182      34      90     371     182      14      14     454  
+Group: TA                             7     215     326     111      52     185      38      82     111     326     111      52     185      38      82     317     185      13      13     431  
+    TA VA Concordance                 5             329     111      35     194      34      82      76     329     111      35     194      34      82     371     194      14      14     454  
     TA VA Discordance                 2                                                                                                                                                          
 
 
@@ -204,26 +207,26 @@ Summary Flows, relative units
                                   Cases    MPA     AAo     SVC     DA      DAo     PBF     UV      MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO   
                                   ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------  ------
     Normal                           50      53      44      28      39      53      14      27      53      44      28      39      53      14      27      32      53       3       3     100  
-Group: HLHS                          41     100      17      31      83      52      13      30     100      -3      31      84      52      14      30      -9      52       3       3     100  
+Group: HLHS                          41     100      19      31      80      52      13      30     100      -3      31      81      52      14      30      -9      52       3       3     100  
     HLHS RAS                          4     100              37      95      52       8      36     100      -3      37      95      52       8      36      -8      52       3       3     100  
     HLHS MA AS                        2                                                                                                                                                     100  
-    HLHS MS AS                       13      83      14      31      67      52      15      28      83      14      31      66      52      18      28       4      52       3       3     100  
+    HLHS MS AS                       13      80      14      30      66      52      15      27      80      17      30      64      52      18      27       4      52       3       3     100  
     HLHS MS AA                        6     100              41      93      53       7      28     100      -3      41      93      53       7      28      -7      53       3       3     100  
-    HLHS MA AA                       13     100              29      89      61      18      30     100      -3      29      90      61      19      30     -19      61       3       3     100  
+    HLHS MA AA                       13     100              29      85      61      17      30     100      -3      29      87      61      19      30     -19      61       3       3     100  
     HLHS DORV                         3      62      35      35              44              34      62      35      35      58      44      15      34              44       3       3     100  
-Group: TGA                           43      40      57      28      20      50      14      28      40      57      28      23      50      14      28      24      50       3       3     100  
-    TGA IVS                          26      40      57      26      19      49      14      29      40      57      26      21      49      14      29      21      49       3       3     100  
+Group: TGA                           45      41      56      28      20      49      14      28      41      56      28      22      49      14      28      24      49       3       3     100  
+    TGA IVS                          27      40      57      26      19      48      14      29      40      57      26      20      48      15      29      20      48       3       3     100  
     TGA VSD                           9      39      58      38      17      50      15      25      39      58      38      21      50      15      25              50       3       3     100  
-    TGA VSD PS                        3      31      66      32              52              24      31      66      32      21      52      13      24              52       3       3     100  
+    TGA VSD PS                        4      31      66      32              52              24      31      66      32      21      52      13      24              52       3       3     100  
     TGA COA                           5      58      39      36              56       7      27      58      39      36      55      56       7      27      55      56       3       3     100  
-Group: TOF                           16      22      77      31       6      55       8      27      20      77      31       5      55      10      27              55       3       3     100  
-    TOF ONLY                         12      22      75      29       6      46      13      27      22      75      29       6      51      14      27              51       3       3     100  
-    TOF PA                            4              97      38              57       6      26       0      97      38      -5      57       6      26              57       3       3     100  
+Group: TOF                           19      24      77      30       6      55       8      25      20      77      30       5      55      10      25              55       3       3     100  
+    TOF ONLY                         13      24      73      27       6      50      13      25      24      73      27       6      54      14      25              54       3       3     100  
+    TOF PA                            6              97      34              58       6      25       0      97      34      -5      58       6      25              58       3       3     100  
 Group: EA                            15              97      26              50       9      34       0      97      26     -26      50      10      34      95      50       3       3     100  
     Ebstein's no Circular Shunt      10              97      36              59       9      39       0      97      36     -10      59      10      39      95      59       3       3     100  
     Ebstein's Circular Shunt          5              97      17              32              26              97      17     -44      32              26              32       3       3     100  
-Group: TA                             8      52      73      28      12      46       9      19      24      73      28      12      46       9      19      79      46       3       3     100  
-    TA VA Concordance                 6              79      28       8      46       8      19      18      79      28       8      46       8      19      79      46       3       3     100  
+Group: TA                             7      52      73      28      12      46       9      19      24      73      28      12      46       9      19      79      46       3       3     100  
+    TA VA Concordance                 5              79      28       8      46       8      19      18      79      28       8      46       8      19      79      46       3       3     100  
     TA VA Discordance                 2                                                                                                                                                     100  
 
 
@@ -237,23 +240,23 @@ Modelled Flow Distribution
 Group: HLHS                          41                                                                                                  
     HLHS RAS                          4     100      -3      38      94      53       6      36      -6      53       3       3     100  
     HLHS MA AS                        2                                                                                                  
-    HLHS MS AS                       13      83      14      30      68      52      15      28       2      52       3       3     100  
+    HLHS MS AS                       13      81      16      30      66      52      15      27       4      52       3       3     100  
     HLHS MS AA                        6     100      -3      40      95      52       5      28      -5      52       3       3     100  
-    HLHS MA AA                       13     100      -3      27      89      59      11      30     -11      59       3       3     100  
+    HLHS MA AA                       13     100      -3      26      88      59      12      30     -12      59       3       3     100  
     HLHS DORV                         3      62      35      35      44      44      18      34     -18      44       3       3     100  
-Group: TGA                           43      39      58      29      21      50      18      28      21      50       3       3     100  
-    TGA IVS                          26      40      57      27      20      50      20      29      20      50       3       3     100  
+Group: TGA                           45      40      57      29      22      50      18      28      22      50       3       3     100  
+    TGA IVS                          27      40      57      28      20      49      20      29      20      49       3       3     100  
     TGA VSD                           9      37      60      35      22      47      15      25      22      47       3       3     100  
-    TGA VSD PS                        3      31      66      32      18      52      13      24      18      52       3       3     100  
+    TGA VSD PS                        4      31      66      32      18      52      13      24      18      52       3       3     100  
     TGA COA                           5      58      39      36      53      56       5      27      53      56       3       3     100  
-Group: TOF                           16      20      77      31       9      55      11      27      69      55       3       3     100  
-    TOF ONLY                         12      22      75      31       4      48      18      27      60      48       3       3     100  
-    TOF PA                            4       0      97      37      -4      56       4      26      96      56       3       3     100  
+Group: TOF                           19      21      76      30       9      55      12      25      67      55       3       3     100  
+    TOF ONLY                         13      24      73      28       6      51      18      25      58      51       3       3     100  
+    TOF PA                            6       0      97      34      -5      58       5      25      95      58       3       3     100  
 Group: EA                            15                                                                                                  
     Ebstein's no Circular Shunt      10       0      97      34      -5      58       5      39      95      58       3       3     100  
     Ebstein's Circular Shunt          5                                                                                                  
-Group: TA                             8                                                                                                  
-    TA VA Concordance                 6      20      77      32       4      49      16      19      64      49       3       3     100  
+Group: TA                             7                                                                                                  
+    TA VA Concordance                 5      20      77      32       4      49      16      19      64      49       3       3     100  
     TA VA Discordance                 2                                                                                                  
 
 
@@ -268,18 +271,18 @@ Modelled Flow (%CVO)
 Group: HLHS                          ?       ?       ?       ?       ?       ?       ?       ?   
     HLHS RAS                       100    [ -3]   { 38}   { 94}   { 53}   {  6}     36    [ -6]  
     HLHS MA AS                       ?       ?       ?       ?       ?       ?       ?       ?   
-    HLHS MS AS                      83      14    { 30}   { 68}     52      15      28    [  2]  
+    HLHS MS AS                    { 81}   { 16}     30      66      52      15      27    [  4]  
     HLHS MS AA                     100    [ -3]   { 40}   { 95}   { 52}   {  5}     28    [ -5]  
-    HLHS MA AA                     100    [ -3]   { 27}     89    { 59}   { 11}     30    [-11]  
+    HLHS MA AA                     100    [ -3]   { 26}   { 88}   { 59}   { 12}     30    [-12]  
     HLHS DORV                       62      35      35    [ 44]     44    [ 18]     34    [-18]  
-Group: TGA                        { 39}   { 58}   { 29}   { 21}     50    { 18}     28    [ 21]  
-    TGA IVS                         40      57    { 27}   { 20}   { 50}   { 20}     29    [ 20]  
+Group: TGA                        { 40}   { 57}   { 29}   { 22}   { 50}   { 18}     28    [ 22]  
+    TGA IVS                         40      57    { 28}   { 20}   { 49}   { 20}     29    [ 20]  
     TGA VSD                       { 37}   { 60}   { 35}   { 22}   { 47}     15      25    [ 22]  
     TGA VSD PS                      31      66      32    [ 18]     52    [ 13]     24    [ 18]  
     TGA COA                         58      39      36    [ 53]     56    {  5}     27    [ 53]  
-Group: TOF                        { 20}     77      31    {  9}     55    { 11}     27    [ 69]  
-    TOF ONLY                        22      75    { 31}   {  4}   { 48}   { 18}     27    [ 60]  
-    TOF PA                        [  0]     97    { 37}   [ -4]   { 56}   {  4}     26    [ 96]  
+Group: TOF                        { 21}   { 76}     30    {  9}     55    { 12}     25    [ 67]  
+    TOF ONLY                        24      73    { 28}      6    { 51}   { 18}     25    [ 58]  
+    TOF PA                        [  0]     97      34    [ -5]     58    {  5}     25    [ 95]  
 Group: EA                            ?       ?       ?       ?       ?       ?       ?       ?   
     Ebstein's no Circular Shunt   [  0]     97    { 34}   [ -5]   { 58}   {  5}     39    [ 95]  
     Ebstein's Circular Shunt         ?       ?       ?       ?       ?       ?       ?       ?   
@@ -299,18 +302,18 @@ Modelled Flow Distribution Relative to Normal Scaled by Median CVO
 Group: HLHS                      
     HLHS RAS                       1.68   -0.06    1.17    2.15    0.87    0.38    1.19   -0.16  
     HLHS MA AS                   
-    HLHS MS AS                     1.53    0.31    1.01    1.71    0.94    1.05    1.02    0.06  
+    HLHS MS AS                     1.57    0.37    1.06    1.73    0.99    1.10    1.02    0.12  
     HLHS MS AA                     1.49   -0.05    1.09    1.92    0.76    0.28    0.82   -0.12  
-    HLHS MA AA                     1.74   -0.06    0.86    2.11    1.01    0.73    1.03   -0.31  
+    HLHS MA AA                     1.74   -0.06    0.83    2.08    1.01    0.79    1.03   -0.34  
     HLHS DORV                      1.07    0.73    1.10    1.03    0.74    1.18    1.15   -0.50  
-Group: TGA                         0.78    1.40    1.06    0.57    0.98    1.37    1.10    0.68  
-    TGA IVS                        0.83    1.43    1.03    0.57    1.02    1.58    1.18    0.67  
+Group: TGA                         0.80    1.38    1.07    0.60    0.99    1.37    1.10    0.71  
+    TGA IVS                        0.86    1.48    1.10    0.59    1.04    1.63    1.23    0.69  
     TGA VSD                        0.71    1.38    1.22    0.57    0.88    1.09    0.94    0.68  
     TGA VSD PS                     0.60    1.53    1.12    0.47    0.98    0.95    0.90    0.56  
     TGA COA                        1.28    1.04    1.45    1.59    1.21    0.42    1.17    1.88  
-Group: TOF                         0.38    1.76    1.08    0.23    1.03    0.79    1.01    2.11  
-    TOF ONLY                       0.42    1.72    1.08    0.10    0.90    1.30    1.01    1.83  
-    TOF PA                         0.00    1.97    1.14   -0.09    0.93    0.26    0.86    2.60  
+Group: TOF                         0.40    1.74    1.04    0.23    1.03    0.86    0.93    2.05  
+    TOF ONLY                       0.46    1.70    0.99    0.16    0.97    1.32    0.95    1.80  
+    TOF PA                         0.00    1.83    0.97   -0.11    0.89    0.30    0.77    2.38  
 Group: EA                        
     Ebstein's no Circular Shunt    0.00    1.13    0.60   -0.07    0.55    0.18    0.74    1.47  
     Ebstein's Circular Shunt     

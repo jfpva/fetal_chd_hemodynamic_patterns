@@ -62,7 +62,7 @@
     {'HLHS'  }    {'HLHS MS AS'                 }       3      329      51     107      266    202      51     108 
     {'HLHS'  }    {'HLHS MS AS'                 }       4      373     120     160      275    192     100     174 
     {'HLHS'  }    {'HLHS MS AS'                 }       5      352      47     168      316    272      85     111 
-    {'HLHS'  }    {'HLHS MS AS'                 }       6      334       6     172      380    138     NaN     105 
+    {'HLHS'  }    {'HLHS MS AS'                 }       6      NaN       6     172      380    138     NaN     105 
     {'HLHS'  }    {'HLHS MS AS'                 }       7      373     101     143      306    271      60     116 
     {'HLHS'  }    {'HLHS MS AS'                 }       8      291      33     133      198    195     NaN     104 
     {'HLHS'  }    {'HLHS MS AS'                 }       9      348      60     113      NaN    167     NaN     112 
@@ -80,7 +80,7 @@
     {'HLHS'  }    {'HLHS MA AA'                 }       2      350     NaN      84      323    257      32     151 
     {'HLHS'  }    {'HLHS MA AA'                 }       3      414     NaN      70      300    238     NaN     134 
     {'HLHS'  }    {'HLHS MA AA'                 }       4      433     NaN     231      403    165     NaN     144 
-    {'HLHS'  }    {'HLHS MA AA'                 }       5      444     NaN     113      456    243     140     132 
+    {'HLHS'  }    {'HLHS MA AA'                 }       5      596     NaN     113      456    243     NaN     132 
     {'HLHS'  }    {'HLHS MA AA'                 }       6      438     NaN     159      366    266      80     165 
     {'HLHS'  }    {'HLHS MA AA'                 }       7      514     NaN     148      410    216     NaN     116 
     {'HLHS'  }    {'HLHS MA AA'                 }       8      358     NaN     148      292    239      72     107 
@@ -118,6 +118,7 @@
     {'TGA'   }    {'TGA IVS'                    }      24      171     241     143      NaN    171     NaN     111 
     {'TGA'   }    {'TGA IVS'                    }      25      297     279     143      139    230     NaN     226 
     {'TGA'   }    {'TGA IVS'                    }      26      312     290     175      NaN    290     NaN     116 
+    {'TGA'   }    {'TGA IVS'                    }      27      306     325     178      107    251     NaN     194 
     {'TGA'   }    {'TGA VSD'                    }       1      272     213     145      215    249      70     174 
     {'TGA'   }    {'TGA VSD'                    }       2      214     235     103      NaN    129     NaN     114 
     {'TGA'   }    {'TGA VSD'                    }       3      130     290     189       91    173      56     100 
@@ -130,9 +131,10 @@
     {'TGA'   }    {'TGA VSD PS'                 }       1      290     161     120      210    257     140     159 
     {'TGA'   }    {'TGA VSD PS'                 }       2      130     290     189       91    173      56     100 
     {'TGA'   }    {'TGA VSD PS'                 }       3      185     395     194      NaN    310     NaN     142 
+    {'TGA'   }    {'TGA VSD PS'                 }       4      NaN     354     112      NaN    138     NaN      95 
     {'TGA'   }    {'TGA COA'                    }       1      159     298     189      122    220      33     110 
     {'TGA'   }    {'TGA COA'                    }       2      225     161     171      NaN    283      60     165 
-    {'TGA'   }    {'TGA COA'                    }       3      352     167     194      380    342      21     144 
+    {'TGA'   }    {'TGA COA'                    }       3      352     167     194      NaN    342      21     144 
     {'TGA'   }    {'TGA COA'                    }       4      413     111     150      NaN    258     NaN      96 
     {'TGA'   }    {'TGA COA'                    }       5      336     229     151      NaN    326     NaN     161 
     {'TOF'   }    {'TOF ONLY'                   }       1       79     310      91       25    353      56     125 
@@ -147,10 +149,13 @@
     {'TOF'   }    {'TOF ONLY'                   }      10      125     307     120      NaN    266      89     109 
     {'TOF'   }    {'TOF ONLY'                   }      11      161     352     158      NaN    291     NaN     155 
     {'TOF'   }    {'TOF ONLY'                   }      12      NaN     307      60      NaN    223     NaN     122 
+    {'TOF'   }    {'TOF ONLY'                   }      13      206     287      93      NaN    273     NaN     118 
     {'TOF'   }    {'TOF PA'                     }       1      NaN     468     150      NaN    270      40     167 
     {'TOF'   }    {'TOF PA'                     }       2      NaN     571     242      NaN    308      23      78 
-    {'TOF'   }    {'TOF PA'                     }       3      NaN     263      93      NaN    156      15      62 
-    {'TOF'   }    {'TOF PA'                     }       4      NaN     325     146      NaN    366     NaN      96 
+    {'TOF'   }    {'TOF PA'                     }       3      NaN     NaN     168      NaN    236     NaN     107 
+    {'TOF'   }    {'TOF PA'                     }       4      NaN     263      93      NaN    156      15      62 
+    {'TOF'   }    {'TOF PA'                     }       5      NaN     325     146      NaN    366     NaN      96 
+    {'TOF'   }    {'TOF PA'                     }       6      NaN     367     101      NaN    283     NaN      96 
     {'EA'    }    {'Ebstein's no Circular Shunt'}       1      NaN     216     106      NaN    153     NaN     102 
     {'EA'    }    {'Ebstein's no Circular Shunt'}       2      NaN     144      35      NaN    109     NaN      74 
     {'EA'    }    {'Ebstein's no Circular Shunt'}       3      NaN     237     118      -22    106      22      92 
@@ -166,12 +171,11 @@
     {'EA'    }    {'Ebstein's Circular Shunt'   }       3      NaN     209      35      NaN     68     NaN      56 
     {'EA'    }    {'Ebstein's Circular Shunt'   }       4      NaN     357      63      NaN    132     NaN      97 
     {'EA'    }    {'Ebstein's Circular Shunt'   }       5      NaN     299      80      NaN     90     NaN      79 
-    {'TA'    }    {'TA VA Concordance'          }       1      NaN     216     106      NaN    153     NaN     102 
-    {'TA'    }    {'TA VA Concordance'          }       2      NaN     342     110       38    159      38      82 
-    {'TA'    }    {'TA VA Concordance'          }       3      198     269     104      NaN    259      76      97 
-    {'TA'    }    {'TA VA Concordance'          }       4      NaN     475     203       32    254      32      72 
-    {'TA'    }    {'TA VA Concordance'          }       5      NaN     326     111       31    194      31      99 
-    {'TA'    }    {'TA VA Concordance'          }       6      111     329     187       66    170      34      61 
+    {'TA'    }    {'TA VA Concordance'          }       1      NaN     342     110       38    159      38      82 
+    {'TA'    }    {'TA VA Concordance'          }       2      198     269     104      NaN    259      76      97 
+    {'TA'    }    {'TA VA Concordance'          }       3      NaN     475     203       32    254      32      72 
+    {'TA'    }    {'TA VA Concordance'          }       4      NaN     326     111       31    194      31      99 
+    {'TA'    }    {'TA VA Concordance'          }       5      111     329     187       66    170      34      61 
     {'TA'    }    {'TA VA Discordance'          }       1      231     123     120      184    175     100      70 
     {'TA'    }    {'TA VA Discordance'          }       2      308      90     105      203    185      96     106 
 

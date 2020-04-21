@@ -883,14 +883,14 @@ iR = iR + 1;
 iG = iG + 1;
 T.type(iR)  = G(iG).Group;
 T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_median( G(iG).Smeas, G(iG).Scalc );
+T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % HLHS group
 iR = iR + 1;
 iG = iG + 1;
 T.type(iR)  = G(iG).Group;
 T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_median( G(iG).Smeas, G(iG).Scalc );
+T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % HLHS subgroups
 % TODO: determine flow summary median or range decision on number of values for vessel instead of 
@@ -900,11 +900,7 @@ for iI = 1:6
     iR = iR + 1;
     T.type(iR)  = S(iS).SubGroup;
     T.n(iR)     = S(iS).NumCases;
-    if T.n(iR) >= minMeasToSummarize  
-        T(iR,3:end) = extract_flow_median( S(iS).Smeas, S(iS).Scalc );
-    else
-        T(iR,3:end) = extract_flow_range( S(iS).Tmeas, S(iS).Tcalc );
-    end
+    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % TGA group
@@ -912,7 +908,7 @@ iR = iR + 1;
 iG = iG + 1;
 T.type(iR)  = G(iG).Group;
 T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_median( G(iG).Smeas, G(iG).Scalc );
+T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TGA subgroups
 for iI = 1:4
@@ -920,11 +916,7 @@ for iI = 1:4
     iR = iR + 1;
     T.type(iR)  = S(iS).SubGroup;
     T.n(iR)     = S(iS).NumCases;
-    if T.n(iR) >= minMeasToSummarize
-        T(iR,3:end) = extract_flow_median( S(iS).Smeas, S(iS).Scalc );
-    else
-        T(iR,3:end) = extract_flow_range( S(iS).Tmeas, S(iS).Tcalc );
-    end
+    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % TOF group
@@ -932,7 +924,7 @@ iR = iR + 1;
 iG = iG + 1;
 T.type(iR)  = G(iG).Group;
 T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_median( G(iG).Smeas, G(iG).Scalc );
+T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TOF subgroups
 for iI = 1:2
@@ -940,11 +932,7 @@ for iI = 1:2
     iR = iR + 1;
     T.type(iR)  = S(iS).SubGroup;
     T.n(iR)     = S(iS).NumCases;
-    if T.n(iR) >= minMeasToSummarize
-        T(iR,3:end) = extract_flow_median( S(iS).Smeas, S(iS).Scalc );
-    else
-        T(iR,3:end) = extract_flow_range( S(iS).Tmeas, S(iS).Tcalc );
-    end
+    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % EA group
@@ -952,7 +940,7 @@ iR = iR + 1;
 iG = iG + 1;
 T.type(iR)  = G(iG).Group;
 T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_median( G(iG).Smeas, G(iG).Scalc );
+T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % EA subgroups
 for iI = 1:2
@@ -960,11 +948,7 @@ for iI = 1:2
     iR = iR + 1;
     T.type(iR)  = S(iS).SubGroup;
     T.n(iR)     = S(iS).NumCases;
-    if T.n(iR) >= minMeasToSummarize
-        T(iR,3:end) = extract_flow_median( S(iS).Smeas, S(iS).Scalc );
-    else
-        T(iR,3:end) = extract_flow_range( S(iS).Tmeas, S(iS).Tcalc );
-    end
+    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % TA group
@@ -972,7 +956,7 @@ iR = iR + 1;
 iG = iG + 1;
 T.type(iR)  = G(iG).Group;
 T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_median( G(iG).Smeas, G(iG).Scalc );
+T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TA subgroups
 for iI = 1:2
@@ -980,11 +964,7 @@ for iI = 1:2
     iR = iR + 1;
     T.type(iR)  = S(iS).SubGroup;
     T.n(iR)     = S(iS).NumCases;
-    if T.n(iR) >= minMeasToSummarize
-        T(iR,3:end) = extract_flow_median( S(iS).Smeas, S(iS).Scalc );
-    else
-        T(iR,3:end) = extract_flow_range( S(iS).Tmeas, S(iS).Tcalc );
-    end
+    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 writetable( T, tableFilePath )
@@ -1077,36 +1057,9 @@ end
 
 %% Local Functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% extract_flow_median
-function F = extract_flow_median( Smeas, Scalc )
 
-F = cell2table( { ...
-        num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'MPA')).MPA ) ),...
-        num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'AAo')).AAo ) ),...
-        num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'SVC')).SVC ) ),...
-        num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'DAo')).DAo ) ),...
-        num2str( round( Smeas(strcmp(Smeas.Properties.RowNames,'median'),strcmp(Smeas.Properties.VariableNames,'UV')).UV ) ),...
-        num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'DA')).DA ) ),...
-        num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'PBF')).PBF ) ),...
-        num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'FO')).FO ) ),...
-        num2str( round( Scalc(strcmp(Scalc.Properties.RowNames,'median'),strcmp(Scalc.Properties.VariableNames,'CVO')).CVO ) )...
-    } );
-
-varName = F.Properties.VariableNames;
-for iV = 1:numel(varName)
-    if isequal(F.(varName{iV}),"NaN")
-        F.(varName{iV}) = "N/A";
-    end
-    % if ismissing(F.(varName{iV}))
-    % 	F.(varName{iV}) = "";
-    % end    
-end
-
-end  % extract_flow_median(...)
-
-
-%% extract_flow_range
-function F = extract_flow_range( Tmeas, Tcalc )
+%% extract_flow_summary
+function F = extract_flow_summary( Tmeas, Tcalc, nMeasToSummarize )
 
 varName = {'MPA','AAo','SVC','DAo','UV','DA','PBF','FO','CVO'};
 varType = {'string','string','string','string','string','string','string','string','string'};
@@ -1128,15 +1081,17 @@ for iV = 1:numel(varName)
         F.(varName{iV}) = "N/A";
     elseif nValue == 1  % show value if only one value
         F.(varName{iV}) = string( sprintf( '[%i]', round(T.(varName{iV})(~isnan(T.(varName{iV})))) ) );
-    elseif nValue > 1   % show range if more than one value
+    elseif nValue > 1 && nValue < nMeasToSummarize  % show range if more than one value but less than nMeasToSummarize
         F.(varName{iV}) = string( sprintf( '[%i,%i]', round(min(T.(varName{iV}))), round(max(T.(varName{iV}))) ) );
+    elseif nValue >= nMeasToSummarize
+        F.(varName{iV}) = string( round( nanmedian(T.(varName{iV}))) ); 
     else
-        error( 'nValue == %g not recognized', nValue )
+        error( 'nValue = %g invalid', nValue )
     end
 
 end
 
-end  % extract_flow_range(...)
+end  % extract_flow_summary(...)
 
 
 %% derive_flows

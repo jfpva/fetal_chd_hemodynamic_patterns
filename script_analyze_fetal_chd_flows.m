@@ -643,7 +643,7 @@ if isLogResults
 end
 
 
-%% Summarize Results to Excel
+%% Summarize Results
 
 % Gather Info to Summarize
 iG = 1;
@@ -737,18 +737,6 @@ if isLogResults
     diary off
 end
     
-% Save To Excel
-resultsTemplateFilePath = fullfile( 'templates', 'results_template.xlsx' ); 
-if exist( resultsTemplateFilePath, 'file' )
-    resultsFilePath = fullfile( outputDirPath, 'fetal_chd_flows.xlsx' );
-    copyfile( resultsTemplateFilePath, resultsFilePath )
-    % All Cases
-    writetable( M(:,{'MPA','AAo','SVC','DA','DAo','PBF','UV'}), resultsFilePath, 'Sheet', 'Flows', 'Range', 'E2' );
-    writetable( D(:,{'MPA','AAo','SVC','DA','DAo','PBF','UV','FO','IVC','CA','CS','CVO'}), resultsFilePath, 'Sheet', 'Flows', 'Range', 'L2' );
-    % Summary
-    writematrix( A, resultsFilePath, 'Sheet', 'Summary', 'Range', 'C3' );
-end
-
 
 %% All Measured and Derived Flows
 
@@ -848,7 +836,7 @@ if isLogResults
 end
 
 
-%% Save Results Formatted for Manuscript Table
+%% Save Flow Results Formatted for Manuscript Table
 
 % Define output file path
 tableFilePath = fullfile( outputDataDirPath, 'table_manuscript_flow_median_or_range.csv' );
@@ -968,6 +956,14 @@ for iI = 1:2
 end
 
 writetable( T, tableFilePath )
+
+
+%% TODO: Save SaO2 Results Formatted for Manuscript Table
+
+% median blood oxygen saturation by group
+% column 1 group
+% column 2 n
+% column 3-7 SaO2 for MPA AAo SVC DAo and UV
 
 
 %% Save Data Formatted for Prism Import

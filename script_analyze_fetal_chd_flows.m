@@ -124,46 +124,46 @@ isEACS = strcmp( M.SubGroup, 'Ebstein''s Circular Shunt' );
 %% Define Outlier Bounds
 
 % Initialize Bounds Tables
-L = M( M.CaseNo==1, {'SubGroup','MPA','AAo','SVC','DA','DAo','PBF','UV'} );
-L{:,2:end} = nan(size(L{:,2:end}));
-U = L;
+Bounds.Lower = M( M.CaseNo==1, {'SubGroup','MPA','AAo','SVC','DA','DAo','PBF','UV'} );
+Bounds.Lower{:,1} = {''};
+Bounds.Lower{:,2:end} = nan(size(Bounds.Lower{:,2:end}));
+Bounds.Upper = Bounds.Lower;
 
 % Determine Bounds
 for iS = 1:numel(subGroups)
     % NOTE: isoutlier returns bounds as median +/- 3 scaled median absolute deviations, see isoutlier for details
-    [~,lowerBound,upperBound] = isoutlier( M( strcmp(M.SubGroup,subGroups{iS}), {'MPA','AAo','SVC','DA','DAo','PBF','UV'} ) );
+    Bounds.Lower.SubGroup(iS) = subGroups(iS);
+    Bounds.Upper.SubGroup(iS) = Bounds.Lower.SubGroup(iS);
+    [~,lowerBound,upperBound] = isoutlier( M( strcmp(M.SubGroup,Bounds.Lower.SubGroup(iS)), {'MPA','AAo','SVC','DA','DAo','PBF','UV'} ) );
     for iV = 1:numel(lowerBound.Properties.VariableNames)
         vesselName = lowerBound.Properties.VariableNames{iV};
-        nMeas = sum( strcmp(M.SubGroup,subGroups{iS}) & ~isnan( M.(vesselName) ) );
+        nMeas = sum( strcmp(M.SubGroup,Bounds.Lower.SubGroup(iS)) & ~isnan( M.(vesselName) ) );
         if nMeas >= minMeasToSummarize
-            L.(vesselName)(iS) = lowerBound.(vesselName);
-            U.(vesselName)(iS) = upperBound.(vesselName);
+            Bounds.Lower.(vesselName)(iS) = lowerBound.(vesselName);
+            Bounds.Upper.(vesselName)(iS) = upperBound.(vesselName);
         end
         switch vesselName
             case 'MPA'
-                if strcmp( subGroups{iS}, 'Ebstein''s Circular Shunt' )
-                    U.(vesselName)(iS) = min( [ 0, U.(vesselName)(iS) ] );
+                if strcmp( Bounds.Lower.SubGroup(iS), 'Ebstein''s Circular Shunt' )
+                    Bounds.Upper.(vesselName)(iS) = min( [ 0, Bounds.Upper.(vesselName)(iS) ] );
                 else
-                    L.(vesselName)(iS) = max( [ 0, L.(vesselName)(iS) ] );
+                    Bounds.Lower.(vesselName)(iS) = max( [ 0, Bounds.Lower.(vesselName)(iS) ] );
                 end
             case 'AAo'
-                if strcmp( subGroups{iS}, 'HLHS RAS' ) || strcmp( subGroups{iS}, 'HLHS MS AA' ) || strcmp( subGroups{iS}, 'HLHS MA AA' )
-                    U.(vesselName)(iS) = min( [ 0, U.(vesselName)(iS) ] );
+                if strcmp( Bounds.Lower.SubGroup(iS), 'HLHS RAS' ) || strcmp( Bounds.Lower.SubGroup(iS), 'HLHS MS AA' ) || strcmp( Bounds.Lower.SubGroup(iS), 'HLHS MA AA' )
+                    Bounds.Upper.(vesselName)(iS) = min( [ 0, Bounds.Upper.(vesselName)(iS) ] );
                 else
-                    L.(vesselName)(iS) = max( [ 0, L.(vesselName)(iS) ] );
+                    Bounds.Lower.(vesselName)(iS) = max( [ 0, Bounds.Lower.(vesselName)(iS) ] );
                 end
              case 'DA'
-                if strcmp( subGroups{iS}, 'TOF PA' ) || strcmp( subGroups{iS}, 'Ebstein''s no Circular Shunt' ) || strcmp( subGroups{iS}, 'Ebstein''s Circular Shunt' )
-                    U.(vesselName)(iS) = min( [ 0, U.(vesselName)(iS) ] );
+                if strcmp( Bounds.Lower.SubGroup(iS), 'TOF PA' ) || strcmp( Bounds.Lower.SubGroup(iS), 'Ebstein''s no Circular Shunt' ) || strcmp( Bounds.Lower.SubGroup(iS), 'Ebstein''s Circular Shunt' )
+                    Bounds.Upper.(vesselName)(iS) = min( [ 0, Bounds.Upper.(vesselName)(iS) ] );
                 end
             case {'DAo','SVC','PBF','UV'}
-                L.(vesselName)(iS) = max( [ 0, L.(vesselName)(iS) ] );
+                Bounds.Lower.(vesselName)(iS) = max( [ 0, Bounds.Lower.(vesselName)(iS) ] );
         end
     end
 end
-
-% Save to Structure
-Bounds = struct( 'lower', L, 'upper', U );
 
 % Create New Bounds Tables Matched to Elements of M
 L = M(:,{'SubGroup','CaseNo','MPA','AAo','SVC','DA','DAo','PBF','UV'});
@@ -171,8 +171,8 @@ indVess = find(strcmp(L.Properties.VariableNames,'MPA')):size(L,2);
 L{:,indVess} = nan(size(L{:,indVess}));
 U = L;
 for iR = 1:size(L,1)
-    L{iR,indVess} = Bounds.lower{strcmp(L.SubGroup(iR),Bounds.lower.SubGroup),2:end};
-    U{iR,indVess} = Bounds.upper{strcmp(U.SubGroup(iR),Bounds.upper.SubGroup),2:end};
+    L{iR,indVess} = Bounds.Lower{strcmp(L.SubGroup(iR),Bounds.Lower.SubGroup),2:end};
+    U{iR,indVess} = Bounds.Upper{strcmp(U.SubGroup(iR),Bounds.Upper.SubGroup),2:end};
 end
 
 if isLogResults
@@ -185,11 +185,11 @@ descStr = 'Outlier Bounds';
 fprintf( '\n%s\n%s\n\n\n', descStr, repmat( '=', size(descStr) ) );
 
 fprintf( 'Lower\n\n' )
-display_table(Bounds.lower)
+display_table(Bounds.Lower)
 fprintf( '\n' )
 
 fprintf( 'Upper\n\n' )
-display_table(Bounds.upper)
+display_table(Bounds.Upper)
 fprintf( '\n' )
 
 if isLogResults

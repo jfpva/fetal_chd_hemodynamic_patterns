@@ -10,9 +10,9 @@ Analyisis of fetal blood flow distribution patterns and blood oxygen saturations
 
 `./results` – output of the analysis  
 
-`./data/flow.csv` – measured flow data  
+`./data/data.csv` – measured data  
 
-`./templates/results_template.xlsx` – Excel template for output of analysis
+`./data/flow.csv` – measured flow data  
 
 
 ## 1 Disease and Anatomy Nomenclature
@@ -31,7 +31,8 @@ Analyisis of fetal blood flow distribution patterns and blood oxygen saturations
     * TGA with intact ventricular septum (TGA IVS)
     * TGA with ventricular septal defect (TGA VSD)
     * TGA with VSD and pulmonary stenosis (TGA VSD PS)
-    * TGA with intact ventricular septum with coarctation of the aorta (TGA COA)
+    * TGA with intact ventricular septum with coarctation of the aorta (TGA IVS COA)
+    * TGA with ventricular septal defect with coarctation of the aorta (TGA IVS COA)
 * tetralogy of Fallot (TOF)
     * with pulmonary stenosis (TOF ONLY)
     * with pulmonary atresia (TOF PA)
@@ -111,7 +112,7 @@ Normal, HLHS MS AS
 `Q_FO = Q_AAo + Q_CA - Q_PBF`  
 
 __Transposition__  
-TGA IVS, TGA COA  
+TGA IVS, TGA IVS COA  
 `Q_FO = Q_SVC + Q_IVC - Q_AAo`
             
 __Aortic Atresia__  
@@ -126,7 +127,7 @@ __Ebstein's Anomaly with Circular Shunt__
 `Q_FO = -Q_MPA + Q_SVC + Q_IVC + Q_CS`
 
 __Ventricular Septal Defect, Overriding Aorta__  
-HLHS MA AS, HLHS DORV, TGA VSD, TGA VSD PS, TOF  
+HLHS MA AS, HLHS DORV, TGA VSD, TGA VSD PS, TGA VSD COA, TOF  
 `Q_FO` unknown
 
 

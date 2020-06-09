@@ -377,6 +377,8 @@ for iG = groupToProcess
     
     G(iG).CirculationType = unique(D(indGroup,:).CirculationType);
        
+    G(iG).SubGroups = D(indGroup,strcmp(D.Properties.VariableNames,'SubGroup'));
+       
     % Table (T) and Summary (S) of Measured Values in Absolute Units
     G(iG).Tmeas = M(indGroup,{'CaseNo','MPA','AAo','SVC','DA','DAo','PBF','UV'});
     G(iG).Smeas = summarize_flows( G(iG).Tmeas, minMeasToSummarize );
@@ -790,32 +792,32 @@ if isLogResults
 end
 
 descStr = sprintf( 'Modelled Flow Distribution Diagram Info' );
-fprintf( '\n\n%s\n%s\n\n', descStr, repmat( '=', size(descStr) ) );
-fprintf( '%s\n', 'Modelled Flow (%CVO)' )
+fprintf( '\n%s\n%s\n\n', descStr, repmat( '=', size(descStr) ) );
 
-fprintf( '%-32s %6s  %6s  %6s  %6s  %6s  %6s  %6s  %6s\n', '', 'MPA ', 'AAo ', 'SVC ', 'DA  ', 'DAo ', 'PBF ', 'UV  ', 'FO/ICS' )
-fprintf( '%-32s %6s  %6s  %6s  %6s  %6s  %6s  %6s  %6s\n', '', '------', '------', '------', '------', '------', '------', '------', '------' )
+fprintf( '%s\n', 'Modelled Flow (%CVO)' )
+fprintf( '%-32s %9s  %9s  %9s  %9s  %9s  %9s  %9s  %9s\n', '', 'MPA  ', 'AAo  ', 'SVC  ', 'DA   ', 'DAo  ', 'PBF  ', 'UV  ', 'FO/ICS ' )
+fprintf( '%-32s %9s  %9s  %9s  %9s  %9s  %9s  %9s  %9s\n', '', '---------', '---------', '---------', '---------', '---------', '---------', '---------', '---------' )
 for iR = 1:size(Qmeas,1)
     fprintf( '%-32s ', desc{iR} )
     for iC = 1:size(Qmeas,2)
         if round(Qmeas(iR,iC)) == Qdist(iR,iC)
-            flowStr = sprintf( ' %3i ', Qdist(iR,iC) );
+            flowStr = sprintf( ' %3i     ', Qdist(iR,iC) );
         elseif isnan(Qmeas(iR,iC)) && ~isnan(Qdist(iR,iC))
-            flowStr = sprintf( '[%3i]', Qdist(iR,iC) );
+            flowStr = sprintf( '[%3i    ]', Qdist(iR,iC) );
         elseif isnan(Qdist(iR,iC))
-            flowStr = sprintf( ' ? ' );
+            flowStr = sprintf( '   ?     ' );
         else
-            flowStr = sprintf( '{%3i}', Qdist(iR,iC) );
+            flowStr = sprintf( '{%3i,%+3i}', Qdist(iR,iC), Qdist(iR,iC)-round(Qmeas(iR,iC)) );
         end
-        fprintf( '%6s  ', flowStr )
+        fprintf( '%9s  ', flowStr )
     end
     fprintf( '\b\n' )
 end
-fprintf( '\n\n' )
+fprintf( '\n' )
 
-fprintf( '             ?    flow distribution model undetermined\n' )
-fprintf( '            { }   flow distribution model deviates from measured median\n' )
-fprintf( '            [ ]   measured median flow unavailable, flow derived by model\n' )
+fprintf( '             ?           flow distribution model undetermined\n' )
+fprintf( '            {x, +/-y}    flow distribution model deviates from measured median by +/- x\n' )
+fprintf( '            [x]          measured median flow unavailable, flow derived by model\n' )
 fprintf( '\n' )
 
 fprintf( 'Modelled Flow Distribution Relative to Normal Scaled by Median CVO\n' )
@@ -881,8 +883,6 @@ T.n(iR)     = G(iG).NumCases;
 T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % HLHS subgroups
-% TODO: determine flow summary median or range decision on number of values for vessel instead of 
-% number of cases in subgroup; doesn't make a difference for the data here with minMeasToSummarize=3
 for iI = 1:6
     iS = iS + 1;
     iR = iR + 1;
@@ -956,14 +956,6 @@ for iI = 1:2
 end
 
 writetable( T, tableFilePath )
-
-
-%% TODO: Save SaO2 Results Formatted for Manuscript Table
-
-% median blood oxygen saturation by group
-% column 1 group
-% column 2 n
-% column 3-7 SaO2 for MPA AAo SVC DAo and UV
 
 
 %% Save Data Formatted for Prism Import
@@ -1355,7 +1347,7 @@ function show_results( R, descStr, isShowDistributionOnly, minMeasToSummarize )
     end
     
     if ~exist( 'minMeasToSummarize', 'var' )
-        minMeasToSummarize = 4;
+        minMeasToSummarize = 3;
     end
     
     if ~isShowDistributionOnly
@@ -1389,19 +1381,35 @@ function show_results( R, descStr, isShowDistributionOnly, minMeasToSummarize )
         fprintf( '%s\n%s\n\n\n', 'Flows', repmat( '-', size('Flows') ) )
         
         fprintf( 'Measured (ml/min/kg)\n\n' )
-        display_table( R.Tmeas )
+        if isfield(R,'SubGroups')
+            display_table( [ R.SubGroups, R.Tmeas ] )
+        else
+            display_table( R.Tmeas )
+        end
         fprintf( '\n' )
         
         fprintf( 'Derived (ml/min/kg)\n\n' )
-        display_table( R.Tcalc )
+        if isfield(R,'SubGroups')
+            display_table( [ R.SubGroups, R.Tcalc ] )
+        else
+            display_table( R.Tcalc )
+        end
         fprintf( '\n' )
         
         fprintf( 'Measured (%%CVO)\n\n' )
-        display_table( R.TmeasCvo )
+        if isfield(R,'SubGroups')
+            display_table( [ R.SubGroups, R.TmeasCvo ] )
+        else
+            display_table( R.TmeasCvo )
+        end
         fprintf( '\n' )
         
         fprintf( 'Derived (%%CVO)\n\n' )
-        display_table( R.TcalcCvo )
+        if isfield(R,'SubGroups')
+            display_table( [ R.SubGroups, R.TcalcCvo ] )
+        else
+            display_table( R.TcalcCvo )
+        end
         fprintf( '\n' )
         
     end

@@ -82,57 +82,57 @@ Flows
 
 Measured (ml/min/kg)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
-    ______    ____    ____    ____    ____    ____    ____    ____
+          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    _____________________    ______    ____    ____    ____    ____    ____    ____    ____
 
-      1       NaN     342     110      38     159      38      82 
-      2       198     269     104     NaN     259      76      97 
-      3       NaN     475     203      32     254      32      72 
-      4       NaN     326     111      31     194      31      99 
-      5       111     329     187      66     170      34      61 
-      1       231     123     120     184     175     100      70 
-      2       308      90     105     203     185      96     106 
+    {'TA VA Concordance'}      1       NaN     342     110      38     159      38      82 
+    {'TA VA Concordance'}      2       198     269     104     NaN     259      76      97 
+    {'TA VA Concordance'}      3       NaN     475     203      32     254      32      72 
+    {'TA VA Concordance'}      4       NaN     326     111      31     194      31      99 
+    {'TA VA Concordance'}      5       111     329     187      66     170      34      61 
+    {'TA VA Discordance'}      1       231     123     120     184     175     100      70 
+    {'TA VA Discordance'}      2       308      90     105     203     185      96     106 
 
 
 Derived (ml/min/kg)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
-    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
+    _____________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-      1        76     342     110      38     159      38      82     282     159      13      13     431 
-      2       198     269     104     NaN     259      76      97     377     259      14      14     481 
-      3        64     475     203      32     254      32      72     474     254      17      17     556 
-      4        62     326     111      31     194      31      99     317     194      12      12     400 
-      5       111     329     187      66     170      34      61     371     170      14      14     454 
-      1       231     123     120     184     175     100      70     306     175      11      11     365 
-      2       308      90     105     203     185      96     106     302     185      12      12     410 
+    {'TA VA Concordance'}      1        76     342     110      38     159      38      82     282     159      13      13     431 
+    {'TA VA Concordance'}      2       198     269     104     NaN     259      76      97     377     259      14      14     481 
+    {'TA VA Concordance'}      3        64     475     203      32     254      32      72     474     254      17      17     556 
+    {'TA VA Concordance'}      4        62     326     111      31     194      31      99     317     194      12      12     400 
+    {'TA VA Concordance'}      5       111     329     187      66     170      34      61     371     170      14      14     454 
+    {'TA VA Discordance'}      1       231     123     120     184     175     100      70     306     175      11      11     365 
+    {'TA VA Discordance'}      2       308      90     105     203     185      96     106     302     185      12      12     410 
 
 
 Measured (%CVO)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
-    ______    ____    ____    ____    ____    ____    ____    ____
+          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    _____________________    ______    ____    ____    ____    ____    ____    ____    ____
 
-      1       NaN      79      26       9      37       9      19 
-      2        41      56      22     NaN      54      16      20 
-      3       NaN      85      37       6      46       6      13 
-      4       NaN      82      28       8      49       8      25 
-      5        24      73      41      15      37       7      13 
-      1        63      34      33      50      48      27      19 
-      2        75      22      26      49      45      23      26 
+    {'TA VA Concordance'}      1       NaN      79      26       9      37       9      19 
+    {'TA VA Concordance'}      2        41      56      22     NaN      54      16      20 
+    {'TA VA Concordance'}      3       NaN      85      37       6      46       6      13 
+    {'TA VA Concordance'}      4       NaN      82      28       8      49       8      25 
+    {'TA VA Concordance'}      5        24      73      41      15      37       7      13 
+    {'TA VA Discordance'}      1        63      34      33      50      48      27      19 
+    {'TA VA Discordance'}      2        75      22      26      49      45      23      26 
 
 
 Derived (%CVO)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
-    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
+    _____________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-      1        18      79      26       9      37       9      19      65      37      3       3  
-      2        41      56      22     NaN      54      16      20      78      54      3       3  
-      3        12      85      37       6      46       6      13      85      46      3       3  
-      4        16      82      28       8      49       8      25      79      49      3       3  
-      5        24      73      41      15      37       7      13      82      37      3       3  
-      1        63      34      33      50      48      27      19      84      48      3       3  
-      2        75      22      26      49      45      23      26      74      45      3       3  
+    {'TA VA Concordance'}      1        18      79      26       9      37       9      19      65      37      3       3  
+    {'TA VA Concordance'}      2        41      56      22     NaN      54      16      20      78      54      3       3  
+    {'TA VA Concordance'}      3        12      85      37       6      46       6      13      85      46      3       3  
+    {'TA VA Concordance'}      4        16      82      28       8      49       8      25      79      49      3       3  
+    {'TA VA Concordance'}      5        24      73      41      15      37       7      13      82      37      3       3  
+    {'TA VA Discordance'}      1        63      34      33      50      48      27      19      84      48      3       3  
+    {'TA VA Discordance'}      2        75      22      26      49      45      23      26      74      45      3       3  
 
 

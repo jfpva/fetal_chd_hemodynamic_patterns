@@ -82,89 +82,89 @@ Flows
 
 Measured (ml/min/kg)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
-    ______    ____    ____    ____    ____    ____    ____    ____
+               SubGroup                CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    _______________________________    ______    ____    ____    ____    ____    ____    ____    ____
 
-       1      NaN     216     106      NaN    153     NaN     102 
-       2      NaN     144      35      NaN    109     NaN      74 
-       3      NaN     237     118      -22    106      22      92 
-       4      NaN     248      92      NaN    129     NaN      83 
-       5      NaN     174     125      NaN     97     NaN      65 
-       6      NaN     264      71      NaN    146      51     106 
-       7      NaN     151      56      NaN    139     NaN      88 
-       8      NaN     302      84      NaN    200      18     NaN 
-       9      NaN     283      74      NaN    132     NaN      73 
-      10      NaN     146     NaN      NaN    116     NaN      87 
-       1      NaN     590      45      NaN    169     NaN      90 
-       2      NaN     469     109     -209    173     NaN     123 
-       3      NaN     209      35      NaN     68     NaN      56 
-       4      NaN     357      63      NaN    132     NaN      97 
-       5      NaN     299      80      NaN     90     NaN      79 
+    {'Ebstein's no Circular Shunt'}       1      NaN     216     106      NaN    153     NaN     102 
+    {'Ebstein's no Circular Shunt'}       2      NaN     144      35      NaN    109     NaN      74 
+    {'Ebstein's no Circular Shunt'}       3      NaN     237     118      -22    106      22      92 
+    {'Ebstein's no Circular Shunt'}       4      NaN     248      92      NaN    129     NaN      83 
+    {'Ebstein's no Circular Shunt'}       5      NaN     174     125      NaN     97     NaN      65 
+    {'Ebstein's no Circular Shunt'}       6      NaN     264      71      NaN    146      51     106 
+    {'Ebstein's no Circular Shunt'}       7      NaN     151      56      NaN    139     NaN      88 
+    {'Ebstein's no Circular Shunt'}       8      NaN     302      84      NaN    200      18     NaN 
+    {'Ebstein's no Circular Shunt'}       9      NaN     283      74      NaN    132     NaN      73 
+    {'Ebstein's no Circular Shunt'}      10      NaN     146     NaN      NaN    116     NaN      87 
+    {'Ebstein's Circular Shunt'   }       1      NaN     590      45      NaN    169     NaN      90 
+    {'Ebstein's Circular Shunt'   }       2      NaN     469     109     -209    173     NaN     123 
+    {'Ebstein's Circular Shunt'   }       3      NaN     209      35      NaN     68     NaN      56 
+    {'Ebstein's Circular Shunt'   }       4      NaN     357      63      NaN    132     NaN      97 
+    {'Ebstein's Circular Shunt'   }       5      NaN     299      80      NaN     90     NaN      79 
 
 
 Derived (ml/min/kg)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
-    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+               SubGroup                CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
+    _______________________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-       1        0     216     106      NaN    153     NaN     102     266     153       7       7     223 
-       2        0     144      35        0    109     NaN      74     148     109       4       4     148 
-       3        0     237     118      -22    106      22      92     231     106       7       7     244 
-       4        0     248      92      -27    129      27      83     229     129       8       8     256 
-       5        0     174     125      NaN     97     NaN      65     227      97       5       5     179 
-       6        0     264      71      -47    146      51     106     225     146       8       8     272 
-       7        0     151      56      NaN    139     NaN      88     200     139       5       5     156 
-       8        0     302      84      -18    200      18     NaN     293     200       9       9     311 
-       9        0     283      74      -77    132     NaN      73     215     132       9       9     292 
-      10        0     146     NaN      NaN    116     NaN      87     NaN     116       5       5     151 
-       1      NaN     590      45     -376    169     NaN      90     NaN     169      18      18     608 
-       2      NaN     469     109     -209    173     NaN     123     NaN     173      15      15     484 
-       3      NaN     209      35     -106     68     NaN      56     NaN      68       6       6     215 
-       4      NaN     357      63     -162    132     NaN      97     NaN     132      11      11     368 
-       5      NaN     299      80     -129     90     NaN      79     NaN      90       9       9     308 
+    {'Ebstein's no Circular Shunt'}       1        0     216     106      NaN    153     NaN     102     266     153       7       7     223 
+    {'Ebstein's no Circular Shunt'}       2        0     144      35        0    109     NaN      74     148     109       4       4     148 
+    {'Ebstein's no Circular Shunt'}       3        0     237     118      -22    106      22      92     231     106       7       7     244 
+    {'Ebstein's no Circular Shunt'}       4        0     248      92      -27    129      27      83     229     129       8       8     256 
+    {'Ebstein's no Circular Shunt'}       5        0     174     125      NaN     97     NaN      65     227      97       5       5     179 
+    {'Ebstein's no Circular Shunt'}       6        0     264      71      -47    146      51     106     225     146       8       8     272 
+    {'Ebstein's no Circular Shunt'}       7        0     151      56      NaN    139     NaN      88     200     139       5       5     156 
+    {'Ebstein's no Circular Shunt'}       8        0     302      84      -18    200      18     NaN     293     200       9       9     311 
+    {'Ebstein's no Circular Shunt'}       9        0     283      74      -77    132     NaN      73     215     132       9       9     292 
+    {'Ebstein's no Circular Shunt'}      10        0     146     NaN      NaN    116     NaN      87     NaN     116       5       5     151 
+    {'Ebstein's Circular Shunt'   }       1      NaN     590      45     -376    169     NaN      90     NaN     169      18      18     608 
+    {'Ebstein's Circular Shunt'   }       2      NaN     469     109     -209    173     NaN     123     NaN     173      15      15     484 
+    {'Ebstein's Circular Shunt'   }       3      NaN     209      35     -106     68     NaN      56     NaN      68       6       6     215 
+    {'Ebstein's Circular Shunt'   }       4      NaN     357      63     -162    132     NaN      97     NaN     132      11      11     368 
+    {'Ebstein's Circular Shunt'   }       5      NaN     299      80     -129     90     NaN      79     NaN      90       9       9     308 
 
 
 Measured (%CVO)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
-    ______    ____    ____    ____    ____    ____    ____    ____
+               SubGroup                CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    _______________________________    ______    ____    ____    ____    ____    ____    ____    ____
 
-       1      NaN      97      48     NaN      69     NaN      46 
-       2      NaN      97      24     NaN      73     NaN      50 
-       3      NaN      97      48      -9      43       9      38 
-       4      NaN      97      36     NaN      50     NaN      32 
-       5      NaN      97      70     NaN      54     NaN      36 
-       6      NaN      97      26     NaN      54      19      39 
-       7      NaN      97      36     NaN      89     NaN      57 
-       8      NaN      97      27     NaN      64       6     NaN 
-       9      NaN      97      25     NaN      45     NaN      25 
-      10      NaN      97     NaN     NaN      77     NaN      58 
-       1      NaN      97       7     NaN      28     NaN      15 
-       2      NaN      97      23     -43      36     NaN      25 
-       3      NaN      97      16     NaN      32     NaN      26 
-       4      NaN      97      17     NaN      36     NaN      26 
-       5      NaN      97      26     NaN      29     NaN      26 
+    {'Ebstein's no Circular Shunt'}       1      NaN      97      48     NaN      69     NaN      46 
+    {'Ebstein's no Circular Shunt'}       2      NaN      97      24     NaN      73     NaN      50 
+    {'Ebstein's no Circular Shunt'}       3      NaN      97      48      -9      43       9      38 
+    {'Ebstein's no Circular Shunt'}       4      NaN      97      36     NaN      50     NaN      32 
+    {'Ebstein's no Circular Shunt'}       5      NaN      97      70     NaN      54     NaN      36 
+    {'Ebstein's no Circular Shunt'}       6      NaN      97      26     NaN      54      19      39 
+    {'Ebstein's no Circular Shunt'}       7      NaN      97      36     NaN      89     NaN      57 
+    {'Ebstein's no Circular Shunt'}       8      NaN      97      27     NaN      64       6     NaN 
+    {'Ebstein's no Circular Shunt'}       9      NaN      97      25     NaN      45     NaN      25 
+    {'Ebstein's no Circular Shunt'}      10      NaN      97     NaN     NaN      77     NaN      58 
+    {'Ebstein's Circular Shunt'   }       1      NaN      97       7     NaN      28     NaN      15 
+    {'Ebstein's Circular Shunt'   }       2      NaN      97      23     -43      36     NaN      25 
+    {'Ebstein's Circular Shunt'   }       3      NaN      97      16     NaN      32     NaN      26 
+    {'Ebstein's Circular Shunt'   }       4      NaN      97      17     NaN      36     NaN      26 
+    {'Ebstein's Circular Shunt'   }       5      NaN      97      26     NaN      29     NaN      26 
 
 
 Derived (%CVO)
 
-    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
-    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+               SubGroup                CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
+    _______________________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-       1        0      97      48     NaN      69     NaN      46     119      69      3       3  
-       2        0      97      24       0      73     NaN      50     100      73      3       3  
-       3        0      97      48      -9      43       9      38      95      43      3       3  
-       4        0      97      36     -11      50      11      32      89      50      3       3  
-       5        0      97      70     NaN      54     NaN      36     127      54      3       3  
-       6        0      97      26     -17      54      19      39      83      54      3       3  
-       7        0      97      36     NaN      89     NaN      57     128      89      3       3  
-       8        0      97      27      -6      64       6     NaN      94      64      3       3  
-       9        0      97      25     -26      45     NaN      25      74      45      3       3  
-      10        0      97     NaN     NaN      77     NaN      58     NaN      77      3       3  
-       1      NaN      97       7     -62      28     NaN      15     NaN      28      3       3  
-       2      NaN      97      23     -43      36     NaN      25     NaN      36      3       3  
-       3      NaN      97      16     -49      32     NaN      26     NaN      32      3       3  
-       4      NaN      97      17     -44      36     NaN      26     NaN      36      3       3  
-       5      NaN      97      26     -42      29     NaN      26     NaN      29      3       3  
+    {'Ebstein's no Circular Shunt'}       1        0      97      48     NaN      69     NaN      46     119      69      3       3  
+    {'Ebstein's no Circular Shunt'}       2        0      97      24       0      73     NaN      50     100      73      3       3  
+    {'Ebstein's no Circular Shunt'}       3        0      97      48      -9      43       9      38      95      43      3       3  
+    {'Ebstein's no Circular Shunt'}       4        0      97      36     -11      50      11      32      89      50      3       3  
+    {'Ebstein's no Circular Shunt'}       5        0      97      70     NaN      54     NaN      36     127      54      3       3  
+    {'Ebstein's no Circular Shunt'}       6        0      97      26     -17      54      19      39      83      54      3       3  
+    {'Ebstein's no Circular Shunt'}       7        0      97      36     NaN      89     NaN      57     128      89      3       3  
+    {'Ebstein's no Circular Shunt'}       8        0      97      27      -6      64       6     NaN      94      64      3       3  
+    {'Ebstein's no Circular Shunt'}       9        0      97      25     -26      45     NaN      25      74      45      3       3  
+    {'Ebstein's no Circular Shunt'}      10        0      97     NaN     NaN      77     NaN      58     NaN      77      3       3  
+    {'Ebstein's Circular Shunt'   }       1      NaN      97       7     -62      28     NaN      15     NaN      28      3       3  
+    {'Ebstein's Circular Shunt'   }       2      NaN      97      23     -43      36     NaN      25     NaN      36      3       3  
+    {'Ebstein's Circular Shunt'   }       3      NaN      97      16     -49      32     NaN      26     NaN      32      3       3  
+    {'Ebstein's Circular Shunt'   }       4      NaN      97      17     -44      36     NaN      26     NaN      36      3       3  
+    {'Ebstein's Circular Shunt'   }       5      NaN      97      26     -42      29     NaN      26     NaN      29      3       3  
 
 

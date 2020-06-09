@@ -7,13 +7,13 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)         11      18      19       4      18       9      19       0       0       0       0       0 
-    measured median (ml/min/kg)    118     339     136      27     245      40     111     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          17      18      19      10      19      10      19       0      19      16      16      16 
-    derived median (ml/min/kg)      82     339     136      23     250      46     111     NaN     250      14      14     460 
-    measured, N (%CVO)              11      16      16       4      15       9      16       0       0       0       0       0 
-    measured median (%CVO)          24      77      30       6      55       8      25     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    21      76      30       9      55      12      25      67      55       3       3     100 
+    measured, N (ml/min/kg)         15      26      26       6      25      14      25       0       0       0       0       0 
+    measured median (ml/min/kg)     92     357     138      52     250      54     118     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          24      26      26      20      26      19      25       0      26      24      24      24 
+    derived median (ml/min/kg)      43     357     138      25     250      64     118     NaN     250      14      14     475 
+    measured, N (%CVO)              15      24      24       6      23      14      23       0       0       0       0       0 
+    measured median (%CVO)          20      87      30      10      54      13      28     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    17      80      31       6      55      11      28      72      55       3       3     100 
 
 
 Summary
@@ -25,13 +25,13 @@ Measured (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                             11      18      19       4      18       9      19 
-    mean                         114     356     131      36     251      51     115 
-    standard deviation            45      73      45      28      57      37      30 
-    median                       118     339     136      27     245      40     111 
-    median absolute deviation     26      30      32       8      39      17      17 
-    16th - 50th pct.              38      32      49      11      49      20      31 
-    84th - 50th pct.              35      70      28      43      57      51      40 
+    N                             15      26      26       6      25      14      25 
+    mean                          95     381     132      50     248      94     123 
+    standard deviation            52      86      50      30      56     101      39 
+    median                        92     357     138      52     250      54     118 
+    median absolute deviation     36      49      41      26      41      33      25 
+    16th - 50th pct.              54      50      59      33      55      32      39 
+    84th - 50th pct.              42     112      38      27      50     118      40 
 
 
 Derived (ml/min/kg)
@@ -39,13 +39,13 @@ Derived (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                             17      18      19      10      19      10      19       0      19      16      16      16 
-    mean                          74     356     131      14     254      53     115     NaN     254      13      13     447 
-    standard deviation            66      73      45      35      57      35      30     NaN      57       2       2      83 
-    median                        82     339     136      23     250      46     111     NaN     250      14      14     460 
-    median absolute deviation     49      30      32      11      41      23      17     NaN      41       2       2      56 
-    16th - 50th pct.              82      32      49      43      52      26      31     NaN      52       3       3      96 
-    84th - 50th pct.              48      70      28      13      60      41      40     NaN      60       2       2      67 
+    N                             24      26      26      20      26      19      25       0      26      24      24      24 
+    mean                          59     381     132      12     251      91     123     NaN     251      14      14     455 
+    standard deviation            62      86      50      85      56      90      39     NaN      56       3       3      91 
+    median                        43     357     138      25     250      64     118     NaN     250      14      14     475 
+    median absolute deviation     43      49      41      50      42      41      25     NaN      42       2       2      71 
+    16th - 50th pct.              43      50      59      57      54      42      39     NaN      54       3       3     112 
+    84th - 50th pct.              84     112      38      54      60      77      40     NaN      60       2       2      75 
 
 
 Measured (%CVO)
@@ -53,13 +53,13 @@ Measured (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                             11      16      16      4       15       9      16 
-    mean                          24      80      31      8       59      11      26 
-    standard deviation             8      13       9      6       19       7       6 
-    median                        24      77      30      6       55       8      25 
-    median absolute deviation      4       9       4      1        9       3       4 
-    16th - 50th pct.               4       8       7      2       12       3       5 
-    84th - 50th pct.               6      20      13      9       21      12       6 
+    N                             15      24      24       6      23      14      23 
+    mean                          20      85      31      10      57      19      27 
+    standard deviation            10      13      12       6      18      17       7 
+    median                        20      87      30      10      54      13      28 
+    median absolute deviation      7      10       7       4      10       7       6 
+    16th - 50th pct.              12      16      10       6      11       7       8 
+    84th - 50th pct.               9      10      14       5      20      18       7 
 
 
 Derived (%CVO)
@@ -67,13 +67,13 @@ Derived (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                             16      16      16      10      16      10      16       0      16      16      16 
-    mean                          17      80      31       3      60      12      26     NaN      60       3       3 
-    standard deviation            13      13       9       8      18       7       6     NaN      18       0       0 
-    median                        20      77      30       5      55      10      25     NaN      55       3       3 
-    median absolute deviation      9       9       4       2      10       4       4     NaN      10       0       0 
-    16th - 50th pct.              20       8       7      10      12       4       5     NaN      12       0       0 
-    84th - 50th pct.               8      20      13       2      19      10       6     NaN      19       0       0 
+    N                             24      24      24      19      24      19      23       0      24      24      24 
+    mean                          12      85      31       3      58      18      27     NaN      58       3       3 
+    standard deviation            13      13      12      17      18      16       7     NaN      18       0       0 
+    median                        10      87      30       6      54      14      28     NaN      54       3       3 
+    median absolute deviation     10      10       7      10      11       8       6     NaN      11       0       0 
+    16th - 50th pct.              10      16      10      13      12       9       8     NaN      12       0       0 
+    84th - 50th pct.              16      10      14      12      19      14       7     NaN      19       0       0 
 
 
 Flows
@@ -85,25 +85,32 @@ Measured (ml/min/kg)
       SubGroup      CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
     ____________    ______    ____    ____    ____    ____    ____    ____    ____
 
-    {'TOF ONLY'}       1       79     310      91      25     353      56     125 
-    {'TOF ONLY'}       2       92     362     126      77     NaN      38     160 
-    {'TOF ONLY'}       3       94     376      82     NaN     206     NaN     143 
-    {'TOF ONLY'}       4       40     312     157     NaN     232      20      79 
-    {'TOF ONLY'}       5      118     321     142     NaN     204      52     111 
-    {'TOF ONLY'}       6       82     314     188      14     175     NaN      80 
-    {'TOF ONLY'}       7      131     352     136     NaN     191     NaN     147 
-    {'TOF ONLY'}       8      NaN     418      73     NaN     239     NaN     128 
-    {'TOF ONLY'}       9      128     394     161      29     250     128     107 
-    {'TOF ONLY'}      10      125     307     120     NaN     266      89     109 
-    {'TOF ONLY'}      11      161     352     158     NaN     291     NaN     155 
-    {'TOF ONLY'}      12      NaN     307      60     NaN     223     NaN     122 
-    {'TOF ONLY'}      13      206     287      93     NaN     273     NaN     118 
+    {'TOF ONLY'}       1       45     468     170      75     280     120     146 
+    {'TOF ONLY'}       2       80     470     140      80     250     NaN     220 
+    {'TOF ONLY'}       3       17     523      60     NaN     161     335     100 
+    {'TOF ONLY'}       4       25     467     201     NaN     333      25     206 
+    {'TOF ONLY'}       5       79     310      91      25     353      56     125 
+    {'TOF ONLY'}       6       92     362     126      77     NaN      38     160 
+    {'TOF ONLY'}       7       94     376      82     NaN     206     NaN     143 
+    {'TOF ONLY'}       8       40     312     157     NaN     232      20      79 
+    {'TOF ONLY'}       9      118     321     142     NaN     204      52     111 
+    {'TOF ONLY'}      10       82     314     188      14     175     NaN      80 
+    {'TOF ONLY'}      11      131     352     136     NaN     191     NaN     147 
+    {'TOF ONLY'}      12      NaN     418      73     NaN     239     NaN     128 
+    {'TOF ONLY'}      13      128     394     161      29     250     128     107 
+    {'TOF ONLY'}      14      NaN     307      60     NaN     223     NaN     122 
+    {'TOF ONLY'}      15      125     307     120     NaN     266      89     109 
+    {'TOF ONLY'}      16      161     352     158     NaN     291     NaN     155 
+    {'TOF ONLY'}      17      206     287      93     NaN     273     NaN     118 
     {'TOF PA'  }       1      NaN     468     150     NaN     270      40     167 
-    {'TOF PA'  }       2      NaN     571     242     NaN     308      23      78 
-    {'TOF PA'  }       3      NaN     NaN     168     NaN     236     NaN     107 
-    {'TOF PA'  }       4      NaN     263      93     NaN     156      15      62 
-    {'TOF PA'  }       5      NaN     325     146     NaN     366     NaN      96 
-    {'TOF PA'  }       6      NaN     367     101     NaN     283     NaN      96 
+    {'TOF PA'  }       2      NaN     552      66     NaN     207     296     NaN 
+    {'TOF PA'  }       3      NaN     571     242     NaN     308      23      78 
+    {'TOF PA'  }       4      NaN     278     168     NaN     236     NaN     107 
+    {'TOF PA'  }       5      NaN     380     223     NaN     199      77      78 
+    {'TOF PA'  }       6      NaN     352      87     NaN     259     NaN     123 
+    {'TOF PA'  }       7      NaN     263      93     NaN     156      15      62 
+    {'TOF PA'  }       8      NaN     325     146     NaN     366     NaN      96 
+    {'TOF PA'  }       9      NaN     367     101     NaN     283     NaN      96 
 
 
 Derived (ml/min/kg)
@@ -111,25 +118,32 @@ Derived (ml/min/kg)
       SubGroup      CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
     ____________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    {'TOF ONLY'}       1       79     310      91      25     353      56     125     NaN     353      12      12     401 
-    {'TOF ONLY'}       2       92     362     126      77     313      38     160     NaN     313      14      14     468 
-    {'TOF ONLY'}       3       94     376      82     NaN     206     NaN     143     NaN     206      15      15     485 
-    {'TOF ONLY'}       4       40     312     157      20     232      20      79     NaN     232      11      11     363 
-    {'TOF ONLY'}       5      118     321     142      25     204      52     111     NaN     204      14      14     453 
-    {'TOF ONLY'}       6       82     314     188      14     175      68      80     NaN     175      12      12     408 
-    {'TOF ONLY'}       7      131     352     136     NaN     191     NaN     147     NaN     191      15      15     498 
-    {'TOF ONLY'}       8      NaN     418      73     NaN     239     NaN     128     NaN     239     NaN     NaN     NaN 
-    {'TOF ONLY'}       9      128     394     161      29     250     128     107     NaN     250      16      16     538 
-    {'TOF ONLY'}      10      125     307     120      36     266      89     109     NaN     266      13      13     445 
-    {'TOF ONLY'}      11      161     352     158     NaN     291     NaN     155     NaN     291      16      16     529 
-    {'TOF ONLY'}      12      NaN     307      60     NaN     223     NaN     122     NaN     223     NaN     NaN     NaN 
-    {'TOF ONLY'}      13      206     287      93     NaN     273     NaN     118     NaN     273      15      15     508 
-    {'TOF PA'  }       1        0     468     150     -48     270      40     167     NaN     270      14      14     482 
-    {'TOF PA'  }       2        0     571     242     -21     308      23      78     NaN     308      18      18     589 
-    {'TOF PA'  }       3        0     NaN     168     NaN     236     NaN     107     NaN     236     NaN     NaN     NaN 
-    {'TOF PA'  }       4        0     263      93     -14     156      15      62     NaN     156       8       8     271 
-    {'TOF PA'  }       5        0     325     146     NaN     366     NaN      96     NaN     366      10      10     335 
-    {'TOF PA'  }       6        0     367     101     NaN     283     NaN      96     NaN     283      11      11     378 
+    {'TOF ONLY'}       1       45     468     170       75    280     120     146     NaN     280      16      16     529 
+    {'TOF ONLY'}       2       80     470     140       80    250     NaN     220     NaN     250      17      17     567 
+    {'TOF ONLY'}       3       17     523      60      NaN    161     335     100     NaN     161      17      17     557 
+    {'TOF ONLY'}       4       25     467     201       67    333      25     206     NaN     333      15      15     507 
+    {'TOF ONLY'}       5       79     310      91       25    353      56     125     NaN     353      12      12     401 
+    {'TOF ONLY'}       6       92     362     126       77    313      38     160     NaN     313      14      14     468 
+    {'TOF ONLY'}       7       94     376      82      NaN    206     NaN     143     NaN     206      15      15     485 
+    {'TOF ONLY'}       8       40     312     157       77    232      20      79     NaN     232      11      11     363 
+    {'TOF ONLY'}       9      118     321     142       25    204      52     111     NaN     204      14      14     453 
+    {'TOF ONLY'}      10       82     314     188       14    175      68      80     NaN     175      12      12     408 
+    {'TOF ONLY'}      11      131     352     136      -25    191     156     147     NaN     191      15      15     498 
+    {'TOF ONLY'}      12      NaN     418      73      NaN    239     NaN     128     NaN     239     NaN     NaN     NaN 
+    {'TOF ONLY'}      13      128     394     161       29    250     128     107     NaN     250      16      16     538 
+    {'TOF ONLY'}      14      NaN     307      60      -24    223     NaN     122     NaN     223     NaN     NaN     NaN 
+    {'TOF ONLY'}      15      125     307     120       79    266      89     109     NaN     266      13      13     445 
+    {'TOF ONLY'}      16      161     352     158       97    291      64     155     NaN     291      16      16     529 
+    {'TOF ONLY'}      17      206     287      93       79    273     127     118     NaN     273      15      15     508 
+    {'TOF PA'  }       1        0     468     150      -48    270      40     167     NaN     270      14      14     482 
+    {'TOF PA'  }       2        0     552      66     -279    207     296     NaN     NaN     207      17      17     569 
+    {'TOF PA'  }       3        0     571     242      -21    308      23      78     NaN     308      18      18     589 
+    {'TOF PA'  }       4        0     278     168      NaN    236     NaN     107     NaN     236       9       9     287 
+    {'TOF PA'  }       5        0     380     223      -77    199      77      78     NaN     199      12      12     392 
+    {'TOF PA'  }       6        0     352      87       -6    259       6     123     NaN     259      11      11     363 
+    {'TOF PA'  }       7        0     263      93      -14    156      15      62     NaN     156       8       8     271 
+    {'TOF PA'  }       8        0     325     146      NaN    366     NaN      96     NaN     366      10      10     335 
+    {'TOF PA'  }       9        0     367     101      NaN    283     NaN      96     NaN     283      11      11     378 
 
 
 Measured (%CVO)
@@ -137,25 +151,32 @@ Measured (%CVO)
       SubGroup      CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
     ____________    ______    ____    ____    ____    ____    ____    ____    ____
 
-    {'TOF ONLY'}       1       20      77      23       6      88      14      31 
-    {'TOF ONLY'}       2       20      77      27      16     NaN       8      34 
-    {'TOF ONLY'}       3       19      78      17     NaN      43     NaN      30 
-    {'TOF ONLY'}       4       11      86      43     NaN      64       6      22 
-    {'TOF ONLY'}       5       26      71      31     NaN      45      11      25 
-    {'TOF ONLY'}       6       20      77      46       3      43     NaN      20 
-    {'TOF ONLY'}       7       26      71      27     NaN      38     NaN      30 
-    {'TOF ONLY'}       8      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TOF ONLY'}       9       24      73      30       5      46      24      20 
-    {'TOF ONLY'}      10       28      69      27     NaN      60      20      24 
-    {'TOF ONLY'}      11       30      67      30     NaN      55     NaN      29 
+    {'TOF ONLY'}       1        9      88      32      14      53      23      28 
+    {'TOF ONLY'}       2       14      83      25      14      44     NaN      39 
+    {'TOF ONLY'}       3        3      94      11     NaN      29      60      18 
+    {'TOF ONLY'}       4        5      92      40     NaN      66       5      41 
+    {'TOF ONLY'}       5       20      77      23       6      88      14      31 
+    {'TOF ONLY'}       6       20      77      27      16     NaN       8      34 
+    {'TOF ONLY'}       7       19      78      17     NaN      43     NaN      30 
+    {'TOF ONLY'}       8       11      86      43     NaN      64       6      22 
+    {'TOF ONLY'}       9       26      71      31     NaN      45      11      25 
+    {'TOF ONLY'}      10       20      77      46       3      43     NaN      20 
+    {'TOF ONLY'}      11       26      71      27     NaN      38     NaN      30 
     {'TOF ONLY'}      12      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TOF ONLY'}      13       41      56      18     NaN      54     NaN      23 
+    {'TOF ONLY'}      13       24      73      30       5      46      24      20 
+    {'TOF ONLY'}      14      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    {'TOF ONLY'}      15       28      69      27     NaN      60      20      24 
+    {'TOF ONLY'}      16       30      67      30     NaN      55     NaN      29 
+    {'TOF ONLY'}      17       41      56      18     NaN      54     NaN      23 
     {'TOF PA'  }       1      NaN      97      31     NaN      56       8      35 
-    {'TOF PA'  }       2      NaN      97      41     NaN      52       4      13 
-    {'TOF PA'  }       3      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TOF PA'  }       4      NaN      97      34     NaN      58       6      23 
-    {'TOF PA'  }       5      NaN      97      44     NaN     109     NaN      29 
-    {'TOF PA'  }       6      NaN      97      27     NaN      75     NaN      25 
+    {'TOF PA'  }       2      NaN      97      12     NaN      36      52     NaN 
+    {'TOF PA'  }       3      NaN      97      41     NaN      52       4      13 
+    {'TOF PA'  }       4      NaN      97      59     NaN      82     NaN      37 
+    {'TOF PA'  }       5      NaN      97      57     NaN      51      20      20 
+    {'TOF PA'  }       6      NaN      97      24     NaN      71     NaN      34 
+    {'TOF PA'  }       7      NaN      97      34     NaN      58       6      23 
+    {'TOF PA'  }       8      NaN      97      44     NaN     109     NaN      29 
+    {'TOF PA'  }       9      NaN      97      27     NaN      75     NaN      25 
 
 
 Derived (%CVO)
@@ -163,24 +184,31 @@ Derived (%CVO)
       SubGroup      CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
     ____________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    {'TOF ONLY'}       1       20      77      23       6      88      14      31     NaN      88       3       3 
-    {'TOF ONLY'}       2       20      77      27      16      67       8      34     NaN      67       3       3 
-    {'TOF ONLY'}       3       19      78      17     NaN      43     NaN      30     NaN      43       3       3 
-    {'TOF ONLY'}       4       11      86      43       6      64       6      22     NaN      64       3       3 
-    {'TOF ONLY'}       5       26      71      31       6      45      11      25     NaN      45       3       3 
-    {'TOF ONLY'}       6       20      77      46       3      43      17      20     NaN      43       3       3 
-    {'TOF ONLY'}       7       26      71      27     NaN      38     NaN      30     NaN      38       3       3 
-    {'TOF ONLY'}       8      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TOF ONLY'}       9       24      73      30       5      46      24      20     NaN      46       3       3 
-    {'TOF ONLY'}      10       28      69      27       8      60      20      24     NaN      60       3       3 
-    {'TOF ONLY'}      11       30      67      30     NaN      55     NaN      29     NaN      55       3       3 
+    {'TOF ONLY'}       1        9      88      32      14      53      23      28     NaN      53       3       3 
+    {'TOF ONLY'}       2       14      83      25      14      44     NaN      39     NaN      44       3       3 
+    {'TOF ONLY'}       3        3      94      11     NaN      29      60      18     NaN      29       3       3 
+    {'TOF ONLY'}       4        5      92      40      13      66       5      41     NaN      66       3       3 
+    {'TOF ONLY'}       5       20      77      23       6      88      14      31     NaN      88       3       3 
+    {'TOF ONLY'}       6       20      77      27      16      67       8      34     NaN      67       3       3 
+    {'TOF ONLY'}       7       19      78      17     NaN      43     NaN      30     NaN      43       3       3 
+    {'TOF ONLY'}       8       11      86      43      21      64       6      22     NaN      64       3       3 
+    {'TOF ONLY'}       9       26      71      31       6      45      11      25     NaN      45       3       3 
+    {'TOF ONLY'}      10       20      77      46       3      43      17      20     NaN      43       3       3 
+    {'TOF ONLY'}      11       26      71      27      -5      38      31      30     NaN      38       3       3 
     {'TOF ONLY'}      12      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TOF ONLY'}      13       41      56      18     NaN      54     NaN      23     NaN      54       3       3 
+    {'TOF ONLY'}      13       24      73      30       5      46      24      20     NaN      46       3       3 
+    {'TOF ONLY'}      14      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    {'TOF ONLY'}      15       28      69      27      18      60      20      24     NaN      60       3       3 
+    {'TOF ONLY'}      16       30      67      30      18      55      12      29     NaN      55       3       3 
+    {'TOF ONLY'}      17       41      56      18      16      54      25      23     NaN      54       3       3 
     {'TOF PA'  }       1        0      97      31     -10      56       8      35     NaN      56       3       3 
-    {'TOF PA'  }       2        0      97      41      -4      52       4      13     NaN      52       3       3 
-    {'TOF PA'  }       3      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TOF PA'  }       4        0      97      34      -5      58       6      23     NaN      58       3       3 
-    {'TOF PA'  }       5        0      97      44     NaN     109     NaN      29     NaN     109       3       3 
-    {'TOF PA'  }       6        0      97      27     NaN      75     NaN      25     NaN      75       3       3 
+    {'TOF PA'  }       2        0      97      12     -49      36      52     NaN     NaN      36       3       3 
+    {'TOF PA'  }       3        0      97      41      -4      52       4      13     NaN      52       3       3 
+    {'TOF PA'  }       4        0      97      59     NaN      82     NaN      37     NaN      82       3       3 
+    {'TOF PA'  }       5        0      97      57     -20      51      20      20     NaN      51       3       3 
+    {'TOF PA'  }       6        0      97      24      -2      71       2      34     NaN      71       3       3 
+    {'TOF PA'  }       7        0      97      34      -5      58       6      23     NaN      58       3       3 
+    {'TOF PA'  }       8        0      97      44     NaN     109     NaN      29     NaN     109       3       3 
+    {'TOF PA'  }       9        0      97      27     NaN      75     NaN      25     NaN      75       3       3 
 
 

@@ -7,12 +7,12 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)         40      12      41      32      41      24      41       0       0       0       0       0 
-    measured median (ml/min/kg)    380      74     133     320     227      55     116     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          40      39      41      40      41      36      41      30      41      38      38      38 
-    derived median (ml/min/kg)     380     -10     133     321     227      60     116     -35     227      13      13     419 
-    measured, N (%CVO)              38      11      38      31      38      23      38       0       0       0       0       0 
-    measured median (%CVO)         100      19      31      80      52      13      30     NaN     NaN     NaN     NaN     NaN 
+    measured, N (ml/min/kg)         43      12      43      33      43      27      43       0       0       0       0       0 
+    measured median (ml/min/kg)    380      91     133     316     227      56     112     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          43      42      43      43      43      38      43      32      43      42      42      42 
+    derived median (ml/min/kg)     380     -11     133     316     227      71     112     -46     227      12      12     416 
+    measured, N (%CVO)              42      12      42      33      42      26      42       0       0       0       0       0 
+    measured median (%CVO)         100      18      31      80      51      13      28     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
@@ -25,13 +25,13 @@ Measured (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                             40      12      41      32      41      24      41 
-    mean                         383      79     142     327     222      58     123 
-    standard deviation            73      45      44      65      52      25      33 
-    median                       380      74     133     320     227      55     116 
-    median absolute deviation     41      33      26      46      40      21      18 
-    16th - 50th pct.              52      35      28      50      60      27      18 
-    84th - 50th pct.              54      49      47      82      49      30      36 
+    N                             43      12      43      33      43      27      43 
+    mean                         386      86     140     327     221      60     120 
+    standard deviation            74      42      45      65      49      29      34 
+    median                       380      91     133     316     227      56     112 
+    median absolute deviation     42      32      27      45      36      24      20 
+    16th - 50th pct.              57      47      31      48      59      29      20 
+    84th - 50th pct.              60      31      48      89      43      31      40 
 
 
 Derived (ml/min/kg)
@@ -39,13 +39,13 @@ Derived (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                             40      39      41      40      41      36      41      30      41      38      38      38 
-    mean                         383      25     142     324     222      67     123     -35     222      13      13     417 
-    standard deviation            73      53      44      73      52      36      33      55      52       2       2      74 
-    median                       380     -10     133     321     227      60     116     -35     227      13      13     419 
-    median absolute deviation     41       3      26      52      40      29      18      21      40       2       2      53 
-    16th - 50th pct.              52       3      28      69      60      32      18      49      60       3       3      86 
-    84th - 50th pct.              54     109      47      82      49      41      36      60      49       2       2      77 
+    N                             43      42      43      43      43      38      43      32      43      42      42      42 
+    mean                         386      21     140     324     221      71     120     -48     221      13      13     417 
+    standard deviation            74      52      45      72      49      38      34      58      49       2       2      71 
+    median                       380     -11     133     316     227      71     112     -46     227      12      12     416 
+    median absolute deviation     42       2      27      48      36      30      20      31      36       1       1      44 
+    16th - 50th pct.              57       2      31      58      59      43      20      62      59       2       2      64 
+    84th - 50th pct.              60     104      48      87      43      48      40      38      43       2       2      64 
 
 
 Measured (%CVO)
@@ -53,13 +53,13 @@ Measured (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                             38      11      38      31      38      23      38 
-    mean                          92      20      34      79      54      14      30 
-    standard deviation            12      10      11      16      13       6       7 
-    median                       100      19      31      80      52      13      30 
-    median absolute deviation      0       6       8      13       9       5       5 
-    16th - 50th pct.              22       8       8      19      11       6       7 
-    84th - 50th pct.               0      13      16      14      14       7       7 
+    N                             42      12      42      33      42      26      42 
+    mean                          92      20      34      79      54      14      29 
+    standard deviation            12      10      11      15      13       7       7 
+    median                       100      18      31      80      51      13      28 
+    median absolute deviation      0       7       9      13       9       5       6 
+    16th - 50th pct.              21       7       8      15      11       6       6 
+    84th - 50th pct.               0      13      17      14      15       7       9 
 
 
 Derived (%CVO)
@@ -67,13 +67,13 @@ Derived (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                             38      38      38      38      38      35      38      30      38      38      38 
-    mean                          92       5      34      78      54      16      30      -9      54       3       3 
-    standard deviation            12      12      11      18      13       8       7      12      13       0       0 
-    median                       100      -3      31      81      52      14      30      -9      52       3       3 
-    median absolute deviation      0       0       8      13       9       6       5       7       9       0       0 
-    16th - 50th pct.              22       0       8      25      11       6       7      12      11       0       0 
-    84th - 50th pct.               0      22      16      14      14      10       7      14      14       0       0 
+    N                             42      42      42      42      42      37      42      32      42      42      42 
+    mean                          92       5      34      78      54      17      29     -12      54       3       3 
+    standard deviation            12      12      11      17      13       9       7      13      13       0       0 
+    median                       100      -3      31      80      51      15      28     -12      51       3       3 
+    median absolute deviation      0       0       9      13       9       6       6       6       9       0       0 
+    16th - 50th pct.              21       0       8      21      11       8       6      13      11       0       0 
+    84th - 50th pct.               0      21      17      14      15      13       9      10      15       0       0 
 
 
 Flows
@@ -85,47 +85,49 @@ Measured (ml/min/kg)
        SubGroup       CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
     ______________    ______    ____    ____    ____    ____    ____    ____    ____
 
-    {'HLHS RAS'  }       1      400     NaN     195     384     300     NaN      98 
-    {'HLHS RAS'  }       2      320     NaN     177     302     120      23     117 
-    {'HLHS RAS'  }       3      479     NaN     120     427     307      38     251 
-    {'HLHS RAS'  }       4      414     NaN     105     393     169      56     146 
+    {'HLHS RAS'  }       1      479     NaN     120     427     307      38     251 
+    {'HLHS RAS'  }       2      414     NaN     105     393     169      56     146 
+    {'HLHS RAS'  }       3      390     NaN     216     382     300      20      98 
+    {'HLHS RAS'  }       4      320     NaN     177     302     120      23     117 
     {'HLHS MA AS'}       1      360      87     124     NaN     174     NaN      97 
     {'HLHS MA AS'}       2      380     NaN     133     253     198      60     144 
-    {'HLHS MS AS'}       1      433     NaN      80     308     229      95     111 
-    {'HLHS MS AS'}       2      442     NaN     127     272     256      73     158 
-    {'HLHS MS AS'}       3      329      51     107     266     202      51     108 
-    {'HLHS MS AS'}       4      373     120     160     275     192     100     174 
-    {'HLHS MS AS'}       5      352      47     168     316     272      85     111 
-    {'HLHS MS AS'}       6      NaN       6     172     380     138     NaN     105 
-    {'HLHS MS AS'}       7      373     101     143     306     271      60     116 
-    {'HLHS MS AS'}       8      291      33     133     198     195     NaN     104 
-    {'HLHS MS AS'}       9      348      60     113     NaN     167     NaN     112 
-    {'HLHS MS AS'}      10      366     124     268     332     263      22     108 
-    {'HLHS MS AS'}      11      509     NaN     140     NaN     243      70     104 
-    {'HLHS MS AS'}      12      407     NaN     238     NaN     279     NaN     140 
-    {'HLHS MS AS'}      13      400     NaN     175     361     285      84     152 
+    {'HLHS MS AS'}       1      329      51     107     266     202      51     108 
+    {'HLHS MS AS'}       2      433     NaN      80     308     229      95     111 
+    {'HLHS MS AS'}       3      442     NaN     127     272     256      73     158 
+    {'HLHS MS AS'}       4      352      47     168     316     272      85     111 
+    {'HLHS MS AS'}       5      373     120     160     275     192     100     174 
+    {'HLHS MS AS'}       6      348      60     113     NaN     167     NaN     112 
+    {'HLHS MS AS'}       7      320      19     140     NaN     239     NaN     136 
+    {'HLHS MS AS'}       8      366     124     268     332     263      22     108 
+    {'HLHS MS AS'}       9      509     NaN     140     NaN     243      70     104 
+    {'HLHS MS AS'}      10      444      95     175     361     285      84     152 
     {'HLHS MS AA'}       1      412     NaN     129     356     227      44     131 
-    {'HLHS MS AA'}       2      330     NaN     129     NaN     180     NaN      83 
-    {'HLHS MS AA'}       3      420     NaN     180     NaN     212      28     152 
-    {'HLHS MS AA'}       4      261     NaN     111     242     131     NaN     100 
+    {'HLHS MS AA'}       2      429     NaN     110     320     177     125     148 
+    {'HLHS MS AA'}       3      438     NaN     159     366     266      80     165 
+    {'HLHS MS AA'}       4      366     NaN     111     415     187     102      98 
     {'HLHS MS AA'}       5      299     NaN     136     279     156      22      71 
-    {'HLHS MS AA'}       6      389     NaN     102     NaN     227     NaN      90 
-    {'HLHS MA AA'}       1      422     NaN     120     336     276     NaN     116 
-    {'HLHS MA AA'}       2      350     NaN      84     323     257      32     151 
-    {'HLHS MA AA'}       3      414     NaN      70     300     238     NaN     134 
-    {'HLHS MA AA'}       4      433     NaN     231     403     165     NaN     144 
-    {'HLHS MA AA'}       5      596     NaN     113     456     243     NaN     132 
-    {'HLHS MA AA'}       6      438     NaN     159     366     266      80     165 
-    {'HLHS MA AA'}       7      514     NaN     148     410     216     NaN     116 
-    {'HLHS MA AA'}       8      358     NaN     148     292     239      72     107 
-    {'HLHS MA AA'}       9      330     NaN      76     298     226      53     105 
-    {'HLHS MA AA'}      10      366     NaN     111     415     187     102      98 
+    {'HLHS MS AA'}       6      420     NaN     180     NaN     212      28     152 
+    {'HLHS MS AA'}       7      373     NaN      76     NaN     192     NaN      82 
+    {'HLHS MS AA'}       8      261     NaN     111     242     131     NaN     100 
+    {'HLHS MS AA'}       9      389     NaN     102     NaN     227     NaN      90 
+    {'HLHS MA AA'}       1      480     NaN     197     428     244      82     103 
+    {'HLHS MA AA'}       2      422     NaN     120     336     276     NaN     116 
+    {'HLHS MA AA'}       3      350     NaN      84     323     257      32     151 
+    {'HLHS MA AA'}       4      414     NaN      70     300     238     NaN     134 
+    {'HLHS MA AA'}       5      433     NaN     231     403     165     NaN     144 
+    {'HLHS MA AA'}       6      358     NaN     182     311     337     NaN     119 
+    {'HLHS MA AA'}       7      596     NaN     113     456     243     NaN     132 
+    {'HLHS MA AA'}       8      514     NaN     148     410     216     NaN     116 
+    {'HLHS MA AA'}       9      358     NaN     148     292     239      72     107 
+    {'HLHS MA AA'}      10      330     NaN      76     298     226      53     105 
     {'HLHS MA AA'}      11      423     NaN     211     401     233      28      73 
     {'HLHS MA AA'}      12      422     NaN      93     NaN     298     NaN      89 
-    {'HLHS MA AA'}      13      358     NaN     182     311     337     NaN     119 
-    {'HLHS DORV' }       1      200     112     145     185     161      48     104 
-    {'HLHS DORV' }       2      380      49     153     331     190      54     150 
-    {'HLHS DORV' }       3      244     161     131     NaN     184     NaN     154 
+    {'HLHS MA AA'}      13      367     NaN     102     232     227     NaN      95 
+    {'HLHS MA AA'}      14      419     NaN     168     292     165     NaN      86 
+    {'HLHS DORV' }       1      351      42     149     NaN     209      47     123 
+    {'HLHS DORV' }       2      200     112     145     185     161      48     104 
+    {'HLHS DORV' }       3      288     109     200     268     188      72      64 
+    {'HLHS DORV' }       4      244     161     131     NaN     184     NaN     154 
 
 
 Derived (ml/min/kg)
@@ -133,47 +135,49 @@ Derived (ml/min/kg)
        SubGroup       CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
     ______________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    {'HLHS RAS'  }       1      400     -12     195     384     300      16      98      -16    300      12      12     400 
-    {'HLHS RAS'  }       2      320     -10     177     302     120      23     117      -23    120      10      10     320 
-    {'HLHS RAS'  }       3      479     -14     120     427     307      38     251      -38    307      14      14     479 
-    {'HLHS RAS'  }       4      414     -12     105     393     169      56     146      -56    169      12      12     414 
+    {'HLHS RAS'  }       1      479     -14     120     427     307      38     251      -38    307      14      14     479 
+    {'HLHS RAS'  }       2      414     -12     105     393     169      56     146      -56    169      12      12     414 
+    {'HLHS RAS'  }       3      390     -12     216     382     300      20      98      -20    300      12      12     390 
+    {'HLHS RAS'  }       4      320     -10     177     302     120      23     117      -23    120      10      10     320 
     {'HLHS MA AS'}       1      360      87     124     211     174     149      97      NaN    174      14      14     461 
     {'HLHS MA AS'}       2      380      78     133     253     198      60     144      NaN    198      14      14     472 
-    {'HLHS MS AS'}       1      433       1      80     308     229      95     111      -81    229      13      13     447 
-    {'HLHS MS AS'}       2      442     111     127     272     256      73     158       55    256      17      17     570 
-    {'HLHS MS AS'}       3      329      51     107     266     202      51     108       12    202      12      12     392 
-    {'HLHS MS AS'}       4      373     120     160     275     192     100     174       35    192      15      15     508 
-    {'HLHS MS AS'}       5      352      47     168     316     272      85     111      -26    272      12      12     411 
-    {'HLHS MS AS'}       6      NaN       6     172     380     138     NaN     105      NaN    138     NaN     NaN     NaN 
-    {'HLHS MS AS'}       7      373     101     143     306     271      60     116       56    271      15      15     489 
-    {'HLHS MS AS'}       8      291      33     133     198     195      93     104      -50    195      10      10     334 
-    {'HLHS MS AS'}       9      348      60     113     220     167     128     112      -55    167      13      13     421 
-    {'HLHS MS AS'}      10      366     124     268     332     263      22     108      117    263      15      15     505 
-    {'HLHS MS AS'}      11      509     NaN     140     439     243      70     104      NaN    243     NaN     NaN     NaN 
-    {'HLHS MS AS'}      12      407     NaN     238     NaN     279     NaN     140      NaN    279     NaN     NaN     NaN 
-    {'HLHS MS AS'}      13      400      99     175     361     285      84     152       30    285      15      15     514 
+    {'HLHS MS AS'}       1      329      51     107     266     202      51     108       12    202      12      12     392 
+    {'HLHS MS AS'}       2      433       1      80     308     229      95     111      -81    229      13      13     447 
+    {'HLHS MS AS'}       3      442     111     127     272     256      73     158       55    256      17      17     570 
+    {'HLHS MS AS'}       4      352      47     168     316     272      85     111      -26    272      12      12     411 
+    {'HLHS MS AS'}       5      373     120     160     275     192     100     174       35    192      15      15     508 
+    {'HLHS MS AS'}       6      348      60     113     220     167     128     112      -55    167      13      13     421 
+    {'HLHS MS AS'}       7      320      19     140     360     239     NaN     136      NaN    239      10      10     349 
+    {'HLHS MS AS'}       8      366     124     268     332     263      22     108      117    263      15      15     505 
+    {'HLHS MS AS'}       9      509     NaN     140     439     243      70     104      NaN    243     NaN     NaN     NaN 
+    {'HLHS MS AS'}      10      444      95     175     361     285      84     152       28    285      17      17     556 
     {'HLHS MS AA'}       1      412     -12     129     356     227      44     131      -44    227      12      12     412 
-    {'HLHS MS AA'}       2      330     -10     129     319     180     NaN      83      NaN    180      10      10     330 
-    {'HLHS MS AA'}       3      420     -13     180     392     212      28     152      -28    212      13      13     420 
-    {'HLHS MS AA'}       4      261      -8     111     242     131      19     100      -19    131       8       8     261 
+    {'HLHS MS AA'}       2      429     -13     110     320     177     125     148     -125    177      13      13     429 
+    {'HLHS MS AA'}       3      438     -13     159     366     266      80     165      -80    266      13      13     438 
+    {'HLHS MS AA'}       4      366     -11     111     415     187     102      98     -102    187      11      11     366 
     {'HLHS MS AA'}       5      299      -9     136     279     156      22      71      -22    156       9       9     299 
-    {'HLHS MS AA'}       6      389     -12     102     341     227     NaN      90      NaN    227      12      12     389 
-    {'HLHS MA AA'}       1      422     -13     120     336     276      86     116      -86    276      13      13     422 
-    {'HLHS MA AA'}       2      350     -11      84     323     257      32     151      -32    257      11      11     350 
-    {'HLHS MA AA'}       3      414     -12      70     300     238     114     134     -114    238      12      12     414 
-    {'HLHS MA AA'}       4      433     -13     231     403     165      30     144      -30    165      13      13     433 
-    {'HLHS MA AA'}       5      596     -18     113     456     243     140     132     -140    243      18      18     596 
-    {'HLHS MA AA'}       6      438     -13     159     366     266      80     165      -80    266      13      13     438 
-    {'HLHS MA AA'}       7      514     -15     148     410     216     104     116     -104    216      15      15     514 
-    {'HLHS MA AA'}       8      358     -11     148     292     239      72     107      -72    239      11      11     358 
-    {'HLHS MA AA'}       9      330     -10      76     298     226      53     105      -53    226      10      10     330 
-    {'HLHS MA AA'}      10      366     -11     111     415     187     102      98     -102    187      11      11     366 
+    {'HLHS MS AA'}       6      420     -13     180     392     212      28     152      -28    212      13      13     420 
+    {'HLHS MS AA'}       7      373     -11      76     279     192     NaN      82      NaN    192      11      11     373 
+    {'HLHS MS AA'}       8      261      -8     111     242     131      19     100      -19    131       8       8     261 
+    {'HLHS MS AA'}       9      389     -12     102     341     227     NaN      90      NaN    227      12      12     389 
+    {'HLHS MA AA'}       1      480     -14     197     428     244      82     103      -82    244      14      14     480 
+    {'HLHS MA AA'}       2      422     -13     120     336     276      86     116      -86    276      13      13     422 
+    {'HLHS MA AA'}       3      350     -11      84     323     257      32     151      -32    257      11      11     350 
+    {'HLHS MA AA'}       4      414     -12      70     300     238     114     134     -114    238      12      12     414 
+    {'HLHS MA AA'}       5      433     -13     231     403     165      30     144      -30    165      13      13     433 
+    {'HLHS MA AA'}       6      358     -11     182     311     337      47     119      -47    337      11      11     358 
+    {'HLHS MA AA'}       7      596     -18     113     456     243     140     132     -140    243      18      18     596 
+    {'HLHS MA AA'}       8      514     -15     148     410     216     104     116     -104    216      15      15     514 
+    {'HLHS MA AA'}       9      358     -11     148     292     239      72     107      -72    239      11      11     358 
+    {'HLHS MA AA'}      10      330     -10      76     298     226      53     105      -53    226      10      10     330 
     {'HLHS MA AA'}      11      423     -13     211     401     233      28      73      -28    233      13      13     423 
     {'HLHS MA AA'}      12      422     -13      93     404     298     NaN      89      NaN    298      13      13     422 
-    {'HLHS MA AA'}      13      358     -11     182     311     337      47     119      -47    337      11      11     358 
-    {'HLHS DORV' }       1      200     112     145     185     161      48     104      NaN    161      10      10     322 
-    {'HLHS DORV' }       2      380      49     153     331     190      54     150      NaN    190      13      13     442 
-    {'HLHS DORV' }       3      244     161     131     154     184      90     154      NaN    184      13      13     418 
+    {'HLHS MA AA'}      13      367     -11     102     232     227     135      95     -135    227      11      11     367 
+    {'HLHS MA AA'}      14      419     -13     168     292     165     127      86     -127    165      13      13     419 
+    {'HLHS DORV' }       1      351      42     149     316     209      47     123      NaN    209      12      12     405 
+    {'HLHS DORV' }       2      200     112     145     185     161      48     104      NaN    161      10      10     322 
+    {'HLHS DORV' }       3      288     109     200     268     188      72      64      NaN    188      12      12     409 
+    {'HLHS DORV' }       4      244     161     131     154     184     NaN     154      NaN    184      13      13     418 
 
 
 Measured (%CVO)
@@ -181,47 +185,49 @@ Measured (%CVO)
        SubGroup       CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
     ______________    ______    ____    ____    ____    ____    ____    ____    ____
 
-    {'HLHS RAS'  }       1      100     NaN      49      96      75     NaN      25 
-    {'HLHS RAS'  }       2      100     NaN      55      94      38       7      37 
-    {'HLHS RAS'  }       3      100     NaN      25      89      64       8      52 
-    {'HLHS RAS'  }       4      100     NaN      25      95      41      14      35 
+    {'HLHS RAS'  }       1      100     NaN      25      89      64       8      52 
+    {'HLHS RAS'  }       2      100     NaN      25      95      41      14      35 
+    {'HLHS RAS'  }       3      100     NaN      55      98      77       5      25 
+    {'HLHS RAS'  }       4      100     NaN      55      94      38       7      37 
     {'HLHS MA AS'}       1       78      19      27     NaN      38     NaN      21 
     {'HLHS MA AS'}       2       80     NaN      28      54      42      13      30 
-    {'HLHS MS AS'}       1       97     NaN      18      69      51      21      25 
-    {'HLHS MS AS'}       2       78     NaN      22      48      45      13      28 
-    {'HLHS MS AS'}       3       84      13      27      68      52      13      28 
-    {'HLHS MS AS'}       4       73      24      31      54      38      20      34 
-    {'HLHS MS AS'}       5       86      11      41      77      66      21      27 
-    {'HLHS MS AS'}       6      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'HLHS MS AS'}       7       76      21      29      63      55      12      24 
-    {'HLHS MS AS'}       8       87      10      40      59      58     NaN      31 
-    {'HLHS MS AS'}       9       83      14      27     NaN      40     NaN      27 
-    {'HLHS MS AS'}      10       72      25      53      66      52       4      21 
-    {'HLHS MS AS'}      11      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'HLHS MS AS'}      12      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'HLHS MS AS'}      13       78     NaN      34      70      55      16      30 
+    {'HLHS MS AS'}       1       84      13      27      68      52      13      28 
+    {'HLHS MS AS'}       2       97     NaN      18      69      51      21      25 
+    {'HLHS MS AS'}       3       78     NaN      22      48      45      13      28 
+    {'HLHS MS AS'}       4       86      11      41      77      66      21      27 
+    {'HLHS MS AS'}       5       73      24      31      54      38      20      34 
+    {'HLHS MS AS'}       6       83      14      27     NaN      40     NaN      27 
+    {'HLHS MS AS'}       7       92       5      40     NaN      68     NaN      39 
+    {'HLHS MS AS'}       8       72      25      53      66      52       4      21 
+    {'HLHS MS AS'}       9      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    {'HLHS MS AS'}      10       80      17      31      65      51      15      27 
     {'HLHS MS AA'}       1      100     NaN      31      86      55      11      32 
-    {'HLHS MS AA'}       2      100     NaN      39     NaN      55     NaN      25 
-    {'HLHS MS AA'}       3      100     NaN      43     NaN      50       7      36 
-    {'HLHS MS AA'}       4      100     NaN      43      93      50     NaN      38 
+    {'HLHS MS AA'}       2      100     NaN      26      75      41      29      34 
+    {'HLHS MS AA'}       3      100     NaN      36      84      61      18      38 
+    {'HLHS MS AA'}       4      100     NaN      30     113      51      28      27 
     {'HLHS MS AA'}       5      100     NaN      45      93      52       7      24 
-    {'HLHS MS AA'}       6      100     NaN      26     NaN      58     NaN      23 
-    {'HLHS MA AA'}       1      100     NaN      28      80      65     NaN      27 
-    {'HLHS MA AA'}       2      100     NaN      24      92      73       9      43 
-    {'HLHS MA AA'}       3      100     NaN      17      72      57     NaN      32 
-    {'HLHS MA AA'}       4      100     NaN      53      93      38     NaN      33 
-    {'HLHS MA AA'}       5      100     NaN      19      77      41     NaN      22 
-    {'HLHS MA AA'}       6      100     NaN      36      84      61      18      38 
-    {'HLHS MA AA'}       7      100     NaN      29      80      42     NaN      23 
-    {'HLHS MA AA'}       8      100     NaN      41      82      67      20      30 
-    {'HLHS MA AA'}       9      100     NaN      23      90      68      16      32 
-    {'HLHS MA AA'}      10      100     NaN      30     113      51      28      27 
+    {'HLHS MS AA'}       6      100     NaN      43     NaN      50       7      36 
+    {'HLHS MS AA'}       7      100     NaN      20     NaN      51     NaN      22 
+    {'HLHS MS AA'}       8      100     NaN      43      93      50     NaN      38 
+    {'HLHS MS AA'}       9      100     NaN      26     NaN      58     NaN      23 
+    {'HLHS MA AA'}       1      100     NaN      41      89      51      17      21 
+    {'HLHS MA AA'}       2      100     NaN      28      80      65     NaN      27 
+    {'HLHS MA AA'}       3      100     NaN      24      92      73       9      43 
+    {'HLHS MA AA'}       4      100     NaN      17      72      57     NaN      32 
+    {'HLHS MA AA'}       5      100     NaN      53      93      38     NaN      33 
+    {'HLHS MA AA'}       6      100     NaN      51      87      94     NaN      33 
+    {'HLHS MA AA'}       7      100     NaN      19      77      41     NaN      22 
+    {'HLHS MA AA'}       8      100     NaN      29      80      42     NaN      23 
+    {'HLHS MA AA'}       9      100     NaN      41      82      67      20      30 
+    {'HLHS MA AA'}      10      100     NaN      23      90      68      16      32 
     {'HLHS MA AA'}      11      100     NaN      50      95      55       7      17 
     {'HLHS MA AA'}      12      100     NaN      22     NaN      71     NaN      21 
-    {'HLHS MA AA'}      13      100     NaN      51      87      94     NaN      33 
-    {'HLHS DORV' }       1       62      35      45      58      50      15      32 
-    {'HLHS DORV' }       2       86      11      35      75      43      12      34 
-    {'HLHS DORV' }       3       58      39      31     NaN      44     NaN      37 
+    {'HLHS MA AA'}      13      100     NaN      28      63      62     NaN      26 
+    {'HLHS MA AA'}      14      100     NaN      40      70      39     NaN      21 
+    {'HLHS DORV' }       1       87      10      37     NaN      52      12      30 
+    {'HLHS DORV' }       2       62      35      45      58      50      15      32 
+    {'HLHS DORV' }       3       70      27      49      65      46      18      16 
+    {'HLHS DORV' }       4       58      39      31     NaN      44     NaN      37 
 
 
 Derived (%CVO)
@@ -229,46 +235,48 @@ Derived (%CVO)
        SubGroup       CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
     ______________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    {'HLHS RAS'  }       1      100      -3      49      96      75       4      25      -4      75       3       3 
-    {'HLHS RAS'  }       2      100      -3      55      94      38       7      37      -7      38       3       3 
-    {'HLHS RAS'  }       3      100      -3      25      89      64       8      52      -8      64       3       3 
-    {'HLHS RAS'  }       4      100      -3      25      95      41      14      35     -14      41       3       3 
+    {'HLHS RAS'  }       1      100      -3      25      89      64       8      52      -8      64       3       3 
+    {'HLHS RAS'  }       2      100      -3      25      95      41      14      35     -14      41       3       3 
+    {'HLHS RAS'  }       3      100      -3      55      98      77       5      25      -5      77       3       3 
+    {'HLHS RAS'  }       4      100      -3      55      94      38       7      37      -7      38       3       3 
     {'HLHS MA AS'}       1       78      19      27      46      38      32      21     NaN      38       3       3 
     {'HLHS MA AS'}       2       80      17      28      54      42      13      30     NaN      42       3       3 
-    {'HLHS MS AS'}       1       97       0      18      69      51      21      25     -18      51       3       3 
-    {'HLHS MS AS'}       2       78      19      22      48      45      13      28      10      45       3       3 
-    {'HLHS MS AS'}       3       84      13      27      68      52      13      28       3      52       3       3 
-    {'HLHS MS AS'}       4       73      24      31      54      38      20      34       7      38       3       3 
-    {'HLHS MS AS'}       5       86      11      41      77      66      21      27      -6      66       3       3 
-    {'HLHS MS AS'}       6      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'HLHS MS AS'}       7       76      21      29      63      55      12      24      11      55       3       3 
-    {'HLHS MS AS'}       8       87      10      40      59      58      28      31     -15      58       3       3 
-    {'HLHS MS AS'}       9       83      14      27      52      40      30      27     -13      40       3       3 
-    {'HLHS MS AS'}      10       72      25      53      66      52       4      21      23      52       3       3 
-    {'HLHS MS AS'}      11      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'HLHS MS AS'}      12      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'HLHS MS AS'}      13       78      19      34      70      55      16      30       6      55       3       3 
+    {'HLHS MS AS'}       1       84      13      27      68      52      13      28       3      52       3       3 
+    {'HLHS MS AS'}       2       97       0      18      69      51      21      25     -18      51       3       3 
+    {'HLHS MS AS'}       3       78      19      22      48      45      13      28      10      45       3       3 
+    {'HLHS MS AS'}       4       86      11      41      77      66      21      27      -6      66       3       3 
+    {'HLHS MS AS'}       5       73      24      31      54      38      20      34       7      38       3       3 
+    {'HLHS MS AS'}       6       83      14      27      52      40      30      27     -13      40       3       3 
+    {'HLHS MS AS'}       7       92       5      40     103      68     NaN      39     NaN      68       3       3 
+    {'HLHS MS AS'}       8       72      25      53      66      52       4      21      23      52       3       3 
+    {'HLHS MS AS'}       9      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    {'HLHS MS AS'}      10       80      17      31      65      51      15      27       5      51       3       3 
     {'HLHS MS AA'}       1      100      -3      31      86      55      11      32     -11      55       3       3 
-    {'HLHS MS AA'}       2      100      -3      39      97      55     NaN      25     NaN      55       3       3 
-    {'HLHS MS AA'}       3      100      -3      43      93      50       7      36      -7      50       3       3 
-    {'HLHS MS AA'}       4      100      -3      43      93      50       7      38      -7      50       3       3 
+    {'HLHS MS AA'}       2      100      -3      26      75      41      29      34     -29      41       3       3 
+    {'HLHS MS AA'}       3      100      -3      36      84      61      18      38     -18      61       3       3 
+    {'HLHS MS AA'}       4      100      -3      30     113      51      28      27     -28      51       3       3 
     {'HLHS MS AA'}       5      100      -3      45      93      52       7      24      -7      52       3       3 
-    {'HLHS MS AA'}       6      100      -3      26      88      58     NaN      23     NaN      58       3       3 
-    {'HLHS MA AA'}       1      100      -3      28      80      65      20      27     -20      65       3       3 
-    {'HLHS MA AA'}       2      100      -3      24      92      73       9      43      -9      73       3       3 
-    {'HLHS MA AA'}       3      100      -3      17      72      57      28      32     -28      57       3       3 
-    {'HLHS MA AA'}       4      100      -3      53      93      38       7      33      -7      38       3       3 
-    {'HLHS MA AA'}       5      100      -3      19      77      41      23      22     -23      41       3       3 
-    {'HLHS MA AA'}       6      100      -3      36      84      61      18      38     -18      61       3       3 
-    {'HLHS MA AA'}       7      100      -3      29      80      42      20      23     -20      42       3       3 
-    {'HLHS MA AA'}       8      100      -3      41      82      67      20      30     -20      67       3       3 
-    {'HLHS MA AA'}       9      100      -3      23      90      68      16      32     -16      68       3       3 
-    {'HLHS MA AA'}      10      100      -3      30     113      51      28      27     -28      51       3       3 
+    {'HLHS MS AA'}       6      100      -3      43      93      50       7      36      -7      50       3       3 
+    {'HLHS MS AA'}       7      100      -3      20      75      51     NaN      22     NaN      51       3       3 
+    {'HLHS MS AA'}       8      100      -3      43      93      50       7      38      -7      50       3       3 
+    {'HLHS MS AA'}       9      100      -3      26      88      58     NaN      23     NaN      58       3       3 
+    {'HLHS MA AA'}       1      100      -3      41      89      51      17      21     -17      51       3       3 
+    {'HLHS MA AA'}       2      100      -3      28      80      65      20      27     -20      65       3       3 
+    {'HLHS MA AA'}       3      100      -3      24      92      73       9      43      -9      73       3       3 
+    {'HLHS MA AA'}       4      100      -3      17      72      57      28      32     -28      57       3       3 
+    {'HLHS MA AA'}       5      100      -3      53      93      38       7      33      -7      38       3       3 
+    {'HLHS MA AA'}       6      100      -3      51      87      94      13      33     -13      94       3       3 
+    {'HLHS MA AA'}       7      100      -3      19      77      41      23      22     -23      41       3       3 
+    {'HLHS MA AA'}       8      100      -3      29      80      42      20      23     -20      42       3       3 
+    {'HLHS MA AA'}       9      100      -3      41      82      67      20      30     -20      67       3       3 
+    {'HLHS MA AA'}      10      100      -3      23      90      68      16      32     -16      68       3       3 
     {'HLHS MA AA'}      11      100      -3      50      95      55       7      17      -7      55       3       3 
     {'HLHS MA AA'}      12      100      -3      22      96      71     NaN      21     NaN      71       3       3 
-    {'HLHS MA AA'}      13      100      -3      51      87      94      13      33     -13      94       3       3 
-    {'HLHS DORV' }       1       62      35      45      58      50      15      32     NaN      50       3       3 
-    {'HLHS DORV' }       2       86      11      35      75      43      12      34     NaN      43       3       3 
-    {'HLHS DORV' }       3       58      39      31      37      44      22      37     NaN      44       3       3 
+    {'HLHS MA AA'}      13      100      -3      28      63      62      37      26     -37      62       3       3 
+    {'HLHS MA AA'}      14      100      -3      40      70      39      30      21     -30      39       3       3 
+    {'HLHS DORV' }       1       87      10      37      78      52      12      30     NaN      52       3       3 
+    {'HLHS DORV' }       2       62      35      45      58      50      15      32     NaN      50       3       3 
+    {'HLHS DORV' }       3       70      27      49      65      46      18      16     NaN      46       3       3 
+    {'HLHS DORV' }       4       58      39      31      37      44     NaN      37     NaN      44       3       3 
 
 

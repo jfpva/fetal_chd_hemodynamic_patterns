@@ -47,7 +47,8 @@ subGroups = {   'Normal', ...
                 'TGA IVS', ...
                 'TGA VSD', ...
                 'TGA VSD PS', ...
-                'TGA COA', ...
+                'TGA VSD COA', ...
+                'TGA IVS COA', ...
                 'TOF ONLY', ...
                 'TOF PA', ...
                 'Ebstein''s no Circular Shunt', ...
@@ -273,7 +274,7 @@ for iD = 1:size(D,1)
     switch D.SubGroup{iD}
         case {'Normal','HLHS MS AS'}
             D.FO(iD) = D.AAo(iD) + D.CA(iD) - D.PBF(iD);
-        case {'TGA IVS','TGA COA'}
+        case {'TGA IVS','TGA IVS COA'}
             D.FO(iD) = D.SVC(iD) + D.IVC(iD) - D.AAo(iD);
         case {'HLHS RAS','HLHS MS AA','HLHS MA AA'}
             D.FO(iD) = -D.PBF(iD);
@@ -281,7 +282,7 @@ for iD = 1:size(D,1)
             D.FO(iD) = D.SVC(iD) + D.IVC(iD) + D.CS(iD);
         case 'Ebstein''s Circular Shunt'
             D.FO(iD) = -D.MPA(iD) + D.SVC(iD) + D.IVC(iD) + D.CS(iD);
-        case {'HLHS MA AS','HLHS DORV','TGA VSD','TGA VSD PS','TOF ONLY','TOF PA'}
+        case {'HLHS MA AS','HLHS DORV','TGA VSD','TGA VSD PS','TGA VSD COA','TOF ONLY','TOF PA'}
             D.FO(iD) = NaN;
     end
 end
@@ -899,7 +900,7 @@ T.n(iR)     = G(iG).NumCases;
 T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TGA subgroups
-for iI = 1:4
+for iI = 1:5
     iS = iS + 1;
     iR = iR + 1;
     T.type(iR)  = S(iS).SubGroup;

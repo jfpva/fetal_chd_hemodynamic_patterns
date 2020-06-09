@@ -7,13 +7,13 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)          3       3       3       2       3       2       3       0       0       0       0       0 
-    measured median (ml/min/kg)    244     112     145     NaN     184     NaN     150     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)           3       3       3       3       3       3       3       0       3       3       3       3 
-    derived median (ml/min/kg)     244     112     145     185     184      54     150     NaN     184      13      13     418 
-    measured, N (%CVO)               3       3       3       2       3       2       3       0       0       0       0       0 
-    measured median (%CVO)          62      35      35     NaN      44     NaN      34     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    62      35      35      44      44      18      34     -18      44       3       3     100 
+    measured, N (ml/min/kg)          4       4       4       2       4       3       4       0       0       0       0       0 
+    measured median (ml/min/kg)    266     111     147     NaN     186      48     114     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           4       4       4       4       4       3       4       0       4       4       4       4 
+    derived median (ml/min/kg)     266     111     147     227     186      48     114     NaN     186      12      12     407 
+    measured, N (%CVO)               4       4       4       2       4       3       4       0       0       0       0       0 
+    measured median (%CVO)          66      31      41     NaN      48      15      31     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                    66      31      39      55      47      11      31     -11      47       3       3     100 
 
 
 Summary
@@ -25,13 +25,13 @@ Measured (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                              3       3       3       2       3       2       3 
-    mean                         275     107     143     NaN     178     NaN     136 
-    standard deviation            94      56      11     NaN      15     NaN      28 
-    median                       244     112     145     NaN     184     NaN     150 
-    median absolute deviation     44      49       8     NaN       6     NaN       4 
-    16th - 50th pct.              44      63      14     NaN      23     NaN      46 
-    84th - 50th pct.             136      49       8     NaN       6     NaN       4 
+    N                              4       4       4       2       4       3       4 
+    mean                         271     106     156     NaN     186      56     111 
+    standard deviation            64      49      30     NaN      20      14      38 
+    median                       266     111     147     NaN     186      48     114 
+    median absolute deviation     44      26       9     NaN      13       1      25 
+    16th - 50th pct.              60      59      14     NaN      22       1      44 
+    84th - 50th pct.              76      44      46     NaN      20      24      36 
 
 
 Derived (ml/min/kg)
@@ -39,13 +39,13 @@ Derived (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                              3       3       3       3       3       3       3       0       3       3       3       3 
-    mean                         275     107     143     223     178      64     136     NaN     178      12      12     394 
-    standard deviation            94      56      11      95      15      23      28     NaN      15       2       2      64 
-    median                       244     112     145     185     184      54     150     NaN     184      13      13     418 
-    median absolute deviation     44      49       8      31       6       6       4     NaN       6       1       1      25 
-    16th - 50th pct.              44      63      14      31      23       6      46     NaN      23       3       3      96 
-    84th - 50th pct.             136      49       8     146       6      36       4     NaN       6       1       1      25 
+    N                              4       4       4       4       4       3       4       0       4       4       4       4 
+    mean                         271     106     156     231     186      56     111     NaN     186      12      12     388 
+    standard deviation            64      49      30      74      20      14      38     NaN      20       1       1      45 
+    median                       266     111     147     227     186      48     114     NaN     186      12      12     407 
+    median absolute deviation     44      26       9      57      13       1      25     NaN      13       0       0       6 
+    16th - 50th pct.              60      59      14      68      22       1      44     NaN      22       2       2      74 
+    84th - 50th pct.              76      44      46      83      20      24      36     NaN      20       0       0       9 
 
 
 Measured (%CVO)
@@ -53,13 +53,13 @@ Measured (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                              3       3       3       2       3       2       3 
-    mean                          69      28      37     NaN      46     NaN      34 
-    standard deviation            15      15       7     NaN       4     NaN       2 
-    median                        62      35      35     NaN      44     NaN      34 
-    median absolute deviation      4       4       3     NaN       1     NaN       2 
-    16th - 50th pct.               4      24       3     NaN       1     NaN       2 
-    84th - 50th pct.              24       4      10     NaN       6     NaN       3 
+    N                              4       4       4       2       4       3       4 
+    mean                          69      28      41     NaN      48      15      29 
+    standard deviation            13      13       8     NaN       4       3       9 
+    median                        66      31      41     NaN      48      15      31 
+    median absolute deviation      6       6       6     NaN       3       3       3 
+    16th - 50th pct.               7      18       9     NaN       4       3      14 
+    84th - 50th pct.              18       7       7     NaN       3       3       5 
 
 
 Derived (%CVO)
@@ -67,13 +67,13 @@ Derived (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                              3       3       3       3       3       3       3       0       3      3       3  
-    mean                          69      28      37      56      46      16      34     NaN      46      3       3  
-    standard deviation            15      15       7      19       4       5       2     NaN       4      0       0  
-    median                        62      35      35      58      44      15      34     NaN      44      3       3  
-    median absolute deviation      4       4       3      17       1       3       2     NaN       1      0       0  
-    16th - 50th pct.               4      24       3      21       1       3       2     NaN       1      0       0  
-    84th - 50th pct.              24       4      10      17       6       7       3     NaN       6      0       0  
+    N                              4       4       4       4       4       3       4       0       4      4       4  
+    mean                          69      28      41      59      48      15      29     NaN      48      3       3  
+    standard deviation            13      13       8      17       4       3       9     NaN       4      0       0  
+    median                        66      31      41      61      48      15      31     NaN      48      3       3  
+    median absolute deviation      6       6       6      10       3       3       3     NaN       3      0       0  
+    16th - 50th pct.               7      18       9      22       4       3      14     NaN       4      0       0  
+    84th - 50th pct.              18       7       7      15       3       3       5     NaN       3      0       0  
 
 
 Flows
@@ -85,9 +85,10 @@ Measured (ml/min/kg)
     CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
     ______    ____    ____    ____    ____    ____    ____    ____
 
-      1       200     112     145     185     161      48     104 
-      2       380      49     153     331     190      54     150 
-      3       244     161     131     NaN     184     NaN     154 
+      1       351      42     149     NaN     209      47     123 
+      2       200     112     145     185     161      48     104 
+      3       288     109     200     268     188      72      64 
+      4       244     161     131     NaN     184     NaN     154 
 
 
 Derived (ml/min/kg)
@@ -95,9 +96,10 @@ Derived (ml/min/kg)
     CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
     ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-      1       200     112     145     185     161      48     104     NaN     161      10      10     322 
-      2       380      49     153     331     190      54     150     NaN     190      13      13     442 
-      3       244     161     131     154     184      90     154     NaN     184      13      13     418 
+      1       351      42     149     316     209      47     123     NaN     209      12      12     405 
+      2       200     112     145     185     161      48     104     NaN     161      10      10     322 
+      3       288     109     200     268     188      72      64     NaN     188      12      12     409 
+      4       244     161     131     154     184     NaN     154     NaN     184      13      13     418 
 
 
 Measured (%CVO)
@@ -105,9 +107,10 @@ Measured (%CVO)
     CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
     ______    ____    ____    ____    ____    ____    ____    ____
 
-      1        62      35      45      58      50      15      32 
-      2        86      11      35      75      43      12      34 
-      3        58      39      31     NaN      44     NaN      37 
+      1        87      10      37     NaN      52      12      30 
+      2        62      35      45      58      50      15      32 
+      3        70      27      49      65      46      18      16 
+      4        58      39      31     NaN      44     NaN      37 
 
 
 Derived (%CVO)
@@ -115,8 +118,9 @@ Derived (%CVO)
     CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
     ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-      1        62      35      45      58      50      15      32     NaN      50      3       3  
-      2        86      11      35      75      43      12      34     NaN      43      3       3  
-      3        58      39      31      37      44      22      37     NaN      44      3       3  
+      1        87      10      37      78      52      12      30     NaN      52      3       3  
+      2        62      35      45      58      50      15      32     NaN      50      3       3  
+      3        70      27      49      65      46      18      16     NaN      46      3       3  
+      4        58      39      31      37      44     NaN      37     NaN      44      3       3  
 
 

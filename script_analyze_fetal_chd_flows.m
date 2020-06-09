@@ -13,7 +13,7 @@
 %% Options
 
 isLogResults = true;  % Log results flag    
-isShowFigs = true;    % Create figures flag
+isShowFigs   = false; % Create figures flag
 
 dataFilePath   = fullfile( 'data', 'flow.csv' );  % Path to file with measured flows
 

@@ -13,7 +13,7 @@ Flow Distribution Model
     derived median (ml/min/kg)     254     204     123     181     245      77     129     136     245      14      14     470 
     measured, N (%CVO)              40      40      40      39      40      38      40       0       0       0       0       0 
     measured median (%CVO)          53      44      26      38      52      16      26     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    54      43      27      37      53      17      26      29      53       3       3     100 
+    model (%CVO)                    53      44      27      36      53      17      26      30      53       3       3     100 
 
 
 Group 02: HLHS
@@ -55,7 +55,7 @@ Flow Distribution Model
     derived median (ml/min/kg)     195     271     143     112     258      76     135      97     258      15      15     486 
     measured, N (%CVO)              59      59      59      39      59      29      59       0       0       0       0       0 
     measured median (%CVO)          40      57      27      20      52      15      28     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    39      58      27      21      52      18      28      21      52       3       3     100 
+    model (%CVO)                    40      57      27      22      52      18      28      22      52       3       3     100 
 
 
 Group 04: TOF
@@ -73,7 +73,7 @@ Flow Distribution Model
     derived median (ml/min/kg)      43     357     138      25     250      64     118     NaN     250      14      14     475 
     measured, N (%CVO)              15      24      24       6      23      14      23       0       0       0       0       0 
     measured median (%CVO)          20      87      30      10      54      13      28     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    17      80      31       6      55      11      28      72      55       3       3     100 
+    model (%CVO)                    16      81      32       6      55      10      28      74      55       3       3     100 
 
 
 Group 05: EA

@@ -13,7 +13,7 @@ Flow Distribution Model
     derived median (ml/min/kg)     254     204     123     181     245      77     129     136     245      14      14     470 
     measured, N (%CVO)              40      40      40      39      40      38      40       0       0       0       0       0 
     measured median (%CVO)          53      44      26      38      52      16      26     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    54      43      27      37      53      17      26      29      53       3       3     100 
+    model (%CVO)                    53      44      27      36      53      17      26      30      53       3       3     100 
 
 
 Sub-Group 02: HLHS RAS
@@ -70,7 +70,7 @@ Flow Distribution Model
     derived median (ml/min/kg)     370      60     140     312     241      84     112      20     241      13      13     447 
     measured, N (%CVO)               9       7       9       7       9       7       9       0       0       0       0       0 
     measured median (%CVO)          83      14      31      66      51      15      27     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    83      14      31      68      51      15      27       2      51       3       3     100 
+    model (%CVO)                    82      15      31      67      51      15      27       3      51       3       3     100 
 
 
 Sub-Group 05: HLHS MS AA
@@ -235,7 +235,7 @@ Flow Distribution Model
     derived median (ml/min/kg)      92     352     136      71     250      68     125     NaN     250      15      15     498 
     measured, N (%CVO)              15      15      15       6      14       9      15       0       0       0       0       0 
     measured median (%CVO)          20      77      27      10      50      14      28     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    22      75      30       7      52      15      28      63      52       3       3     100 
+    model (%CVO)                    21      76      30       6      52      15      28      64      52       3       3     100 
 
 
 Sub-Group 14: TOF PA
@@ -253,7 +253,7 @@ Flow Distribution Model
     derived median (ml/min/kg)       0     367     146     -35     259      32      96     NaN     259      11      11     378 
     measured, N (%CVO)               0       9       9       0       9       5       8       0       0       0       0       0 
     measured median (%CVO)         NaN      97      34     NaN      58       8      27     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                     0      97      33      -7      57       7      27      93      57       3       3     100 
+    model (%CVO)                     0      97      34      -6      57       6      27      94      57       3       3     100 
 
 
 Sub-Group 15: Ebstein's no Circular Shunt

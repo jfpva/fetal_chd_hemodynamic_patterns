@@ -13,7 +13,7 @@ Flow Distribution Model
     derived median (ml/min/kg)     195     271     143     112     258      76     135      97     258      15      15     486 
     measured, N (%CVO)              59      59      59      39      59      29      59       0       0       0       0       0 
     measured median (%CVO)          40      57      27      20      52      15      28     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    39      58      27      21      52      18      28      21      52       3       3     100 
+    model (%CVO)                    40      57      27      22      52      18      28      22      52       3       3     100 
 
 
 Summary

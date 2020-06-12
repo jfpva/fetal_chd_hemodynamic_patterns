@@ -115,6 +115,7 @@ switch dataFileExt
         
 end
 
+
 %% Define SubGroups with Pulmonary Atresia, Aortic Atresia or Ebstein's Anomaly with Circular Shunt
 
 isPA   = strcmp( M.SubGroup, 'TOF PA' ) | strcmp( M.SubGroup, 'Ebstein''s no Circular Shunt' );
@@ -1251,55 +1252,79 @@ function Q = balance_flow_distribution( Sdist, R )
     
     maxIter = 10;
     
-    q = round(Sdist{end,1:11}); 
+    isVerbose = false;
+    
+    q = Sdist{end,1:11}; 
+    
+    iQ = 1;
+    % q(iQ,:) = Sdist{end,1:11};
     if isfield( R, 'SubGroup' )
         switch R.SubGroup
             case {'HLHS RAS','HLHS MS AA','HLHS MA AA'}
-                q(1,2) = -3; 
+                q(iQ,2) = -3; 
             case {'TOF PA','Ebstein''s no Circular Shunt'}
-                q(1,1) = 0;
+                q(iQ,1) = 0;
         end
     end
 
     if numel(R.CirculationType) > 1
-        Q = nan( size(q) );
+        Q = nan( size(q(1,:)) );
         warning( 'cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types' )
         return
     end
     
     if all(isnan(q))
-        Q = nan( size(q) );
+        Q = nan( size(q(1,:)) );
         warning( 'cannot balance flow distribution if all flows are NaN' )
         return
     end
-    
-    iQ = 2;
-    [q(iQ,:),~,~,exitFlag] = balance_fetal_flow_distribution( round(q(iQ-1,:)), R.CirculationType, 'objFn', 'wRMSD', 'isPctCvo', true, 'isVerbose', false );
+        
+    % Balance flows with wRMSD objective function using measurements as initial values
+    iQ = iQ + 1;
+    [q(iQ,:),~,~,exitFlag] = balance_fetal_flow_distribution( q(iQ-1,:), R.CirculationType, 'objFn', 'wRMSD', 'isPctCvo', true, 'isVerbose', isVerbose );
     if exitFlag<0
         Q = q(iQ,:);
         return
     end
+   
+    % Balance flows with wMAD objective function using rounded values from previous iteration as initial values
+    iQ = iQ + 1;
+    [q(iQ,:),~,~,exitFlag] = balance_fetal_flow_distribution( round(q(iQ-1,:)), R.CirculationType, 'objFn', 'wMAD', 'isPctCvo', true, 'isVerbose', isVerbose );
 
-    while ~isequal( q(iQ,:), q(iQ-1,:) ) && exitFlag>=0
+    % Balance flows with wMAD objective function using rounded values from previous iteration as initial values
+    while ~isequal( round(q(iQ,:),1), round(q(iQ-1,:),1) ) && exitFlag>=0
         iQ = iQ + 1;
-        [q(iQ,:),~,~,exitFlag] = balance_fetal_flow_distribution( round(q(iQ-1,:)), R.CirculationType, 'objFn', 'wRMSD', 'isPctCvo', true, 'isVerbose', false );
+        [q(iQ,:),~,~,exitFlag] = balance_fetal_flow_distribution( round(q(iQ-1,:)), R.CirculationType, 'objFn', 'wMAD', 'isPctCvo', true, 'isVerbose', isVerbose );
+        if exitFlag<0
+            Q = q(iQ,:);
+            return
+        end
         if iQ >= maxIter
             Q = q(iQ,:);
             warning( 'maximum iterations, %i, reached', maxIter )
             return
         end
     end
-
-    iQ = iQ + 1;
-    [q(iQ,:),~,~,exitFlag] = balance_fetal_flow_distribution( round(q(iQ-1,:)), R.CirculationType, 'objFn', 'wMAD', 'isPctCvo', true, 'isVerbose', false );
-
-    while ~isequal( q(iQ,:), q(iQ-1,:) ) && exitFlag>=0
-        iQ = iQ + 1;
-        [q(iQ,:),~,~,exitFlag] = balance_fetal_flow_distribution( round(q(iQ-1,:)), R.CirculationType, 'objFn', 'wMAD', 'isPctCvo', true, 'isVerbose', false );
-        if iQ >= maxIter
-            Q = q(iQ,:);
-            warning( 'maximum iterations, %i, reached', maxIter )
-            return
+    
+    if (isVerbose)
+        fprintf( '%5s %4s %5s %5s %5s %5s %5s %5s %5s %5s %5s %5s\n', 'iter.', 'MPA', 'AAo', 'SVC', 'DA', 'DAo', 'PBF', 'UV', 'ICS', 'IVC', 'CA', 'CS' )
+        fprintf( '%5s %5s %5s %5s %5s %5s %5s %5s %5s %5s %5s %5s\n', '-----', '-----', '-----', '-----', '-----', '-----', '-----', '-----', '-----', '-----', '-----', '-----' )
+        iq = 1;
+        fprintf( '%5s ', 'init' )
+        fprintf( '%5.1f ', q(iq,:) )
+        fprintf( '\n' )
+        iq = 2;
+        fprintf( '%5s ', 'opt' )
+        fprintf( '%5.1f ', q(iq,:) )
+        fprintf( '\n' )
+        iq = 2;
+        fprintf( '%5s ', 'whole' )
+        fprintf( '%5.1f ', round(q(iq,:)) )
+        fprintf( '\n' )
+        for iq = 3:size(q,1)
+            fprintf( '%5i ', iq-1 )
+            fprintf( '%5.1f ', q(iq,:) )
+            fprintf( '\n' )
         end
     end
     

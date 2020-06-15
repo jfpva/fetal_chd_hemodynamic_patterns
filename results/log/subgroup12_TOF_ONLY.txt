@@ -1,4 +1,4 @@
-Sub-Group 13: TOF ONLY
+Sub-Group 12: TOF ONLY
 ======================
 
 

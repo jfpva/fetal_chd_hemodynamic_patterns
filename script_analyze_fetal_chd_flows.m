@@ -39,7 +39,6 @@ groupToProcess = 1:numel(groups);
 
 subGroups = {   'Normal', ...
                 'HLHS RAS', ...
-                'HLHS MA AS', ...
                 'HLHS MS AS', ...
                 'HLHS MS AA', ...
                 'HLHS MA AA', ...
@@ -283,7 +282,7 @@ for iD = 1:size(D,1)
             D.FO(iD) = D.SVC(iD) + D.IVC(iD) + D.CS(iD);
         case 'Ebstein''s Circular Shunt'
             D.FO(iD) = -D.MPA(iD) + D.SVC(iD) + D.IVC(iD) + D.CS(iD);
-        case {'HLHS MA AS','HLHS DORV','TGA VSD','TGA VSD PS','TGA VSD COA','TOF ONLY','TOF PA'}
+        case {'HLHS DORV','TGA VSD','TGA VSD PS','TGA VSD COA','TOF ONLY','TOF PA'}
             D.FO(iD) = NaN;
     end
 end
@@ -885,7 +884,7 @@ T.n(iR)     = G(iG).NumCases;
 T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % HLHS subgroups
-for iI = 1:6
+for iI = 1:5
     iS = iS + 1;
     iR = iR + 1;
     T.type(iR)  = S(iS).SubGroup;

@@ -205,8 +205,8 @@ Flow Distribution Model
 Note: too few measurements to summarize
 
 
-Sub-Group 12: TOF ONLY
-======================
+Sub-Group 12: TOF PS
+====================
 
 
 Flow Distribution Model

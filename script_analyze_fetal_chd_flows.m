@@ -48,7 +48,7 @@ subGroups = {   'Normal', ...
                 'TGA VSD PS', ...
                 'TGA VSD COA', ...
                 'TGA IVS COA', ...
-                'TOF ONLY', ...
+                'TOF PS', ...
                 'TOF PA', ...
                 'Ebstein''s no Circular Shunt', ...
                 'Ebstein''s Circular Shunt', ...
@@ -282,7 +282,7 @@ for iD = 1:size(D,1)
             D.FO(iD) = D.SVC(iD) + D.IVC(iD) + D.CS(iD);
         case 'Ebstein''s Circular Shunt'
             D.FO(iD) = -D.MPA(iD) + D.SVC(iD) + D.IVC(iD) + D.CS(iD);
-        case {'HLHS DORV','TGA VSD','TGA VSD PS','TGA VSD COA','TOF ONLY','TOF PA'}
+        case {'HLHS DORV','TGA VSD','TGA VSD PS','TGA VSD COA','TOF PS','TOF PA'}
             D.FO(iD) = NaN;
     end
 end
@@ -1611,7 +1611,7 @@ arguments
 end
 
 % Circulation Type
-validCircType = {'normal','transposition','hlhs_aortic_atresia','tof_pa',...
+validCircType = {'normal','transposition','hlhs_aortic_atresia',...
                  'double_outlet_right_ventricle','ebsteins_circular_shunt'};
 assert( ismember(circType,validCircType), 'circType ''%s'' invalid', circType )
 
@@ -1727,20 +1727,6 @@ else
             Qref.ivc = Qref.svc;
             Qref.ca  = 0.03 * Qref.cvo;
             Qref.cs  = Qref.ca;
-        case 'tof_pa'
-            % Based on mean measured values in 4 cases.
-            Qref.cvo = 407/.97;  
-            Qref.mpa =   0;
-            Qref.aao = 407;
-            Qref.svc = 158;
-            Qref.da  = -26;
-            Qref.dao = 223;
-            Qref.pbf =  26;
-            Qref.uv  = 101;
-            Qref.ivc = Qref.dao;
-            Qref.ca  = 0.03 * Qref.cvo;
-            Qref.cs  = Qref.ca;
-            Qref.ics = Qref.svc + Qref.dao + Qref.cs;
         otherwise
             error( 'circulation type %s not recognized, no reference flows defined', circType )
     end
@@ -1795,7 +1781,7 @@ if isnan(Q.ca)
     switch circType
         case {'normal','transposition','double_outlet_right_ventricle'}
             Q.ca  = caFlowPerCvo/(1-caFlowPerCvo)*(Q.mpa+Q.aao);
-        case {'ebsteins_circular_shunt','tof_pa'}
+        case {'ebsteins_circular_shunt'}
             Q.ca  = caFlowPerCvo/(1-caFlowPerCvo)*(Q.aao);
         case 'hlhs_aortic_atresia'
             Q.ca  = caFlowPerCvo*Q.mpa;
@@ -1807,7 +1793,7 @@ if isnan(Q.cs)
     switch circType
         case {'normal','transposition','double_outlet_right_ventricle','hlhs_aortic_atresia'}
             Q.cs  = csFlowPerCai/(1-csFlowPerCai)*(Q.svc+Q.ivc+Q.pbf);
-        case {'ebsteins_circular_shunt','tof_pa'}
+        case {'ebsteins_circular_shunt'}
             Q.cs  = csFlowPerCai/(1-csFlowPerCai)*(Q.svc+Q.ivc+Q.pbf-Q.mpa);
         otherwise 
             error( 'circulation type %s not recognized, coronary artery flow cannot be initialized', circType )
@@ -1817,7 +1803,7 @@ end
 % Derived Intra-cardiac Shunt Flow
 if isnan(Q.ics)
     switch circType
-        case {'normal','ebsteins_circular_shunt','tof_pa'}
+        case {'normal','ebsteins_circular_shunt'}
             Q.ics = Q.aao + Q.ca - Q.pbf; 
         case 'transposition'
             Q.ics = Q.mpa - Q.pbf;
@@ -1841,9 +1827,6 @@ switch circType
     case 'double_outlet_right_ventricle'
         %        [ mpa   aao   svc    da   dao   pbf    uv   ics   ivc    ca    cs ] 
         refWgt = [ 0.6   0.3   0.8   0.5   1.0   0.28  1.0     0     0     0     0 ];  
-    case 'tof_pa'
-        %        [ mpa   aao   svc    da   dao   pbf    uv   ics   ivc    ca    cs ] 
-        refWgt = [ 0.0   0.6   0.8   0.5   1.0   0.28  1.0     0     0     0     0 ];  
     otherwise
         error( 'circulation type %s not recognized, intra-cardiac shunt flow cannot be initialized', circType )
 end
@@ -2058,42 +2041,6 @@ switch circType
                     EqNormal.cai.beq 
                  ];
         end
-    case 'tof_pa'
-        %        [ mpa   aao   svc    da   dao   pbf    uv   ics   ivc    ca    cs ] 
-        Aeq    = [ 
-                     0    -1     1     0     0     1     0     0     1    -1     1  % heart chambers
-                     0     0     0    -1     0    -1     0     0     0     0     0  % pulmonary artery branch junction
-                     EqNormal.arch.Aeq
-                     0     0     1     0     0     0     0    -1     1     0     1  % right ventriculo-arterial connection
-                     EqNormal.lva.Aeq
-                     EqNormal.placenta.Aeq
-                     EqNormal.coronary.Aeq
-                     0     1     0     0     0     0     0     0     0  -Rca     0  % ventricular output
-                     EqNormal.input.Aeq
-                 ];
-        beq    = [ 
-                     0
-                     0
-                     EqNormal.arch.beq
-                     0
-                     EqNormal.lva.beq
-                     EqNormal.placenta.beq
-                     EqNormal.coronary.beq
-                     0
-                     EqNormal.input.beq
-                 ];
-        if NVArg.isPctCvo
-           Aeq = [  
-                    Aeq 
-                    0     1     0     0     0     0     0     0     0     1     0  % combined ventricular output
-                    EqNormal.cai.Aeq 
-                 ];
-           beq = [  
-                    beq 
-                    100
-                    EqNormal.cai.beq 
-                 ];
-        end
     otherwise 
         error( 'circulation type %s not recognized, equality constraints not defined', circType )
 end
@@ -2120,10 +2067,6 @@ switch circType
         %        [ mpa   aao   svc    da   dao   pbf    uv   ics   ivc    ca    cs ] 
         lb =     [   0     1     0     1     0     0     0     1     0     0     0 ] * -maxBound;
         ub =     [   1     0     1     1     1     1     1     1     1     1     1 ] * +maxBound;
-    case 'tof_pa'
-        %        [ mpa   aao   svc    da   dao   pbf    uv   ics   ivc    ca    cs ] 
-        lb =     [   0     0     0     1     0     0     0     1     0     0     0 ] * -maxBound;
-        ub =     [   0     1     1     0     1     1     1     1     1     1     1 ] * +maxBound;
     otherwise 
         error( 'circulation type %s not recognized, bounds not defined', circType )
 end

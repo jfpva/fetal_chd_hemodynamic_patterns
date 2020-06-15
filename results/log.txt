@@ -19,7 +19,7 @@ Lower
     {'TGA VSD PS'                 }     58       0      78      19      17       0      55 
     {'TGA VSD COA'                }    199       0       3     187     211       0      99 
     {'TGA IVS COA'                }      0       0       0     NaN       0       0       0 
-    {'TOF ONLY'                   }      0     165       0     -64      80       0      32 
+    {'TOF PS'                     }      0     165       0     -64      80       0      32 
     {'TOF PA'                     }      0       0       0     NaN      41       0      16 
     {'Ebstein's no Circular Shunt'}      0       0       0     NaN      39       5      34 
     {'Ebstein's Circular Shunt'   }    NaN       0       0     NaN       0       0      41 
@@ -43,7 +43,7 @@ Upper
     {'TGA VSD PS'                 }    244     623     166     205     329     149     135 
     {'TGA VSD COA'                }    449     366     297     195     397     174     215 
     {'TGA IVS COA'                }    NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TOF ONLY'                   }    252     539     287     168     409     203     218 
+    {'TOF PS'                     }    252     539     287     168     409     203     218 
     {'TOF PA'                     }    NaN     763     382       0     477     151     176 
     {'Ebstein's no Circular Shunt'}    NaN     469     195       0     225      49     136 
     {'Ebstein's Circular Shunt'   }      0     855     143       0     314     NaN     139 
@@ -75,9 +75,9 @@ Derived Using Arch Junction: Q_AAo - Q_SVC + Q_DA = Q_DAo
     {'TGA VSD COA'                }       3       369
     {'TGA VSD COA'                }       4       297
     {'TGA VSD COA'                }       7       248
-    {'TOF ONLY'                   }       3      -302
-    {'TOF ONLY'                   }       7       -88
-    {'TOF ONLY'                   }      12      -106
+    {'TOF PS'                     }       3      -302
+    {'TOF PS'                     }       7       -88
+    {'TOF PS'                     }      12      -106
     {'TOF PA'                     }       4       126
     {'TOF PA'                     }       8       187
     {'TOF PA'                     }       9        17
@@ -95,7 +95,7 @@ Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
 
     {'TGA VSD COA'      }      2        165
     {'TGA VSD COA'      }      3        331
-    {'TOF ONLY'         }      3       -318
+    {'TOF PS'           }      3       -318
     {'TA VA Concordance'}      3        122
 
 
@@ -128,8 +128,8 @@ Missing CVO Values
     {'HLHS'}    {'HLHS MS AS'                 }       9      509     NaN     140     439     243      70     104     NaN     NaN 
     {'TGA' }    {'TGA IVS'                    }      29      NaN     408     171      56     293     NaN     135      56     NaN 
     {'TGA' }    {'TGA VSD PS'                 }       3      NaN     354     112     NaN     138     NaN      95     NaN     NaN 
-    {'TOF' }    {'TOF ONLY'                   }      12      NaN     418      73     NaN     239     NaN     128     NaN     NaN 
-    {'TOF' }    {'TOF ONLY'                   }      14      NaN     307      60     -24     223     NaN     122     NaN     NaN 
+    {'TOF' }    {'TOF PS'                     }      12      NaN     418      73     NaN     239     NaN     128     NaN     NaN 
+    {'TOF' }    {'TOF PS'                     }      14      NaN     307      60     -24     223     NaN     122     NaN     NaN 
     {'EA'  }    {'Ebstein's no Circular Shunt'}       8        0     NaN     173     NaN     201     NaN      43     NaN     NaN 
     {'TA'  }    {'TA VA Concordance'          }       4      NaN     475     203     NaN     254      32      58     NaN     NaN 
 
@@ -171,7 +171,7 @@ Sub-Group Flow Difference, balanced - measured
     09 TGA VSD PS                       4       0       1      -5       1      -2       0 
     10 TGA VSD COA                     -3       3      -3       6      -3       1       0 
     11 TGA IVS COA                    NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    12 TOF ONLY                         1      -1       3      -4       2       1       0 
+    12 TOF PS                           1      -1       3      -4       2       1       0 
     13 TOF PA                         NaN       0       0     NaN      -1      -2       0 
     14 Ebstein's no Circular Shunt    NaN       0      -2     NaN      -1      -4       0 
     15 Ebstein's Circular Shunt       NaN     NaN     NaN     NaN     NaN     NaN     NaN 
@@ -202,7 +202,7 @@ Group: TGA                           61     197     271     143     112     258 
     TGA VSD COA                       7     324     161     150     191     304      65     157     324     161     150     191     304      65     157             304      15      15     501  
     TGA IVS COA                       2                                                                                                                                                          
 Group: TOF                           26      92     357     138      52     250      54     118      43     357     138      25     250      64     118             250      14      14     475  
-    TOF ONLY                         17      92     352     136      52     245      56     125      92     352     136      71     250      68     125             250      15      15     498  
+    TOF PS                           17      92     352     136      52     245      56     125      92     352     136      71     250      68     125             250      15      15     498  
     TOF PA                            9             367     146             259      40      96       0     367     146     -35     259      32      96             259      11      11     378  
 Group: EA                            16             248      80    -206     132      27      87       0     248      80    -106     132      27      87     227     132       8       8     256  
     Ebstein's no Circular Shunt      11             227      88             132      27      85       0     227      88     -25     132      27      85     227     132       7       7     234  
@@ -232,7 +232,7 @@ Group: TGA                           61      41      56      27      20      52 
     TGA VSD COA                       7      65      32      26      40      61      15      28      65      32      26      40      61      15      28              61       3       3     100  
     TGA IVS COA                       2                                                                                                                                                     100  
 Group: TOF                           26      20      87      30      10      54      13      28      10      87      30       6      54      14      28              54       3       3     100  
-    TOF ONLY                         17      20      77      27      10      50      14      28      20      77      27      14      53      17      28              53       3       3     100  
+    TOF PS                           17      20      77      27      10      50      14      28      20      77      27      14      53      17      28              53       3       3     100  
     TOF PA                            9              97      34              58       8      27       0      97      34      -8      58       7      27              58       3       3     100  
 Group: EA                            16              97      26     -43      50       9      34       0      97      26     -42      50      10      34      95      50       3       3     100  
     Ebstein's no Circular Shunt      11              97      36              59       9      39       0      97      36     -10      59      10      39      95      59       3       3     100  
@@ -262,7 +262,7 @@ Group: TGA                           61      40      57      27      22      52 
     TGA VSD COA                       7      62      35      23      46      58      16      28      46      58       3       3     100  
     TGA IVS COA                       2                                                                                                  
 Group: TOF                           26      16      81      32       6      55      10      28      74      55       3       3     100  
-    TOF ONLY                         17      21      76      30       6      52      15      28      64      52       3       3     100  
+    TOF PS                           17      21      76      30       6      52      15      28      64      52       3       3     100  
     TOF PA                            9       0      97      34      -6      57       6      27      94      57       3       3     100  
 Group: EA                            16                                                                                                  
     Ebstein's no Circular Shunt      11       0      97      34      -5      58       5      39      95      58       3       3     100  
@@ -292,7 +292,7 @@ Group: TGA                       { 40, -1}  { 57, +1}    27       { 22, +2}    5
     TGA VSD COA                  { 62, -3}  { 35, +3}  { 23, -3}  { 46, +6}  { 58, -3}  { 16, +1}    28       [ 46    ]  
     TGA IVS COA                     ?          ?          ?          ?          ?          ?          ?          ?       
 Group: TOF                       { 16, -4}  { 81, -6}  { 32, +2}  {  6, -4}  { 55, +1}  { 10, -3}    28       [ 74    ]  
-    TOF ONLY                     { 21, +1}  { 76, -1}  { 30, +3}  {  6, -4}  { 52, +2}  { 15, +1}    28       [ 64    ]  
+    TOF PS                       { 21, +1}  { 76, -1}  { 30, +3}  {  6, -4}  { 52, +2}  { 15, +1}    28       [ 64    ]  
     TOF PA                       [  0    ]    97         34       [ -6    ]  { 57, -1}  {  6, -2}    27       [ 94    ]  
 Group: EA                           ?          ?          ?          ?          ?          ?          ?          ?       
     Ebstein's no Circular Shunt  [  0    ]    97       { 34, -2}  [ -5    ]  { 58, -1}  {  5, -4}    39       [ 95    ]  
@@ -322,7 +322,7 @@ Group: TGA                         0.78    1.34    1.03    0.63    1.01    1.09 
     TGA VSD COA                    1.25    0.85    0.91    1.36    1.17    1.00    1.15    1.63  
     TGA IVS COA                  
 Group: TOF                         0.31    1.86    1.20    0.17    1.05    0.59    1.09    2.49  
-    TOF ONLY                       0.42    1.83    1.18    0.18    1.04    0.93    1.14    2.26  
+    TOF PS                         0.42    1.83    1.18    0.18    1.04    0.93    1.14    2.26  
     TOF PA                         0.00    1.77    1.01   -0.13    0.87    0.28    0.84    2.52  
 Group: EA                        
     Ebstein's no Circular Shunt    0.00    1.10    0.63   -0.07    0.54    0.15    0.75    1.57  

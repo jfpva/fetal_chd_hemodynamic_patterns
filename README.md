@@ -32,7 +32,7 @@ Analyisis of fetal blood flow distribution patterns and blood oxygen saturations
     * TGA with ventricular septal defect (TGA VSD)
     * TGA with VSD and pulmonary stenosis (TGA VSD PS)
     * TGA with intact ventricular septum with coarctation of the aorta (TGA IVS COA)
-    * TGA with ventricular septal defect with coarctation of the aorta (TGA IVS COA)
+    * TGA with ventricular septal defect with coarctation of the aorta (TGA VSD COA)
 * tetralogy of Fallot (TOF)
     * with pulmonary stenosis (TOF ONLY)
     * with pulmonary atresia (TOF PA)

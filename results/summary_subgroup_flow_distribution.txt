@@ -103,13 +103,7 @@ Flow Distribution Model
     derived median (ml/min/kg)     288     109     145     211     184      48     104     NaN     184      12      12     409 
     measured, N (%CVO)               5       5       5       2       5       3       5       0       0       0       0       0 
     measured median (%CVO)          70      27      37     NaN      46      15      30     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-
-
-[Warning: cannot balance flows using central tendancy (e.g., mean) of flows from multiple, different circulation types] 
-[> 
-  
-  ] 
+    model (%CVO)                    70      27      37      56      46      14      30     -14      46       3       3     100 
 
 
 Sub-Group 07: TGA IVS

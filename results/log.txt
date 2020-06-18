@@ -165,7 +165,7 @@ Sub-Group Flow Difference, balanced - measured
     03 HLHS MS AS                       0       0       1       1       1       3       0 
     04 HLHS MS AA                       0     NaN       1      -3       1      -1       0 
     05 HLHS MA AA                       0     NaN      -3       4      -3      -2       0 
-    06 HLHS DORV                      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    06 HLHS DORV                        0       0       0     NaN       0      -1       0 
     07 TGA IVS                         -1       1       1       2       0       5       0 
     08 TGA VSD                         -1       1      -2       3      -1       1       0 
     09 TGA VSD PS                       4       0       1      -5       1      -2       0 
@@ -177,8 +177,8 @@ Sub-Group Flow Difference, balanced - measured
     15 Ebstein's Circular Shunt       NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     16 TA VA Concordance              NaN      -3       5      -3       4      10       0 
     17 TA VA Discordance              NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    mean                                0       0       0       0       0       1       0 
-    median                              0       0       1       0       0       1       0 
+    mean                                0       0       0       0       0       0       0 
+    median                              0       0       0       0       0       0       0 
     max abs.                            4       3       5       6       4      10       0 
 
 
@@ -254,7 +254,7 @@ Group: HLHS                          42                                         
     HLHS MS AS                       10      83      14      29      67      52      16      27       1      52       3       3     100  
     HLHS MS AA                        9     100      -3      32      87      52      13      32     -13      52       3       3     100  
     HLHS MA AA                       14     100      -3      26      86      57      14      27     -14      57       3       3     100  
-    HLHS DORV                         5                                                                                                  
+    HLHS DORV                         5      70      27      37      56      46      14      30     -14      46       3       3     100  
 Group: TGA                           61      40      57      27      22      52      18      28      22      52       3       3     100  
     TGA IVS                          34      38      59      27      19      51      19      28      19      51       3       3     100  
     TGA VSD                          13      45      52      28      29      53      16      27      29      53       3       3     100  
@@ -284,7 +284,7 @@ Group: HLHS                         ?          ?          ?          ?          
     HLHS MS AS                     83         14       { 29, +1}  { 67, +1}  { 52, +1}  { 16, +3}    27       [  1    ]  
     HLHS MS AA                    100       [ -3    ]  { 32, +1}  { 87, -3}  { 52, +1}  { 13, -1}    32       [-13    ]  
     HLHS MA AA                    100       [ -3    ]  { 26, -3}  { 86, +4}  { 57, -3}  { 14, -2}    27       [-14    ]  
-    HLHS DORV                       ?          ?          ?          ?          ?          ?          ?          ?       
+    HLHS DORV                      70         27         37       [ 56    ]    46       { 14, -1}    30       [-14    ]  
 Group: TGA                       { 40, -1}  { 57, +1}    27       { 22, +2}    52       { 18, +4}    28       [ 22    ]  
     TGA IVS                      { 38, -1}  { 59, +1}  { 27, +1}  { 19, +2}    51       { 19, +5}    28       [ 19    ]  
     TGA VSD                      { 45, -1}  { 52, +1}  { 28, -2}  { 29, +3}  { 53, -1}  { 16, +1}    27       [ 29    ]  
@@ -314,7 +314,7 @@ Group: HLHS                      
     HLHS MS AS                     1.49    0.30    1.02    1.77    0.93    0.90    0.99    0.03  
     HLHS MS AA                     1.56   -0.06    0.98    2.00    0.81    0.63    1.02   -0.36  
     HLHS MA AA                     1.69   -0.06    0.86    2.14    0.96    0.74    0.93   -0.42  
-    HLHS DORV                    
+    HLHS DORV                      1.15    0.53    1.19    1.35    0.76    0.72    1.00   -0.41  
 Group: TGA                         0.78    1.34    1.03    0.63    1.01    1.09    1.11    0.76  
     TGA IVS                        0.80    1.49    1.11    0.59    1.07    1.24    1.20    0.70  
     TGA VSD                        0.84    1.16    1.02    0.79    0.98    0.93    1.02    0.95  

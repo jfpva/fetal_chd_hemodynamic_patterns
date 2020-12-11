@@ -1,0 +1,27 @@
+"Number of families"	1							
+"Number of comparisons per family"	10							
+Alpha	0.05							
+								
+"Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	A-?		
+"  Normal vs. HLHS RAS"	-144.0	"-393.7 to 105.7"	No	ns	0.1103	B	"HLHS RAS"	
+"  Normal vs. HLHS MS AS"	-135.6	"-213.9 to -57.25"	Yes	***	0.0004	C	"HLHS MS AS"	
+"  Normal vs. HLHS MS AA"	-119.6	"-202.5 to -36.71"	Yes	**	0.0020	D	"HLHS MS AA"	
+"  Normal vs. HLHS MA AA"	-163.7	"-235.5 to -91.84"	Yes	****	<0.0001	E	"HLHS MA AA"	
+"  Normal vs. HLHS DORV"	-31.85	"-216.4 to 152.7"	No	ns	0.9411	F	"HLHS DORV"	
+"  Normal vs. TGA IVS"	55.75	"17.67 to 93.83"	Yes	***	0.0002	G	"TGA IVS"	
+"  Normal vs. TGA VSD"	59.13	"-5.075 to 123.3"	Yes	*	0.0441	H	"TGA VSD"	
+"  Normal vs. TGA VSD PS"	66.42	"-552.6 to 685.4"	No	ns	0.8203	I	"TGA VSD PS"	
+"  Normal vs. TGA VSD COA"	-58.96	"-166.0 to 48.11"	No	ns	0.2894	J	"TGA VSD COA"	
+"  Normal vs. TOF PS"	161.9	"111.1 to 212.7"	Yes	****	<0.0001	L	"TOF PS"	
+								
+"Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
+"  Normal vs. HLHS RAS"	256.8	400.8	-144.0	33.48	40	4	4.301	3.243
+"  Normal vs. HLHS MS AS"	256.8	392.3	-135.6	20.53	40	10	6.602	11.12
+"  Normal vs. HLHS MS AA"	256.8	376.3	-119.6	21.21	40	9	5.637	9.748
+"  Normal vs. HLHS MA AA"	256.8	420.4	-163.7	20.29	40	14	8.067	16.12
+"  Normal vs. HLHS DORV"	256.8	288.6	-31.85	31.37	40	5	1.015	4.371
+"  Normal vs. TGA IVS"	256.8	201.0	55.75	12.06	40	33	4.623	56.23
+"  Normal vs. TGA VSD"	256.8	197.6	59.13	18.14	40	13	3.261	15.75
+"  Normal vs. TGA VSD PS"	256.8	190.3	66.42	50.63	40	3	1.312	2.068
+"  Normal vs. TGA VSD COA"	256.8	315.7	-58.96	24.44	40	7	2.413	6.955
+"  Normal vs. TOF PS"	256.8	94.87	161.9	14.90	40	15	10.86	21.05

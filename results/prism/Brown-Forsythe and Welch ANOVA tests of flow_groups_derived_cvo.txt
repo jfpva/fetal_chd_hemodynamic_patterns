@@ -1,0 +1,17 @@
+"Number of families"	1							
+"Number of comparisons per family"	5							
+Alpha	0.05							
+								
+"Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	?-A		
+"  HLHS vs. Normal"	-57.39	"-97.14 to -17.64"	Yes	***	0.0004	B	HLHS	
+"  TGA vs. Normal"	21.71	"-28.08 to 71.49"	No	ns	0.6931	C	TGA	
+"  TOF vs. Normal"	-17.30	"-78.23 to 43.62"	No	ns	0.9154	D	TOF	
+"  EA vs. Normal"	-191.3	"-301.0 to -81.66"	Yes	***	0.0002	E	EA	
+"  TA vs. Normal"	-48.83	"-119.2 to 21.50"	No	ns	0.1295	F	TA	
+								
+"Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
+"  HLHS vs. Normal"	415.0	472.4	-57.39	13.76	41	40	4.169	74.35
+"  TGA vs. Normal"	494.1	472.4	21.71	17.32	59	40	1.253	86.68
+"  TOF vs. Normal"	455.1	472.4	-17.30	20.32	24	40	0.8514	32.52
+"  EA vs. Normal"	281.0	472.4	-191.3	33.98	15	40	5.631	15.84
+"  TA vs. Normal"	423.5	472.4	-48.83	18.77	6	40	2.602	7.718

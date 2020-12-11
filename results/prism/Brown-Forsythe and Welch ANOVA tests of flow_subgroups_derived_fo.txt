@@ -1,0 +1,21 @@
+"Number of families"	1							
+"Number of comparisons per family"	7							
+Alpha	0.05							
+								
+"Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	A-?		
+"  Normal vs. HLHS RAS"	174.0	"131.7 to 216.2"	Yes	****	<0.0001	B	"HLHS RAS"	
+"  Normal vs. HLHS MS AS"	129.5	"38.90 to 220.0"	Yes	**	0.0026	C	"HLHS MS AS"	
+"  Normal vs. HLHS MS AA"	199.7	"131.6 to 267.9"	Yes	****	<0.0001	D	"HLHS MS AA"	
+"  Normal vs. HLHS MA AA"	220.5	"176.5 to 264.6"	Yes	****	<0.0001	E	"HLHS MA AA"	
+"  Normal vs. TGA IVS"	39.22	"-3.711 to 82.14"	No	ns	0.0510	G	"TGA IVS"	
+"  Normal vs. Ebstein's no Circular Shunt"	-86.30	"-140.0 to -32.57"	Yes	***	0.0005	N	"Ebstein's no Circular Shunt"	
+"  Normal vs. TA VA Concordance"	-197.0	"-329.5 to -64.49"	Yes	**	0.0058	P	"TA VA Concordance"	
+								
+"Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
+"  Normal vs. HLHS RAS"	139.7	-34.25	174.0	11.38	40	4	15.28	10.23
+"  Normal vs. HLHS MS AS"	139.7	10.28	129.5	23.72	40	8	5.457	8.800
+"  Normal vs. HLHS MS AA"	139.7	-60.00	199.7	17.85	40	7	11.19	9.136
+"  Normal vs. HLHS MA AA"	139.7	-80.77	220.5	13.77	40	13	16.01	24.55
+"  Normal vs. TGA IVS"	139.7	100.5	39.22	14.18	40	34	2.766	58.85
+"  Normal vs. Ebstein's no Circular Shunt"	139.7	226.0	-86.30	15.55	40	9	5.550	14.06
+"  Normal vs. TA VA Concordance"	139.7	336.7	-197.0	24.04	40	4	8.194	3.753

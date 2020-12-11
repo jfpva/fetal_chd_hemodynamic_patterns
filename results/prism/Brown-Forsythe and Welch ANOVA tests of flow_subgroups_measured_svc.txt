@@ -1,0 +1,35 @@
+"Number of families"	1							
+"Number of comparisons per family"	14							
+Alpha	0.05							
+								
+"Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	A-?		
+"  Normal vs. HLHS RAS"	-29.60	"-236.8 to 177.6"	No	ns	0.9338	B	"HLHS RAS"	
+"  Normal vs. HLHS MS AS"	-20.20	"-87.65 to 47.25"	No	ns	0.9524	C	"HLHS MS AS"	
+"  Normal vs. HLHS MS AA"	1.122	"-44.51 to 46.75"	No	ns	>0.9999	D	"HLHS MS AA"	
+"  Normal vs. HLHS MA AA"	-13.89	"-68.67 to 40.90"	No	ns	0.9940	E	"HLHS MA AA"	
+"  Normal vs. HLHS DORV"	-24.90	"-101.3 to 51.52"	No	ns	0.6838	F	"HLHS DORV"	
+"  Normal vs. TGA IVS"	-20.95	"-50.12 to 8.212"	No	ns	0.2597	G	"TGA IVS"	
+"  Normal vs. TGA VSD"	-24.72	"-84.76 to 35.33"	No	ns	0.8066	H	"TGA VSD"	
+"  Normal vs. TGA VSD PS"	-19.10	"-109.8 to 71.61"	No	ns	0.9480	I	"TGA VSD PS"	
+"  Normal vs. TGA VSD COA"	-17.53	"-77.41 to 42.35"	No	ns	0.9181	J	"TGA VSD COA"	
+"  Normal vs. TOF PS"	-2.041	"-43.08 to 38.99"	No	ns	>0.9999	L	"TOF PS"	
+"  Normal vs. TOF PA"	-16.88	"-105.5 to 71.70"	No	ns	0.9975	M	"TOF PA"	
+"  Normal vs. Ebstein's no Circular Shunt"	31.50	"-20.33 to 83.33"	No	ns	0.3207	N	"Ebstein's no Circular Shunt"	
+"  Normal vs. Ebstein's Circular Shunt"	58.50	"-16.89 to 133.9"	No	ns	0.0691	O	"Ebstein's Circular Shunt"	
+"  Normal vs. TA VA Concordance"	-18.10	"-154.6 to 118.4"	No	ns	0.9920	P	"TA VA Concordance"	
+								
+"Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
+"  Normal vs. HLHS RAS"	124.9	154.5	-29.60	26.13	40	4	1.133	3.201
+"  Normal vs. HLHS MS AS"	124.9	145.1	-20.20	16.91	40	10	1.195	10.53
+"  Normal vs. HLHS MS AA"	124.9	123.8	1.122	11.44	40	9	0.09810	11.43
+"  Normal vs. HLHS MA AA"	124.9	138.8	-13.89	14.85	40	14	0.9353	15.95
+"  Normal vs. HLHS DORV"	124.9	149.8	-24.90	14.14	40	5	1.761	5.032
+"  Normal vs. TGA IVS"	124.9	145.9	-20.95	8.916	40	34	2.350	55.93
+"  Normal vs. TGA VSD"	124.9	149.6	-24.72	15.88	40	13	1.556	14.34
+"  Normal vs. TGA VSD PS"	124.9	144.0	-19.10	16.78	40	5	1.138	4.697
+"  Normal vs. TGA VSD COA"	124.9	142.4	-17.53	13.66	40	7	1.283	7.673
+"  Normal vs. TOF PS"	124.9	126.9	-2.041	11.65	40	17	0.1753	22.39
+"  Normal vs. TOF PA"	124.9	141.8	-16.88	21.01	40	9	0.8035	8.849
+"  Normal vs. Ebstein's no Circular Shunt"	124.9	93.40	31.50	13.27	40	10	2.374	11.67
+"  Normal vs. Ebstein's Circular Shunt"	124.9	66.40	58.50	13.95	40	5	4.194	5.066
+"  Normal vs. TA VA Concordance"	124.9	143.0	-18.10	21.92	40	5	0.8259	4.389

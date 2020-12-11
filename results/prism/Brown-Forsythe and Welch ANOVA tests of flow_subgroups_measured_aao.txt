@@ -1,0 +1,29 @@
+"Number of families"	1							
+"Number of comparisons per family"	11							
+Alpha	0.05							
+								
+"Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	A-?		
+"  Normal vs. HLHS MS AS"	135.5	"61.30 to 209.6"	Yes	***	0.0007	C	"HLHS MS AS"	
+"  Normal vs. HLHS DORV"	99.25	"-6.891 to 205.4"	Yes	*	0.0330	F	"HLHS DORV"	
+"  Normal vs. TGA IVS"	-106.6	"-158.2 to -54.98"	Yes	****	<0.0001	G	"TGA IVS"	
+"  Normal vs. TGA VSD"	-35.24	"-117.8 to 47.32"	No	ns	0.7369	H	"TGA VSD"	
+"  Normal vs. TGA VSD PS"	-52.95	"-265.6 to 159.7"	No	ns	0.7683	I	"TGA VSD PS"	
+"  Normal vs. TGA VSD COA"	34.74	"-47.52 to 117.0"	No	ns	0.6028	J	"TGA VSD COA"	
+"  Normal vs. TOF PS"	-171.5	"-235.9 to -107.0"	Yes	****	<0.0001	L	"TOF PS"	
+"  Normal vs. TOF PA"	-193.7	"-347.9 to -39.41"	Yes	**	0.0059	M	"TOF PA"	
+"  Normal vs. Ebstein's no Circular Shunt"	-15.05	"-91.96 to 61.86"	No	ns	0.9963	N	"Ebstein's no Circular Shunt"	
+"  Normal vs. Ebstein's Circular Shunt"	-183.4	"-582.7 to 216.0"	No	ns	0.2756	O	"Ebstein's Circular Shunt"	
+"  Normal vs. TA VA Concordance"	-146.8	"-354.5 to 61.03"	No	ns	0.0813	P	"TA VA Concordance"	
+								
+"Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
+"  Normal vs. HLHS MS AS"	201.5	66.00	135.5	16.68	40	6	8.119	7.010
+"  Normal vs. HLHS DORV"	201.5	102.2	99.25	20.41	40	5	4.863	4.988
+"  Normal vs. TGA IVS"	201.5	308.0	-106.6	16.02	40	34	6.655	46.33
+"  Normal vs. TGA VSD"	201.5	236.7	-35.24	22.51	40	13	1.566	14.34
+"  Normal vs. TGA VSD PS"	201.5	254.4	-52.95	35.55	40	5	1.490	4.292
+"  Normal vs. TGA VSD COA"	201.5	166.7	34.74	19.43	40	7	1.788	7.658
+"  Normal vs. TOF PS"	201.5	372.9	-171.5	18.70	40	17	9.169	20.73
+"  Normal vs. TOF PA"	201.5	395.1	-193.7	37.82	40	9	5.121	8.512
+"  Normal vs. Ebstein's no Circular Shunt"	201.5	216.5	-15.05	19.91	40	10	0.7560	11.33
+"  Normal vs. Ebstein's Circular Shunt"	201.5	384.8	-183.4	66.75	40	5	2.747	4.080
+"  Normal vs. TA VA Concordance"	201.5	348.2	-146.8	34.73	40	5	4.225	4.306

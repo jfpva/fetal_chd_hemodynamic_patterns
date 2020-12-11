@@ -7,12 +7,12 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)         58      61      61      39      61      30      61       0       0       0       0       0 
-    measured median (ml/min/kg)    197     271     143     112     258      70     135     NaN     NaN     NaN     NaN     NaN 
+    measured, N (ml/min/kg)         58      61      61      38      61      29      61       0       0       0       0       0 
+    measured median (ml/min/kg)    197     271     143     114     258      70     136     NaN     NaN     NaN     NaN     NaN 
     derived, N (ml/min/kg)          59      61      61      55      61      50      61      36      61      59      59      59 
-    derived median (ml/min/kg)     195     271     143     112     258      73     135      97     258      15      15     486 
-    measured, N (%CVO)              58      59      59      39      59      30      59       0       0       0       0       0 
-    measured median (%CVO)          41      56      27      20      52      14      28     NaN     NaN     NaN     NaN     NaN 
+    derived median (ml/min/kg)     195     271     143     112     258      75     136      97     258      15      15     486 
+    measured, N (%CVO)              58      59      59      38      59      29      59       0       0       0       0       0 
+    measured median (%CVO)          41      56      28      21      52      14      28     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                    40      57      27      22      52      18      28      22      52       3       3     100 
 
 
@@ -25,13 +25,13 @@ Measured (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                             58      61      61      39      61      30      61 
-    mean                         213     271     149     122     254      82     138 
-    standard deviation            70      90      46      59      57      51      40 
-    median                       197     271     143     112     258      70     135 
-    median absolute deviation     45      67      28      29      38      35      29 
-    16th - 50th pct.              46     107      38      41      62      37      38 
-    84th - 50th pct.             102     100      50      80      54      66      48 
+    N                             58      61      61      38      61      29      61 
+    mean                         213     271     149     123     254      85     138 
+    standard deviation            70      90      46      59      57      50      40 
+    median                       197     271     143     114     258      70     136 
+    median absolute deviation     45      60      27      32      38      35      29 
+    16th - 50th pct.              46     107      32      43      62      36      39 
+    84th - 50th pct.             102     100      50      79      54      68      47 
 
 
 Derived (ml/min/kg)
@@ -40,12 +40,12 @@ Derived (ml/min/kg)
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
     N                             59      61      61      55      61      50      61      36      61      59      59      59 
-    mean                         212     271     149     122     254      85     138     105     254      15      15     494 
-    standard deviation            70      90      46      60      57      51      40      71      57       3       3     116 
-    median                       195     271     143     112     258      73     135      97     258      15      15     486 
-    median absolute deviation     44      67      28      39      38      32      29      41      38       2       2      79 
-    16th - 50th pct.              44     107      38      44      62      39      38      56      62       3       3     115 
-    84th - 50th pct.             102     100      50      79      54      66      48      77      54       3       3     114 
+    mean                         212     271     149     124     254      86     138     105     254      15      15     495 
+    standard deviation            70      90      46      59      57      50      40      71      57       3       3     116 
+    median                       195     271     143     112     258      75     136      97     258      15      15     486 
+    median absolute deviation     44      60      27      39      38      31      29      41      38       2       2      76 
+    16th - 50th pct.              44     107      32      43      62      40      39      56      62       3       3     115 
+    84th - 50th pct.             102     100      50      79      54      64      47      77      54       3       3     114 
 
 
 Measured (%CVO)
@@ -53,13 +53,13 @@ Measured (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                             58      59      59      39      59      30      59 
+    N                             58      59      59      38      59      29      59 
     mean                          43      54      31      24      53      16      29 
     standard deviation            11      11      11      12      11       8       8 
-    median                        41      56      27      20      52      14      28 
+    median                        41      56      28      21      52      14      28 
     median absolute deviation      6       6       6       6       5       4       5 
     16th - 50th pct.               7      10       5       6      10       6       8 
-    84th - 50th pct.              11       7      13      18      12      12       8 
+    84th - 50th pct.              11       7      13      18      12      13       8 
 
 
 Derived (%CVO)
@@ -68,12 +68,12 @@ Derived (%CVO)
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
     N                             59      59      59      54      59      50      59      35      59      59      59 
-    mean                          43      54      31      26      53      16      29      23      53       3       3 
-    standard deviation            11      11      11      14      11       8       8      18      11       0       0 
-    median                        41      56      27      24      52      15      28      20      52       3       3 
+    mean                          43      54      31      27      53      17      29      23      53       3       3 
+    standard deviation            11      11      11      14      11       7       8      18      11       0       0 
+    median                        41      56      28      25      52      15      28      20      52       3       3 
     median absolute deviation      6       6       6       9       5       5       5       9       5       0       0 
-    16th - 50th pct.               7      10       5      10      10       6       8      12      10       0       0 
-    84th - 50th pct.              10       7      13      17      12      11       8      16      12       0       0 
+    16th - 50th pct.               7      10       5      11      10       5       8      12      10       0       0 
+    84th - 50th pct.              10       7      13      16      12      11       8      16      12       0       0 
 
 
 Flows
@@ -94,8 +94,8 @@ Measured (ml/min/kg)
     {'TGA IVS'    }       7      288     477     161     151     316      96     213 
     {'TGA IVS'    }       8      315     440     140     120     290     NaN     155 
     {'TGA IVS'    }       9      178     230     110     139     183      57     118 
-    {'TGA IVS'    }      10      153     198      89     112     226      32     146 
-    {'TGA IVS'    }      11      210     261      84      83     313      10     138 
+    {'TGA IVS'    }      10      153     198      89     112     226      31     146 
+    {'TGA IVS'    }      11      210     261      84     NaN     313     NaN     138 
     {'TGA IVS'    }      12      191     239     156     NaN     241     NaN     135 
     {'TGA IVS'    }      13      182     271     134      69     306      46      96 
     {'TGA IVS'    }      14      253     319     118      80     299     160     186 
@@ -115,13 +115,13 @@ Measured (ml/min/kg)
     {'TGA IVS'    }      28      212     395     240      90     246     112     202 
     {'TGA IVS'    }      29      NaN     408     171     NaN     293     NaN     135 
     {'TGA IVS'    }      30      146     159     116      95     135     NaN     101 
-    {'TGA IVS'    }      31      103     140      68     NaN     140     NaN     134 
+    {'TGA IVS'    }      31      105     142      69     NaN     142     NaN     136 
     {'TGA IVS'    }      32      297     279     143     139     230     NaN     226 
     {'TGA IVS'    }      33      312     290     175     NaN     290     NaN     116 
     {'TGA IVS'    }      34      306     325     178     107     251     NaN     194 
     {'TGA VSD'    }       1      156     203     173     NaN     202     NaN      75 
     {'TGA VSD'    }       2      272     213     145     215     249      70     174 
-    {'TGA VSD'    }       3      214     235     103     NaN     129     NaN     114 
+    {'TGA VSD'    }       3      214     235     133     NaN     129     NaN     114 
     {'TGA VSD'    }       4      195     292     280      77     277     NaN     110 
     {'TGA VSD'    }       5      189     175     194     NaN     195      55     102 
     {'TGA VSD'    }       6      344     185     128     190     226     NaN     141 
@@ -133,12 +133,12 @@ Measured (ml/min/kg)
     {'TGA VSD'    }      12      110     263     141     NaN     224     NaN     192 
     {'TGA VSD'    }      13      151     163      82     NaN     182     NaN      78 
     {'TGA VSD PS' }       1      290     161     120     210     257     140     159 
-    {'TGA VSD PS' }       2      130     290     189      91     173      56     100 
-    {'TGA VSD PS' }       3      NaN     354     112     NaN     138     NaN      95 
+    {'TGA VSD PS' }       2      130     298     189      91     173      56     100 
+    {'TGA VSD PS' }       3      NaN     326     112     NaN     138     NaN      95 
     {'TGA VSD PS' }       4      NaN     191     122     112     154      35      66 
     {'TGA VSD PS' }       5      151     276     177     NaN     209     NaN      86 
     {'TGA VSD COA'}       1      324     115     116     249     304     125     125 
-    {'TGA VSD COA'}       2      225     161     171     NaN     283      60     165 
+    {'TGA VSD COA'}       2      241     161     171     NaN     283      60     165 
     {'TGA VSD COA'}       3      352     167     194     NaN     342      21     144 
     {'TGA VSD COA'}       4      413     111     150     NaN     258     NaN      96 
     {'TGA VSD COA'}       5      305     153      98     191     287      70     157 
@@ -162,8 +162,8 @@ Derived (ml/min/kg)
     {'TGA IVS'    }       7      288     477     161     151     316      96     213       0     316      24      24     789 
     {'TGA IVS'    }       8      315     440     140     120     290     195     155     -10     290      23      23     778 
     {'TGA IVS'    }       9      178     230     110     139     183      57     118      63     183      13      13     421 
-    {'TGA IVS'    }      10      153     198      89     112     226      32     146     117     226      11      11     362 
-    {'TGA IVS'    }      11      210     261      84      83     313      10     138     136     313      15      15     486 
+    {'TGA IVS'    }      10      153     198      89     112     226      31     146     117     226      11      11     362 
+    {'TGA IVS'    }      11      210     261      84     136     313      74     138     136     313      15      15     486 
     {'TGA IVS'    }      12      191     239     156     158     241      33     135     158     241      13      13     443 
     {'TGA IVS'    }      13      182     271     134      69     306      46      96     169     306      14      14     467 
     {'TGA IVS'    }      14      253     319     118      80     299     160     186      98     299      18      18     590 
@@ -183,13 +183,13 @@ Derived (ml/min/kg)
     {'TGA IVS'    }      28      212     395     240      90     246     112     202      91     246      19      19     626 
     {'TGA IVS'    }      29      NaN     408     171      56     293     NaN     135      56     293     NaN     NaN     NaN 
     {'TGA IVS'    }      30      146     159     116      95     135      51     101      92     135       9       9     314 
-    {'TGA IVS'    }      31      103     140      68      68     140      35     134      68     140       8       8     251 
+    {'TGA IVS'    }      31      105     142      69      69     142      36     136      69     142       8       8     255 
     {'TGA IVS'    }      32      297     279     143     139     230     158     226      94     230      18      18     594 
     {'TGA IVS'    }      33      312     290     175     175     290     137     116     175     290      19      19     621 
     {'TGA IVS'    }      34      306     325     178     107     251     199     194     104     251      20      20     651 
     {'TGA VSD'    }       1      156     203     173     172     202     NaN      75     NaN     202      11      11     370 
     {'TGA VSD'    }       2      272     213     145     215     249      70     174     NaN     249      15      15     500 
-    {'TGA VSD'    }       3      214     235     103      -3     129     NaN     114     NaN     129      14      14     463 
+    {'TGA VSD'    }       3      214     235     133      27     129     NaN     114     NaN     129      14      14     463 
     {'TGA VSD'    }       4      195     292     280      77     277     118     110     NaN     277      15      15     502 
     {'TGA VSD'    }       5      189     175     194     214     195      55     102     NaN     195      11      11     375 
     {'TGA VSD'    }       6      344     185     128     190     226     NaN     141     NaN     226      16      16     545 
@@ -201,12 +201,12 @@ Derived (ml/min/kg)
     {'TGA VSD'    }      12      110     263     141     102     224     NaN     192     NaN     224      12      12     385 
     {'TGA VSD'    }      13      151     163      82     101     182      50      78     NaN     182      10      10     324 
     {'TGA VSD PS' }       1      290     161     120     210     257     140     159     NaN     257      14      14     465 
-    {'TGA VSD PS' }       2      130     290     189      91     173      56     100     NaN     173      13      13     433 
-    {'TGA VSD PS' }       3      NaN     354     112     NaN     138     NaN      95     NaN     138     NaN     NaN     NaN 
+    {'TGA VSD PS' }       2      130     298     189      91     173      56     100     NaN     173      13      13     441 
+    {'TGA VSD PS' }       3      NaN     326     112     NaN     138     NaN      95     NaN     138     NaN     NaN     NaN 
     {'TGA VSD PS' }       4      147     191     122     112     154      35      66     NaN     154      10      10     348 
     {'TGA VSD PS' }       5      151     276     177     110     209      41      86     NaN     209      13      13     440 
     {'TGA VSD COA'}       1      324     115     116     249     304     125     125     NaN     304      14      14     453 
-    {'TGA VSD COA'}       2      225     161     171     NaN     283      60     165     NaN     283      12      12     398 
+    {'TGA VSD COA'}       2      241     161     171     NaN     283      60     165     NaN     283      12      12     414 
     {'TGA VSD COA'}       3      352     167     194     NaN     342      21     144     NaN     342      16      16     535 
     {'TGA VSD COA'}       4      413     111     150     NaN     258     NaN      96     NaN     258      16      16     540 
     {'TGA VSD COA'}       5      305     153      98     191     287      70     157     NaN     287      14      14     472 
@@ -231,7 +231,7 @@ Measured (%CVO)
     {'TGA IVS'    }       8       40      57      18      15      37     NaN      20 
     {'TGA IVS'    }       9       42      55      26      33      44      14      28 
     {'TGA IVS'    }      10       42      55      25      31      62       9      40 
-    {'TGA IVS'    }      11       43      54      17      17      64       2      28 
+    {'TGA IVS'    }      11       43      54      17     NaN      64     NaN      28 
     {'TGA IVS'    }      12       43      54      35     NaN      54     NaN      30 
     {'TGA IVS'    }      13       39      58      29      15      66      10      21 
     {'TGA IVS'    }      14       43      54      20      14      51      27      32 
@@ -257,7 +257,7 @@ Measured (%CVO)
     {'TGA IVS'    }      34       47      50      27      16      39     NaN      30 
     {'TGA VSD'    }       1       42      55      47     NaN      55     NaN      20 
     {'TGA VSD'    }       2       54      43      29      43      50      14      35 
-    {'TGA VSD'    }       3       46      51      22     NaN      28     NaN      25 
+    {'TGA VSD'    }       3       46      51      29     NaN      28     NaN      25 
     {'TGA VSD'    }       4       39      58      56      15      55     NaN      22 
     {'TGA VSD'    }       5       50      47      52     NaN      52      15      27 
     {'TGA VSD'    }       6       63      34      23      35      41     NaN      26 
@@ -269,12 +269,12 @@ Measured (%CVO)
     {'TGA VSD'    }      12       29      68      37     NaN      58     NaN      50 
     {'TGA VSD'    }      13       47      50      25     NaN      56     NaN      24 
     {'TGA VSD PS' }       1       62      35      26      45      55      30      34 
-    {'TGA VSD PS' }       2       30      67      44      21      40      13      23 
+    {'TGA VSD PS' }       2       29      68      43      21      39      13      23 
     {'TGA VSD PS' }       3      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     {'TGA VSD PS' }       4      NaN      55      35      32      44      10      19 
     {'TGA VSD PS' }       5       34      63      40     NaN      47     NaN      20 
     {'TGA VSD COA'}       1       72      25      26      55      67      28      28 
-    {'TGA VSD COA'}       2       57      40      43     NaN      71      15      41 
+    {'TGA VSD COA'}       2       58      39      41     NaN      68      14      40 
     {'TGA VSD COA'}       3       66      31      36     NaN      64       4      27 
     {'TGA VSD COA'}       4       76      21      28     NaN      48     NaN      18 
     {'TGA VSD COA'}       5       65      32      21      40      61      15      33 
@@ -299,7 +299,7 @@ Derived (%CVO)
     {'TGA IVS'    }       8       40      57      18      15      37      25      20      -1      37       3       3 
     {'TGA IVS'    }       9       42      55      26      33      44      14      28      15      44       3       3 
     {'TGA IVS'    }      10       42      55      25      31      62       9      40      32      62       3       3 
-    {'TGA IVS'    }      11       43      54      17      17      64       2      28      28      64       3       3 
+    {'TGA IVS'    }      11       43      54      17      28      64      15      28      28      64       3       3 
     {'TGA IVS'    }      12       43      54      35      36      54       7      30      36      54       3       3 
     {'TGA IVS'    }      13       39      58      29      15      66      10      21      36      66       3       3 
     {'TGA IVS'    }      14       43      54      20      14      51      27      32      17      51       3       3 
@@ -325,7 +325,7 @@ Derived (%CVO)
     {'TGA IVS'    }      34       47      50      27      16      39      31      30      16      39       3       3 
     {'TGA VSD'    }       1       42      55      47      46      55     NaN      20     NaN      55       3       3 
     {'TGA VSD'    }       2       54      43      29      43      50      14      35     NaN      50       3       3 
-    {'TGA VSD'    }       3       46      51      22      -1      28     NaN      25     NaN      28       3       3 
+    {'TGA VSD'    }       3       46      51      29       6      28     NaN      25     NaN      28       3       3 
     {'TGA VSD'    }       4       39      58      56      15      55      24      22     NaN      55       3       3 
     {'TGA VSD'    }       5       50      47      52      57      52      15      27     NaN      52       3       3 
     {'TGA VSD'    }       6       63      34      23      35      41     NaN      26     NaN      41       3       3 
@@ -337,12 +337,12 @@ Derived (%CVO)
     {'TGA VSD'    }      12       29      68      37      27      58     NaN      50     NaN      58       3       3 
     {'TGA VSD'    }      13       47      50      25      31      56      15      24     NaN      56       3       3 
     {'TGA VSD PS' }       1       62      35      26      45      55      30      34     NaN      55       3       3 
-    {'TGA VSD PS' }       2       30      67      44      21      40      13      23     NaN      40       3       3 
+    {'TGA VSD PS' }       2       29      68      43      21      39      13      23     NaN      39       3       3 
     {'TGA VSD PS' }       3      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     {'TGA VSD PS' }       4       42      55      35      32      44      10      19     NaN      44       3       3 
     {'TGA VSD PS' }       5       34      63      40      25      47       9      20     NaN      47       3       3 
     {'TGA VSD COA'}       1       72      25      26      55      67      28      28     NaN      67       3       3 
-    {'TGA VSD COA'}       2       57      40      43     NaN      71      15      41     NaN      71       3       3 
+    {'TGA VSD COA'}       2       58      39      41     NaN      68      14      40     NaN      68       3       3 
     {'TGA VSD COA'}       3       66      31      36     NaN      64       4      27     NaN      64       3       3 
     {'TGA VSD COA'}       4       76      21      28     NaN      48     NaN      18     NaN      48       3       3 
     {'TGA VSD COA'}       5       65      32      21      40      61      15      33     NaN      61       3       3 

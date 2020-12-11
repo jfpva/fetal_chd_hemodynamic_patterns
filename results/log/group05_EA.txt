@@ -7,12 +7,12 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)          0      15      15        3     16       3      15       0       0       0       0       0 
-    measured median (ml/min/kg)    NaN     248      80     -206    132      27      87     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          11      15      15       11     16       4      15       9      16      15      15      15 
-    derived median (ml/min/kg)       0     248      80     -106    132      27      87     227     132       8       8     256 
-    measured, N (%CVO)               0      15      14        3     15       3      14       0       0       0       0       0 
-    measured median (%CVO)         NaN      97      26      -43     50       9      34     NaN     NaN     NaN     NaN     NaN 
+    measured, N (ml/min/kg)          0      15      15        3     16       2      15       0       0       0       0       0 
+    measured median (ml/min/kg)    NaN     248      80     -206    132     NaN      87     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          11      15      15       10     16       5      15       9      16      15      15      15 
+    derived median (ml/min/kg)       0     248      80     -118    132      27      87     227     132       8       8     256 
+    measured, N (%CVO)               0      15      14        3     15       2      14       0       0       0       0       0 
+    measured median (%CVO)         NaN      97      26      -43     50     NaN      34     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN      NaN    NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
@@ -25,13 +25,13 @@ Measured (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                              0      15      15        3     16       3      15 
-    mean                         NaN     273      84     -146    135      33      84 
-    standard deviation           NaN     124      38      107     38      16      20 
-    median                       NaN     248      80     -206    132      27      87 
-    median absolute deviation    NaN      54      26        3     25       5      13 
-    16th - 50th pct.             NaN      98      36        3     34       5      23 
-    84th - 50th pct.             NaN     120      39      184     41      24      15 
+    N                              0      15      15        3     16       2      15 
+    mean                         NaN     272      84     -146    135     NaN      84 
+    standard deviation           NaN     124      38      107     38     NaN      20 
+    median                       NaN     248      80     -206    132     NaN      87 
+    median absolute deviation    NaN      54      26        3     25     NaN      10 
+    16th - 50th pct.             NaN      98      36        3     34     NaN      23 
+    84th - 50th pct.             NaN     120      39      184     41     NaN      15 
 
 
 Derived (ml/min/kg)
@@ -39,13 +39,13 @@ Derived (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                             11      15      15       11     16       4      15       9      16      15      15      15 
-    mean                           0     273      84     -121    135      32      84     226     135       8       8     281 
-    standard deviation             0     124      38      113     38      13      20      40      38       4       4     128 
-    median                         0     248      80     -106    132      27      87     227     132       8       8     256 
-    median absolute deviation      0      54      26       84     25       3      13      13      25       2       2      56 
-    16th - 50th pct.               0      98      36      102     34       4      23      31      34       3       3     101 
-    84th - 50th pct.               0     120      39       87     41      21      15      40      41       4       4     124 
+    N                             11      15      15       10     16       5      15       9      16      15      15      15 
+    mean                           0     272      84     -133    135      72      84     226     135       8       8     281 
+    standard deviation             0     124      38      111     38      78      20      40      38       4       4     128 
+    median                         0     248      80     -118    132      27      87     227     132       8       8     256 
+    median absolute deviation      0      54      26       90     25       5      10      14      25       2       2      56 
+    16th - 50th pct.               0      98      36       91     34       4      23      31      34       3       3     101 
+    84th - 50th pct.               0     120      39       95     41     141      15      40      41       4       4     124 
 
 
 Measured (%CVO)
@@ -53,13 +53,13 @@ Measured (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                              0      15      14       3      15       3      14 
-    mean                         NaN      97      31     -43      52      12      36 
-    standard deviation           NaN       0      16      33      19       6      13 
-    median                       NaN      97      26     -43      50       9      34 
-    median absolute deviation    NaN       0       9      32      15       0       9 
-    16th - 50th pct.             NaN       0       9      32      19       0       9 
-    84th - 50th pct.             NaN       0      22      34      23      10      17 
+    N                              0      15      14       3      15       2      14 
+    mean                         NaN      97      31     -43      52     NaN      36 
+    standard deviation           NaN       0      16      33      19     NaN      13 
+    median                       NaN      97      26     -43      50     NaN      34 
+    median absolute deviation    NaN       0       9      32      15     NaN       9 
+    16th - 50th pct.             NaN       0       9      32      19     NaN       9 
+    84th - 50th pct.             NaN       0      22      34      24     NaN      20 
 
 
 Derived (%CVO)
@@ -67,13 +67,13 @@ Derived (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                             10      15      14      11      15       4      14       9      15      15      15 
-    mean                           0      97      31     -33      52      12      36     101      52       3       3 
-    standard deviation             0       0      16      25      19       5      13      20      19       0       0 
-    median                         0      97      26     -42      50      10      34      95      50       3       3 
-    median absolute deviation      0       0       9      20      15       1       9      12      15       0       0 
-    16th - 50th pct.               0       0       9      17      19       1       9      12      19       0       0 
-    84th - 50th pct.               0       0      22      35      23       8      17      32      23       0       0 
+    N                             10      15      14      10      15       5      14       9      15      15      15 
+    mean                           0      97      31     -37      52      26      36     101      52       3       3 
+    standard deviation             0       0      16      23      19      29      13      20      19       0       0 
+    median                         0      97      26     -43      50      11      34      95      50       3       3 
+    median absolute deviation      0       0       9      18      15       2       9      12      15       0       0 
+    16th - 50th pct.               0       0       9      18      19       2       9      13      19       0       0 
+    84th - 50th pct.               0       0      22      33      24      50      20      32      24       0       0 
 
 
 Flows
@@ -87,14 +87,14 @@ Measured (ml/min/kg)
 
     {'Ebstein's no Circular Shunt'}       1      NaN     237     118      -22    106      22      92 
     {'Ebstein's no Circular Shunt'}       2      NaN     216     106      NaN    153     NaN     102 
-    {'Ebstein's no Circular Shunt'}       3      NaN     283      74      NaN    132     NaN      73 
+    {'Ebstein's no Circular Shunt'}       3      NaN     283      73      NaN    132     NaN      73 
     {'Ebstein's no Circular Shunt'}       4      NaN     146     NaN      NaN    116     NaN      87 
     {'Ebstein's no Circular Shunt'}       5      NaN     248      92      NaN    129     NaN      83 
     {'Ebstein's no Circular Shunt'}       6      NaN     174     125      NaN     97     NaN      65 
-    {'Ebstein's no Circular Shunt'}       7      NaN     264      71     -206    146      51     106 
+    {'Ebstein's no Circular Shunt'}       7      NaN     264      71     -206    146     NaN     106 
     {'Ebstein's no Circular Shunt'}       8      NaN     NaN     173      NaN    201     NaN      43 
     {'Ebstein's no Circular Shunt'}       9      NaN     302      84      NaN    200      27     NaN 
-    {'Ebstein's no Circular Shunt'}      10      NaN     144      35      NaN    109     NaN      74 
+    {'Ebstein's no Circular Shunt'}      10      NaN     142      35      NaN    109     NaN      78 
     {'Ebstein's no Circular Shunt'}      11      NaN     151      56      NaN    139     NaN      88 
     {'Ebstein's Circular Shunt'   }       1      NaN     209      35      NaN     68     NaN      56 
     {'Ebstein's Circular Shunt'   }       2      NaN     590      45      NaN    169     NaN      90 
@@ -110,14 +110,14 @@ Derived (ml/min/kg)
 
     {'Ebstein's no Circular Shunt'}       1        0     237     118      -22    106      22      92     231     106       7       7     244 
     {'Ebstein's no Circular Shunt'}       2        0     216     106      NaN    153     NaN     102     266     153       7       7     223 
-    {'Ebstein's no Circular Shunt'}       3        0     283      74      -77    132     NaN      73     215     132       9       9     292 
+    {'Ebstein's no Circular Shunt'}       3        0     283      73      -78    132      78      73     214     132       9       9     292 
     {'Ebstein's no Circular Shunt'}       4        0     146     NaN      NaN    116     NaN      87     NaN     116       5       5     151 
     {'Ebstein's no Circular Shunt'}       5        0     248      92      -27    129      27      83     229     129       8       8     256 
     {'Ebstein's no Circular Shunt'}       6        0     174     125      NaN     97     NaN      65     227      97       5       5     179 
-    {'Ebstein's no Circular Shunt'}       7        0     264      71     -206    146      51     106     225     146       8       8     272 
+    {'Ebstein's no Circular Shunt'}       7        0     264      71     -206    146     206     106     225     146       8       8     272 
     {'Ebstein's no Circular Shunt'}       8        0     NaN     173      NaN    201     NaN      43     NaN     201     NaN     NaN     NaN 
     {'Ebstein's no Circular Shunt'}       9        0     302      84      -18    200      27     NaN     293     200       9       9     311 
-    {'Ebstein's no Circular Shunt'}      10        0     144      35        0    109     NaN      74     148     109       4       4     148 
+    {'Ebstein's no Circular Shunt'}      10        0     142      35      NaN    109     NaN      78     148     109       4       4     146 
     {'Ebstein's no Circular Shunt'}      11        0     151      56      NaN    139     NaN      88     200     139       5       5     156 
     {'Ebstein's Circular Shunt'   }       1      NaN     209      35     -106     68     NaN      56     NaN      68       6       6     215 
     {'Ebstein's Circular Shunt'   }       2      NaN     590      45     -376    169     NaN      90     NaN     169      18      18     608 
@@ -137,10 +137,10 @@ Measured (%CVO)
     {'Ebstein's no Circular Shunt'}       4      NaN      97     NaN     NaN      77     NaN      58 
     {'Ebstein's no Circular Shunt'}       5      NaN      97      36     NaN      50     NaN      32 
     {'Ebstein's no Circular Shunt'}       6      NaN      97      70     NaN      54     NaN      36 
-    {'Ebstein's no Circular Shunt'}       7      NaN      97      26     -76      54      19      39 
+    {'Ebstein's no Circular Shunt'}       7      NaN      97      26     -76      54     NaN      39 
     {'Ebstein's no Circular Shunt'}       8      NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     {'Ebstein's no Circular Shunt'}       9      NaN      97      27     NaN      64       9     NaN 
-    {'Ebstein's no Circular Shunt'}      10      NaN      97      24     NaN      73     NaN      50 
+    {'Ebstein's no Circular Shunt'}      10      NaN      97      24     NaN      74     NaN      53 
     {'Ebstein's no Circular Shunt'}      11      NaN      97      36     NaN      89     NaN      57 
     {'Ebstein's Circular Shunt'   }       1      NaN      97      16     NaN      32     NaN      26 
     {'Ebstein's Circular Shunt'   }       2      NaN      97       7     NaN      28     NaN      15 
@@ -156,14 +156,14 @@ Derived (%CVO)
 
     {'Ebstein's no Circular Shunt'}       1        0      97      48      -9      43       9      38      95      43       3       3 
     {'Ebstein's no Circular Shunt'}       2        0      97      48     NaN      69     NaN      46     119      69       3       3 
-    {'Ebstein's no Circular Shunt'}       3        0      97      25     -26      45     NaN      25      74      45       3       3 
+    {'Ebstein's no Circular Shunt'}       3        0      97      25     -27      45      27      25      73      45       3       3 
     {'Ebstein's no Circular Shunt'}       4        0      97     NaN     NaN      77     NaN      58     NaN      77       3       3 
     {'Ebstein's no Circular Shunt'}       5        0      97      36     -11      50      11      32      89      50       3       3 
     {'Ebstein's no Circular Shunt'}       6        0      97      70     NaN      54     NaN      36     127      54       3       3 
-    {'Ebstein's no Circular Shunt'}       7        0      97      26     -76      54      19      39      83      54       3       3 
+    {'Ebstein's no Circular Shunt'}       7        0      97      26     -76      54      76      39      83      54       3       3 
     {'Ebstein's no Circular Shunt'}       8      NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     {'Ebstein's no Circular Shunt'}       9        0      97      27      -6      64       9     NaN      94      64       3       3 
-    {'Ebstein's no Circular Shunt'}      10        0      97      24       0      73     NaN      50     100      73       3       3 
+    {'Ebstein's no Circular Shunt'}      10        0      97      24     NaN      74     NaN      53     101      74       3       3 
     {'Ebstein's no Circular Shunt'}      11        0      97      36     NaN      89     NaN      57     128      89       3       3 
     {'Ebstein's Circular Shunt'   }       1      NaN      97      16     -49      32     NaN      26     NaN      32       3       3 
     {'Ebstein's Circular Shunt'   }       2      NaN      97       7     -62      28     NaN      15     NaN      28       3       3 

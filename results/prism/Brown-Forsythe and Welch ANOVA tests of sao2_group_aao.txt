@@ -3,15 +3,15 @@
 Alpha	0.05							
 								
 "Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	?-A		
-"  HLHS vs. Normal"	-0.1674	"-0.2820 to -0.05276"	Yes	**	0.0015	B	HLHS	
-"  TGA vs. Normal"	-0.08318	"-0.1715 to 0.005125"	Yes	*	0.0374	C	TGA	
-"  TOF vs. Normal"	-0.1228	"-0.1973 to -0.04836"	Yes	***	0.0002	D	TOF	
-"  EA vs. Normal"	-0.1250	"-0.2198 to -0.03015"	Yes	**	0.0047	E	EA	
-"  TA vs. Normal"	-0.1239	"-0.5322 to 0.2844"	No	ns	0.4097	F	TA	
+"  HLHS vs. Normal"	-0.1505	"-0.3181 to 0.01709"	Yes	*	0.0429	B	HLHS	
+"  TGA vs. Normal"	-0.1159	"-0.1874 to -0.04435"	Yes	***	0.0002	C	TGA	
+"  TOF vs. Normal"	-0.1188	"-0.1933 to -0.04435"	Yes	***	0.0003	D	TOF	
+"  EA vs. Normal"	-0.1459	"-0.2600 to -0.03178"	Yes	**	0.0057	E	EA	
+"  TA vs. Normal"	-0.1155	"-0.5209 to 0.2900"	No	ns	0.4523	F	TA	
 								
 "Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
-"  HLHS vs. Normal"	0.4190	0.5864	-0.1674	0.03433	11	40	4.875	12.60
-"  TGA vs. Normal"	0.5032	0.5864	-0.08318	0.02816	15	40	2.954	19.79
-"  TOF vs. Normal"	0.4635	0.5864	-0.1228	0.02389	14	40	5.143	21.25
-"  EA vs. Normal"	0.4614	0.5864	-0.1250	0.02617	7	40	4.774	9.084
-"  TA vs. Normal"	0.4625	0.5864	-0.1239	0.06314	4	40	1.962	3.206
+"  HLHS vs. Normal"	0.4359	0.5864	-0.1505	0.04473	8	40	3.365	8.005
+"  TGA vs. Normal"	0.4705	0.5864	-0.1159	0.02357	18	40	4.917	27.92
+"  TOF vs. Normal"	0.4676	0.5864	-0.1188	0.02388	14	40	4.975	21.25
+"  EA vs. Normal"	0.4405	0.5864	-0.1459	0.03150	8	40	4.631	9.246
+"  TA vs. Normal"	0.4709	0.5864	-0.1155	0.06270	4	40	1.842	3.210

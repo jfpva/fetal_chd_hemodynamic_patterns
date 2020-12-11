@@ -47,14 +47,14 @@ HLHS,HLHS MS AS,1,normal,329,51,107,266,202,51,108
 HLHS,HLHS MS AS,2,normal,433,NaN,80,308,229,95,111
 HLHS,HLHS MS AS,3,normal,442,NaN,127,272,256,73,158
 HLHS,HLHS MS AS,4,normal,352,47,168,316,272,85,111
-HLHS,HLHS MS AS,5,normal,380,NaN,133,253,198,60,144
+HLHS,HLHS MS AS,5,normal,380,NaN,133,253,198,60,114
 HLHS,HLHS MS AS,6,normal,348,60,113,NaN,167,NaN,112
 HLHS,HLHS MS AS,7,normal,320,19,140,NaN,239,NaN,136
 HLHS,HLHS MS AS,8,normal,366,124,268,332,263,22,108
 HLHS,HLHS MS AS,9,normal,509,NaN,140,NaN,243,70,104
 HLHS,HLHS MS AS,10,normal,444,95,175,361,285,84,152
 HLHS,HLHS MS AA,1,hlhs_aortic_atresia,412,NaN,129,356,227,44,131
-HLHS,HLHS MS AA,2,hlhs_aortic_atresia,429,NaN,110,320,177,125,148
+HLHS,HLHS MS AA,2,hlhs_aortic_atresia,429,NaN,110,320,177,125,107
 HLHS,HLHS MS AA,3,hlhs_aortic_atresia,438,NaN,159,366,266,80,165
 HLHS,HLHS MS AA,4,hlhs_aortic_atresia,366,NaN,111,415,187,102,98
 HLHS,HLHS MS AA,5,hlhs_aortic_atresia,299,NaN,136,279,156,22,71
@@ -66,7 +66,7 @@ HLHS,HLHS MA AA,1,hlhs_aortic_atresia,480,NaN,197,428,244,82,103
 HLHS,HLHS MA AA,2,hlhs_aortic_atresia,422,NaN,120,336,276,NaN,116
 HLHS,HLHS MA AA,3,hlhs_aortic_atresia,350,NaN,84,323,257,32,151
 HLHS,HLHS MA AA,4,hlhs_aortic_atresia,414,NaN,70,300,238,NaN,134
-HLHS,HLHS MA AA,5,hlhs_aortic_atresia,433,NaN,231,403,165,NaN,144
+HLHS,HLHS MA AA,5,hlhs_aortic_atresia,433,NaN,231,403,165,23,144
 HLHS,HLHS MA AA,6,hlhs_aortic_atresia,358,NaN,182,311,337,NaN,119
 HLHS,HLHS MA AA,7,hlhs_aortic_atresia,596,NaN,113,456,243,NaN,132
 HLHS,HLHS MA AA,8,hlhs_aortic_atresia,514,NaN,148,410,216,NaN,116
@@ -79,7 +79,7 @@ HLHS,HLHS MA AA,14,hlhs_aortic_atresia,419,NaN,168,292,165,NaN,86
 HLHS,HLHS DORV,1,double_outlet_right_ventricle,351,42,149,NaN,209,47,123
 HLHS,HLHS DORV,2,double_outlet_right_ventricle,360,87,124,NaN,174,NaN,97
 HLHS,HLHS DORV,3,double_outlet_right_ventricle,200,112,145,185,161,48,104
-HLHS,HLHS DORV,4,double_outlet_right_ventricle,288,109,200,268,188,72,64
+HLHS,HLHS DORV,4,double_outlet_right_ventricle,288,109,200,268,188,56,64
 HLHS,HLHS DORV,5,double_outlet_right_ventricle,244,161,131,NaN,184,NaN,154
 TGA,TGA IVS,1,transposition,249,331,261,222,328,NaN,162
 TGA,TGA IVS,2,transposition,150,374,133,10,281,152,180
@@ -90,8 +90,8 @@ TGA,TGA IVS,6,transposition,178,298,125,100,350,34,106
 TGA,TGA IVS,7,transposition,288,477,161,151,316,96,213
 TGA,TGA IVS,8,transposition,315,440,140,120,290,NaN,155
 TGA,TGA IVS,9,transposition,178,230,110,139,183,57,118
-TGA,TGA IVS,10,transposition,153,198,89,112,226,32,146
-TGA,TGA IVS,11,transposition,210,261,84,83,313,10,138
+TGA,TGA IVS,10,transposition,153,198,89,112,226,31,146
+TGA,TGA IVS,11,transposition,210,261,84,NaN,313,NaN,138
 TGA,TGA IVS,12,transposition,191,239,156,NaN,241,NaN,135
 TGA,TGA IVS,13,transposition,182,271,134,69,306,46,96
 TGA,TGA IVS,14,transposition,253,319,118,80,299,160,186
@@ -111,13 +111,13 @@ TGA,TGA IVS,27,transposition,255,415,144,138,286,240,200
 TGA,TGA IVS,28,transposition,212,395,240,90,246,112,202
 TGA,TGA IVS,29,transposition,NaN,408,171,NaN,293,NaN,135
 TGA,TGA IVS,30,transposition,146,159,116,95,135,NaN,101
-TGA,TGA IVS,31,transposition,103,140,68,NaN,140,NaN,134
+TGA,TGA IVS,31,transposition,105,142,69,NaN,142,NaN,136
 TGA,TGA IVS,32,transposition,297,279,143,139,230,NaN,226
 TGA,TGA IVS,33,transposition,312,290,175,NaN,290,NaN,116
 TGA,TGA IVS,34,transposition,306,325,178,107,251,NaN,194
 TGA,TGA VSD,1,transposition,156,203,173,NaN,202,NaN,75
 TGA,TGA VSD,2,transposition,272,213,145,215,249,70,174
-TGA,TGA VSD,3,transposition,214,235,103,NaN,129,NaN,114
+TGA,TGA VSD,3,transposition,214,235,133,NaN,129,NaN,114
 TGA,TGA VSD,4,transposition,195,292,280,77,277,NaN,110
 TGA,TGA VSD,5,transposition,189,175,194,NaN,195,55,102
 TGA,TGA VSD,6,transposition,344,185,128,190,226,NaN,141
@@ -129,12 +129,12 @@ TGA,TGA VSD,11,transposition,166,155,82,85,240,27,121
 TGA,TGA VSD,12,transposition,110,263,141,NaN,224,NaN,192
 TGA,TGA VSD,13,transposition,151,163,82,NaN,182,NaN,78
 TGA,TGA VSD PS,1,transposition,290,161,120,210,257,140,159
-TGA,TGA VSD PS,2,transposition,130,290,189,91,173,56,100
-TGA,TGA VSD PS,3,transposition,NaN,354,112,NaN,138,NaN,95
+TGA,TGA VSD PS,2,transposition,130,298,189,91,173,56,100
+TGA,TGA VSD PS,3,transposition,NaN,326,112,NaN,138,NaN,95
 TGA,TGA VSD PS,4,transposition,NaN,191,122,112,154,35,66
 TGA,TGA VSD PS,5,transposition,151,276,177,NaN,209,NaN,86
 TGA,TGA VSD COA,1,transposition,324,115,116,249,304,125,125
-TGA,TGA VSD COA,2,transposition,225,161,171,NaN,283,60,165
+TGA,TGA VSD COA,2,transposition,241,161,171,NaN,283,60,165
 TGA,TGA VSD COA,3,transposition,352,167,194,NaN,342,21,144
 TGA,TGA VSD COA,4,transposition,413,111,150,NaN,258,NaN,96
 TGA,TGA VSD COA,5,transposition,305,153,98,191,287,70,157
@@ -147,22 +147,22 @@ TOF,TOF PS,2,normal,80,470,140,80,250,NaN,220
 TOF,TOF PS,3,normal,17,523,60,NaN,161,335,100
 TOF,TOF PS,4,normal,25,467,201,NaN,333,25,206
 TOF,TOF PS,5,normal,79,310,91,25,353,56,125
-TOF,TOF PS,6,normal,92,362,126,77,NaN,38,160
-TOF,TOF PS,7,normal,94,376,82,NaN,206,NaN,143
+TOF,TOF PS,6,normal,92,362,126,77,285,38,160
+TOF,TOF PS,7,normal,94,376,84,NaN,206,NaN,143
 TOF,TOF PS,8,normal,40,312,157,NaN,232,20,79
-TOF,TOF PS,9,normal,118,321,142,NaN,204,52,111
+TOF,TOF PS,9,normal,118,321,142,NaN,204,62,111
 TOF,TOF PS,10,normal,82,314,188,14,175,NaN,80
 TOF,TOF PS,11,normal,131,352,136,NaN,191,NaN,147
 TOF,TOF PS,12,normal,NaN,418,73,NaN,239,NaN,128
-TOF,TOF PS,13,normal,128,394,161,29,250,128,107
+TOF,TOF PS,13,normal,128,394,161,29,250,100,107
 TOF,TOF PS,14,normal,NaN,307,60,NaN,223,NaN,122
-TOF,TOF PS,15,normal,125,307,120,NaN,266,89,109
+TOF,TOF PS,15,normal,125,307,120,NaN,266,NaN,109
 TOF,TOF PS,16,normal,161,352,158,NaN,291,NaN,155
 TOF,TOF PS,17,normal,206,287,93,NaN,273,NaN,118
-TOF,TOF PA,1,normal,NaN,468,150,NaN,270,40,167
-TOF,TOF PA,2,normal,NaN,552,66,NaN,207,296,NaN
-TOF,TOF PA,3,normal,NaN,571,242,NaN,308,23,78
-TOF,TOF PA,4,normal,NaN,278,168,NaN,236,NaN,107
+TOF,TOF PA,1,normal,NaN,468,150,NaN,278,40,167
+TOF,TOF PA,2,normal,NaN,552,66,NaN,207,NaN,NaN
+TOF,TOF PA,3,normal,NaN,571,242,NaN,308,21,78
+TOF,TOF PA,4,normal,NaN,283,139,NaN,236,NaN,103
 TOF,TOF PA,5,normal,NaN,380,223,NaN,199,77,78
 TOF,TOF PA,6,normal,NaN,352,87,NaN,259,NaN,123
 TOF,TOF PA,7,normal,NaN,263,93,NaN,156,15,62
@@ -170,24 +170,24 @@ TOF,TOF PA,8,normal,NaN,325,146,NaN,366,NaN,96
 TOF,TOF PA,9,normal,NaN,367,101,NaN,283,NaN,96
 EA,Ebstein's no Circular Shunt,1,normal,NaN,237,118,-22,106,22,92
 EA,Ebstein's no Circular Shunt,2,normal,NaN,216,106,NaN,153,NaN,102
-EA,Ebstein's no Circular Shunt,3,normal,NaN,283,74,NaN,132,NaN,73
+EA,Ebstein's no Circular Shunt,3,normal,NaN,283,73,NaN,132,NaN,73
 EA,Ebstein's no Circular Shunt,4,normal,NaN,146,NaN,NaN,116,NaN,87
 EA,Ebstein's no Circular Shunt,5,normal,NaN,248,92,NaN,129,NaN,83
 EA,Ebstein's no Circular Shunt,6,normal,NaN,174,125,NaN,97,NaN,65
-EA,Ebstein's no Circular Shunt,7,normal,NaN,264,71,-206,146,51,106
+EA,Ebstein's no Circular Shunt,7,normal,NaN,264,71,-206,146,NaN,106
 EA,Ebstein's no Circular Shunt,8,normal,NaN,NaN,173,NaN,201,NaN,43
 EA,Ebstein's no Circular Shunt,9,normal,NaN,302,84,NaN,200,27,NaN
-EA,Ebstein's no Circular Shunt,10,normal,NaN,144,35,NaN,109,NaN,74
+EA,Ebstein's no Circular Shunt,10,normal,NaN,142,35,NaN,109,NaN,78
 EA,Ebstein's no Circular Shunt,11,normal,NaN,151,56,NaN,139,NaN,88
 EA,Ebstein's Circular Shunt,1,ebsteins_circular_shunt,NaN,209,35,NaN,68,NaN,56
 EA,Ebstein's Circular Shunt,2,ebsteins_circular_shunt,NaN,590,45,NaN,169,NaN,90
 EA,Ebstein's Circular Shunt,3,ebsteins_circular_shunt,NaN,357,63,NaN,132,NaN,97
 EA,Ebstein's Circular Shunt,4,ebsteins_circular_shunt,NaN,299,80,NaN,90,NaN,79
 EA,Ebstein's Circular Shunt,5,ebsteins_circular_shunt,NaN,469,109,-209,173,NaN,123
-TA,TA VA Concordance,1,normal,111,329,187,66,170,34,43
+TA,TA VA Concordance,1,normal,111,329,187,66,177,34,43
 TA,TA VA Concordance,2,normal,NaN,342,110,38,159,38,82
 TA,TA VA Concordance,3,normal,198,269,104,NaN,259,76,81
 TA,TA VA Concordance,4,normal,NaN,475,203,NaN,254,32,58
 TA,TA VA Concordance,5,normal,NaN,326,111,31,194,31,99
 TA,TA VA Discordance,1,transposition,231,123,120,184,175,100,70
-TA,TA VA Discordance,2,transposition,308,90,105,203,185,96,106
+TA,TA VA Discordance,2,transposition,308,90,105,203,129,96,106

@@ -137,6 +137,34 @@ Missing CVO Values
 
 
 
+Number of Measured Flows
+========================
+
+               SubGroup                NumCases    MPA    AAo    SVC    DA     DAo    PBF    UV 
+    _______________________________    ________    ___    ___    ___    ___    ___    ___    ___
+
+    {'Normal'                     }       40        40     40     40     39     40     38     40
+    {'HLHS RAS'                   }        4         4    NaN      4      4      4      4      4
+    {'HLHS MS AS'                 }       10        10      6     10      7     10      8     10
+    {'HLHS MS AA'                 }        9         9    NaN      9      6      9      6      9
+    {'HLHS MA AA'                 }       14        14    NaN     14     13     14      5     14
+    {'HLHS DORV'                  }        5         5      5      5      2      5      3      5
+    {'TGA IVS'                    }       34        33     34     34     24     34     15     34
+    {'TGA VSD'                    }       13        13     13     13      7     13      6     13
+    {'TGA VSD PS'                 }        5         3      5      5      3      5      3      5
+    {'TGA VSD COA'                }        7         7      7      7      3      7      4      7
+    {'TGA IVS COA'                }        2         2      2      2      2      2      2      2
+    {'TOF PS'                     }       17        15     17     17      6     16      9     17
+    {'TOF PA'                     }        9       NaN      9      9      0      9      5      8
+    {'Ebstein's no Circular Shunt'}       11       NaN     10     10      2     11      3     10
+    {'Ebstein's Circular Shunt'   }        5         0      5      5      1      5      0      5
+    {'TA VA Concordance'          }        5         2      5      5      3      5      5      5
+    {'TA VA Discordance'          }        2         2      2      2      2      2      2      2
+    {'Number Measured'            }      NaN       159    160    191    124    191    118    190
+    {'Total'                      }      192       172    165    192    192    192    192    192
+    {'Measured as Pct. Total'     }      NaN        92     97     99     65     99     61     99
+
+
 Group Flow Difference, balanced - measured
 ==========================================
 

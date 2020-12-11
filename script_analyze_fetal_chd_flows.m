@@ -566,6 +566,82 @@ if isLogResults
 end
 
 
+%% Display Summary of Number of Flows Measured
+
+if isLogResults
+    diary( logFilePath );
+end
+
+nanVec = nan(length(subGroupToProcess)+3,1);
+N = table({S.SubGroup,'Number Measured','Total','Measured as Pct. Total'}.',[S.NumCases,NaN,NaN,NaN].',nanVec,nanVec,nanVec,nanVec,nanVec,nanVec,nanVec,...
+    'VariableNames',{'SubGroup','NumCases','MPA','AAo','SVC','DA','DAo','PBF','UV'});
+
+subGroupExcludeMPA = {'TOF PA','Ebstein''s no Circular Shunt'};
+subGroupExcludeAAo = {'HLHS RAS','HLHS MS AA','HLHS MA AA'};
+
+for iS = subGroupToProcess
+    % The totals for MPA exclude TOF PA and EA without circ. shunt and
+    % for AAo exclude HLHS RAS, MS AA and MA AA
+    switch N.SubGroup{iS}
+        case subGroupExcludeMPA
+            N.MPA(iS) = NaN;
+        otherwise
+            N.MPA(iS) = sum(~isnan(S(iS).Tmeas.MPA));
+    end
+    switch N.SubGroup{iS}
+        case subGroupExcludeAAo
+            N.AAo(iS) = NaN;
+        otherwise
+            N.AAo(iS) = sum(~isnan(S(iS).Tmeas.AAo));
+    end
+    N.SVC(iS) = sum(~isnan(S(iS).Tmeas.SVC));
+    N.DA(iS)  = sum(~isnan(S(iS).Tmeas.DA));
+    N.DAo(iS) = sum(~isnan(S(iS).Tmeas.DAo));
+    N.PBF(iS) = sum(~isnan(S(iS).Tmeas.PBF));
+    N.UV(iS)  = sum(~isnan(S(iS).Tmeas.UV));   
+end
+% Number of Measured Flows for Each Vessel for All Cases
+iS = iS + 1;
+N.NumCases(iS) = NaN;
+N.MPA(iS) = sum(N.MPA(find(~contains(subGroups(subGroupToProcess),subGroupExcludeMPA))));
+N.AAo(iS) = sum(N.AAo(find(~contains(subGroups(subGroupToProcess),subGroupExcludeAAo))));
+N.SVC(iS) = sum(N.SVC(subGroupToProcess));
+N.DA(iS)  = sum(N.DA(subGroupToProcess));
+N.DAo(iS) = sum(N.DAo(subGroupToProcess));
+N.PBF(iS) = sum(N.PBF(subGroupToProcess));
+N.UV(iS)  = sum(N.UV(subGroupToProcess));
+% Total Possible Measured Flows for Each Vessel
+iS = iS + 1;
+N.NumCases(iS) = sum(N.NumCases(subGroupToProcess));
+N.MPA(iS) = sum(N.NumCases(find(~contains(subGroups(subGroupToProcess),subGroupExcludeMPA))));
+N.AAo(iS) = sum(N.NumCases(find(~contains(subGroups(subGroupToProcess),subGroupExcludeAAo))));
+N.SVC(iS) = sum(N.NumCases(subGroupToProcess));
+N.DA(iS)  = sum(N.NumCases(subGroupToProcess));
+N.DAo(iS) = sum(N.NumCases(subGroupToProcess));
+N.PBF(iS) = sum(N.NumCases(subGroupToProcess));
+N.UV(iS)  = sum(N.NumCases(subGroupToProcess));
+% Percent of Total Possible Measured Flows for Each Vessel
+iS = iS + 1;
+N.NumCases(iS) = round(N.NumCases(iS-2)/N.NumCases(iS-1)*100);
+N.MPA(iS) = round(N.MPA(iS-2)/N.MPA(iS-1)*100);
+N.AAo(iS) = round(N.AAo(iS-2)/N.AAo(iS-1)*100);
+N.SVC(iS) = round(N.SVC(iS-2)/N.SVC(iS-1)*100);
+N.DA(iS)  = round(N.DA(iS-2)/N.DA(iS-1)*100);
+N.DAo(iS) = round(N.DAo(iS-2)/N.DAo(iS-1)*100);
+N.PBF(iS) = round(N.PBF(iS-2)/N.PBF(iS-1)*100);
+N.UV(iS)  = round(N.UV(iS-2)/N.UV(iS-1)*100);
+    
+descStr = sprintf( 'Number of Measured Flows' );
+fprintf( '\n%s\n%s\n\n', descStr, repmat( '=', size(descStr) ) );
+
+disp(N)
+
+if isLogResults
+    diary off
+    clean_log_file( logFilePath )
+end
+
+
 %% Display Difference Between Measured and Balanced Flows
 
 if isLogResults

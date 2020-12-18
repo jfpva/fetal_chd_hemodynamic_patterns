@@ -244,13 +244,13 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)          0      10      10       2      11       2      10       0       0       0       0       0 
-    measured median (ml/min/kg)    NaN     227      88     NaN     132     NaN      85     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          11      10      10       5      11       5      10       9      11      10      10      10 
+    measured, N (ml/min/kg)          0      10      10       2      11       3      10       0       0       0       0       0 
+    measured median (ml/min/kg)    NaN     227      88     NaN     132      27      85     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          11      10      10       5      11       4      10       9      11      10      10      10 
     derived median (ml/min/kg)       0     227      88     -27     132      27      85     227     132       7       7     234 
-    measured, N (%CVO)               0      10       9       2      10       2       9       0       0       0       0       0 
-    measured median (%CVO)         NaN      97      36     NaN      59     NaN      39     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                     0      97      36      -2      59       2      39      98      59       3       3     100 
+    measured, N (%CVO)               0      10       9       2      10       3       9       0       0       0       0       0 
+    measured median (%CVO)         NaN      97      36     NaN      59       9      39     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                     0      97      34      -5      58       5      39      95      58       3       3     100 
 
 
 Sub-Group 15: Ebstein's Circular Shunt

@@ -6,12 +6,12 @@ Alpha	0.05
 "  HLHS vs. Normal"	-0.1075	"-0.2171 to 0.002068"	Yes	*	0.0284	B	HLHS	
 "  TGA vs. Normal"	-0.03255	"-0.1191 to 0.05405"	No	ns	0.7676	C	TGA	
 "  TOF vs. Normal"	-0.06139	"-0.1281 to 0.005311"	Yes	*	0.0449	D	TOF	
-"  EA vs. Normal"	-0.04853	"-0.1666 to 0.06958"	No	ns	0.5548	E	EA	
+"  EA vs. Normal"	-0.01749	"-0.1716 to 0.1366"	No	ns	0.9956	E	EA	
 "  TA vs. Normal"	-0.07126	"-0.3181 to 0.1756"	No	ns	0.5850	F	TA	
 								
 "Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
 "  HLHS vs. Normal"	0.6927	0.8002	-0.1075	0.03424	13	40	3.140	16.97
 "  TGA vs. Normal"	0.7677	0.8002	-0.03255	0.02853	18	40	1.141	27.98
 "  TOF vs. Normal"	0.7389	0.8002	-0.06139	0.02215	14	40	2.772	30.89
-"  EA vs. Normal"	0.7517	0.8002	-0.04853	0.03261	7	40	1.488	8.876
+"  EA vs. Normal"	0.7827	0.8002	-0.01749	0.04253	8	40	0.4114	8.743
 "  TA vs. Normal"	0.7290	0.8002	-0.07126	0.04786	4	40	1.489	3.573

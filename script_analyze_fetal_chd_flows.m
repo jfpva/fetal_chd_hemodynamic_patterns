@@ -921,8 +921,8 @@ end
 tableFilePath = fullfile( outputDataDirPath, 'table_manuscript_flow_median_or_range.csv' );
 
 % Create table
-varNames = {'type','n','MPA','AAo','SVC','DAo','UV','DA','PBF','FO','CVO'};
-varTypes = {'string','singlenan','string','string','string','string','string','string','string','string','string'};
+varNames = {'type','MPA','AAo','SVC','DAo','UV','DA','PBF','FO','CVO'};
+varTypes = {'string','string','string','string','string','string','string','string','string','string'};
 nRow = 1+length(G)+length(S)-1;
 nCol = length(varNames);
 T = table( 'Size', [nRow,nCol], 'VariableNames', varNames, 'VariableTypes', varTypes );
@@ -948,88 +948,78 @@ T.CVO(iR)  = 'calc';
 % Normal group
 iR = iR + 1;
 iG = iG + 1;
-T.type(iR)  = G(iG).Group;
-T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
+T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
+
+T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % HLHS group
 iR = iR + 1;
 iG = iG + 1;
-T.type(iR)  = G(iG).Group;
-T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
+T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
+T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % HLHS subgroups
 for iI = 1:5
     iS = iS + 1;
     iR = iR + 1;
-    T.type(iR)  = S(iS).SubGroup;
-    T.n(iR)     = S(iS).NumCases;
-    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
+    T.type(iR)  = sprintf( '%s (n=%i)', S(iS).SubGroup, S(iS).NumCases );
+    T(iR,2:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % TGA group
 iR = iR + 1;
 iG = iG + 1;
-T.type(iR)  = G(iG).Group;
-T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
+T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
+T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TGA subgroups
 for iI = 1:5
     iS = iS + 1;
     iR = iR + 1;
-    T.type(iR)  = S(iS).SubGroup;
-    T.n(iR)     = S(iS).NumCases;
-    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
+    T.type(iR)  = sprintf( '%s (n=%i)', S(iS).SubGroup, S(iS).NumCases );
+    T(iR,2:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % TOF group
 iR = iR + 1;
 iG = iG + 1;
-T.type(iR)  = G(iG).Group;
-T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
+T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
+T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TOF subgroups
 for iI = 1:2
     iS = iS + 1;
     iR = iR + 1;
-    T.type(iR)  = S(iS).SubGroup;
-    T.n(iR)     = S(iS).NumCases;
-    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
+    T.type(iR)  = sprintf( '%s (n=%i)', S(iS).SubGroup, S(iS).NumCases );
+    T(iR,2:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % EA group
 iR = iR + 1;
 iG = iG + 1;
-T.type(iR)  = G(iG).Group;
-T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
+T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
+T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % EA subgroups
 for iI = 1:2
     iS = iS + 1;
     iR = iR + 1;
-    T.type(iR)  = S(iS).SubGroup;
-    T.n(iR)     = S(iS).NumCases;
-    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
+    T.type(iR)  = sprintf( '%s (n=%i)', S(iS).SubGroup, S(iS).NumCases );
+    T(iR,2:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 % TA group
 iR = iR + 1;
 iG = iG + 1;
-T.type(iR)  = G(iG).Group;
-T.n(iR)     = G(iG).NumCases;
-T(iR,3:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
+T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
+T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TA subgroups
 for iI = 1:2
     iS = iS + 1;
     iR = iR + 1;
-    T.type(iR)  = S(iS).SubGroup;
-    T.n(iR)     = S(iS).NumCases;
-    T(iR,3:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
+    T.type(iR)  = sprintf( '%s (n=%i)', S(iS).SubGroup, S(iS).NumCases );
+    T(iR,2:end) = extract_flow_summary( S(iS).Tmeas, S(iS).Tcalc, minMeasToSummarize );
 end
 
 writetable( T, tableFilePath )
@@ -1142,14 +1132,12 @@ for iV = 1:numel(varName)
     end
     
     nValue = sum(~isnan(T.(varName{iV})));
-    if nValue == 0      % show emdash if no values
+    if nValue == 0      % show N/A if no values
         F.(varName{iV}) = "N/A";
-    elseif nValue == 1  % show value if only one value
-        F.(varName{iV}) = string( sprintf( '[%i]', round(T.(varName{iV})(~isnan(T.(varName{iV})))) ) );
-    elseif nValue > 1 && nValue < nMeasToSummarize  % show range if more than one value but less than nMeasToSummarize
+    elseif nValue > 1 && nValue < nMeasToSummarize  % show only range if fewer than nMeasToSummarize values
         F.(varName{iV}) = string( sprintf( '[%i,%i]', round(min(T.(varName{iV}))), round(max(T.(varName{iV}))) ) );
-    elseif nValue >= nMeasToSummarize
-        F.(varName{iV}) = string( round( nanmedian(T.(varName{iV}))) ); 
+    elseif nValue >= nMeasToSummarize  % show median and range if nMeasToSummarize or more values
+        F.(varName{iV}) = strcat( string( round( nanmedian(T.(varName{iV}))) ), sprintf( ' [%i,%i]', round(min(T.(varName{iV}))), round(max(T.(varName{iV}))) ) ); 
     else
         error( 'nValue = %g invalid', nValue )
     end

@@ -1,81 +1,81 @@
 Group,SubGroup,CaseNo,CirculationType,MPA,AAo,SVC,DA,DAo,PBF,UV
 Normal,Normal,1,normal,211,230,118,134,265,95,128
-Normal,Normal,2,normal,241,206,134,182,220,87,97
-Normal,Normal,3,normal,236,236,83,192,310,43,95
-Normal,Normal,4,normal,263,281,165,117,230,169,110
-Normal,Normal,5,normal,224,238,148,152,257,NaN,109
-Normal,Normal,6,normal,238,145,110,145,226,44,137
-Normal,Normal,7,normal,297,189,114,169,210,74,141
-Normal,Normal,8,normal,201,193,162,188,244,43,92
-Normal,Normal,9,normal,313,137,138,211,235,85,126
-Normal,Normal,10,normal,242,225,130,173,300,93,130
-Normal,Normal,11,normal,215,200,99,136,230,93,71
-Normal,Normal,12,normal,240,158,125,209,237,32,115
-Normal,Normal,13,normal,254,236,70,174,184,79,93
-Normal,Normal,14,normal,251,219,163,159,191,79,128
-Normal,Normal,15,normal,265,254,155,216,274,68,196
-Normal,Normal,16,normal,260,162,125,NaN,293,22,156
-Normal,Normal,17,normal,223,201,189,165,254,82,156
-Normal,Normal,18,normal,341,132,125,183,246,78,161
-Normal,Normal,19,normal,282,220,131,150,273,85,111
-Normal,Normal,20,normal,201,126,90,154,201,97,142
-Normal,Normal,21,normal,291,152,79,229,275,58,143
-Normal,Normal,22,normal,306,166,119,258,266,84,120
-Normal,Normal,23,normal,253,236,133,217,221,NaN,131
-Normal,Normal,24,normal,203,239,112,129,247,50,139
-Normal,Normal,25,normal,270,173,140,187,181,40,109
-Normal,Normal,26,normal,206,274,112,176,291,56,131
-Normal,Normal,27,normal,202,167,138,148,194,52,88
-Normal,Normal,28,normal,212,212,108,203,288,82,120
+Normal,Normal,2,normal,312,222,206,276,276,114,138
+Normal,Normal,3,normal,264,187,150,NaN,277,48,165
+Normal,Normal,4,normal,241,206,134,182,220,87,97
+Normal,Normal,5,normal,236,236,83,192,310,43,95
+Normal,Normal,6,normal,263,281,165,117,230,169,110
+Normal,Normal,7,normal,273,218,121,210,302,107,126
+Normal,Normal,8,normal,224,238,148,152,257,NaN,109
+Normal,Normal,9,normal,201,193,162,188,244,43,92
+Normal,Normal,10,normal,297,189,114,169,210,74,141
+Normal,Normal,11,normal,238,145,110,145,226,44,137
+Normal,Normal,12,normal,313,137,138,211,235,85,126
+Normal,Normal,13,normal,242,225,130,173,300,93,130
+Normal,Normal,14,normal,241,198,189,145,257,64,141
+Normal,Normal,15,normal,215,200,99,136,230,93,71
+Normal,Normal,16,normal,254,236,70,174,184,79,93
+Normal,Normal,17,normal,240,158,125,209,237,32,115
+Normal,Normal,18,normal,251,219,163,159,191,79,128
+Normal,Normal,19,normal,223,201,189,165,254,82,156
+Normal,Normal,20,normal,341,132,125,183,246,78,161
+Normal,Normal,21,normal,201,126,90,154,201,97,142
+Normal,Normal,22,normal,291,152,79,229,275,58,143
+Normal,Normal,23,normal,306,166,119,258,266,84,120
+Normal,Normal,24,normal,253,236,133,217,221,NaN,131
+Normal,Normal,25,normal,203,239,112,129,247,50,139
+Normal,Normal,26,normal,270,173,140,187,181,40,109
+Normal,Normal,27,normal,206,274,112,176,291,56,131
+Normal,Normal,28,normal,202,167,138,148,194,52,88
 Normal,Normal,29,normal,232,280,162,200,262,28,95
-Normal,Normal,30,normal,233,209,95,190,317,54,180
-Normal,Normal,31,normal,271,247,104,179,233,130,163
-Normal,Normal,32,normal,323,206,83,224,292,57,175
-Normal,Normal,33,normal,310,188,116,197,242,105,134
-Normal,Normal,34,normal,267,174,98,186,220,83,104
-Normal,Normal,35,normal,196,201,88,120,190,126,148
-Normal,Normal,36,normal,277,172,161,194,341,76,135
-Normal,Normal,37,normal,347,178,187,206,246,98,102
-Normal,Normal,38,normal,259,131,106,153,203,33,100
-Normal,Normal,39,normal,311,214,120,153,256,191,141
+Normal,Normal,30,normal,271,247,104,179,233,130,163
+Normal,Normal,31,normal,323,206,83,224,292,57,175
+Normal,Normal,32,normal,310,188,116,197,242,105,134
+Normal,Normal,33,normal,196,201,88,120,190,126,148
+Normal,Normal,34,normal,277,172,161,194,341,76,135
+Normal,Normal,35,normal,347,178,187,206,246,98,102
+Normal,Normal,36,normal,227,211,113,189,234,56,76
+Normal,Normal,37,normal,202,215,93,161,281,90,156
+Normal,Normal,38,normal,311,214,120,153,256,191,141
+Normal,Normal,39,normal,307,215,78,114,223,120,166
 Normal,Normal,40,normal,303,251,161,164,221,76,134
 HLHS,HLHS RAS,1,hlhs_aortic_atresia,479,NaN,120,427,307,38,251
-HLHS,HLHS RAS,2,hlhs_aortic_atresia,414,NaN,105,393,169,56,146
-HLHS,HLHS RAS,3,hlhs_aortic_atresia,390,NaN,216,382,300,20,98
-HLHS,HLHS RAS,4,hlhs_aortic_atresia,320,NaN,177,302,120,23,117
+HLHS,HLHS RAS,2,hlhs_aortic_atresia,390,NaN,216,382,300,20,98
+HLHS,HLHS RAS,3,hlhs_aortic_atresia,433,NaN,231,403,165,23,144
+HLHS,HLHS RAS,4,hlhs_aortic_atresia,414,NaN,105,393,169,56,146
+HLHS,HLHS RAS,5,hlhs_aortic_atresia,299,NaN,136,279,156,22,71
+HLHS,HLHS RAS,6,hlhs_aortic_atresia,420,NaN,180,NaN,212,28,152
+HLHS,HLHS RAS,7,hlhs_aortic_atresia,419,NaN,168,292,165,NaN,86
 HLHS,HLHS MS AS,1,normal,329,51,107,266,202,51,108
 HLHS,HLHS MS AS,2,normal,433,NaN,80,308,229,95,111
 HLHS,HLHS MS AS,3,normal,442,NaN,127,272,256,73,158
 HLHS,HLHS MS AS,4,normal,352,47,168,316,272,85,111
-HLHS,HLHS MS AS,5,normal,380,NaN,133,253,198,60,114
-HLHS,HLHS MS AS,6,normal,348,60,113,NaN,167,NaN,112
-HLHS,HLHS MS AS,7,normal,320,19,140,NaN,239,NaN,136
-HLHS,HLHS MS AS,8,normal,366,124,268,332,263,22,108
-HLHS,HLHS MS AS,9,normal,509,NaN,140,NaN,243,70,104
-HLHS,HLHS MS AS,10,normal,444,95,175,361,285,84,152
+HLHS,HLHS MS AS,5,normal,348,60,113,NaN,167,NaN,112
+HLHS,HLHS MS AS,6,normal,320,19,140,NaN,239,NaN,136
+HLHS,HLHS MS AS,7,normal,366,124,268,332,263,22,108
+HLHS,HLHS MS AS,8,normal,444,95,175,361,285,84,152
 HLHS,HLHS MS AA,1,hlhs_aortic_atresia,412,NaN,129,356,227,44,131
 HLHS,HLHS MS AA,2,hlhs_aortic_atresia,429,NaN,110,320,177,125,107
 HLHS,HLHS MS AA,3,hlhs_aortic_atresia,438,NaN,159,366,266,80,165
 HLHS,HLHS MS AA,4,hlhs_aortic_atresia,366,NaN,111,415,187,102,98
-HLHS,HLHS MS AA,5,hlhs_aortic_atresia,299,NaN,136,279,156,22,71
-HLHS,HLHS MS AA,6,hlhs_aortic_atresia,420,NaN,180,NaN,212,28,152
-HLHS,HLHS MS AA,7,hlhs_aortic_atresia,373,NaN,76,NaN,192,NaN,82
-HLHS,HLHS MS AA,8,hlhs_aortic_atresia,261,NaN,111,242,131,NaN,100
-HLHS,HLHS MS AA,9,hlhs_aortic_atresia,389,NaN,102,NaN,227,NaN,90
+HLHS,HLHS MS AA,5,hlhs_aortic_atresia,320,NaN,177,302,120,23,117
+HLHS,HLHS MS AA,6,hlhs_aortic_atresia,373,NaN,76,NaN,192,NaN,82
+HLHS,HLHS MS AA,7,hlhs_aortic_atresia,261,NaN,111,242,131,NaN,100
+HLHS,HLHS MS AA,8,hlhs_aortic_atresia,389,NaN,102,NaN,227,NaN,90
 HLHS,HLHS MA AA,1,hlhs_aortic_atresia,480,NaN,197,428,244,82,103
 HLHS,HLHS MA AA,2,hlhs_aortic_atresia,422,NaN,120,336,276,NaN,116
 HLHS,HLHS MA AA,3,hlhs_aortic_atresia,350,NaN,84,323,257,32,151
 HLHS,HLHS MA AA,4,hlhs_aortic_atresia,414,NaN,70,300,238,NaN,134
-HLHS,HLHS MA AA,5,hlhs_aortic_atresia,433,NaN,231,403,165,23,144
-HLHS,HLHS MA AA,6,hlhs_aortic_atresia,358,NaN,182,311,337,NaN,119
-HLHS,HLHS MA AA,7,hlhs_aortic_atresia,596,NaN,113,456,243,NaN,132
-HLHS,HLHS MA AA,8,hlhs_aortic_atresia,514,NaN,148,410,216,NaN,116
-HLHS,HLHS MA AA,9,hlhs_aortic_atresia,358,NaN,148,292,239,72,107
-HLHS,HLHS MA AA,10,hlhs_aortic_atresia,330,NaN,76,298,226,53,105
+HLHS,HLHS MA AA,5,hlhs_aortic_atresia,358,NaN,182,311,337,NaN,119
+HLHS,HLHS MA AA,6,hlhs_aortic_atresia,596,NaN,113,456,243,NaN,132
+HLHS,HLHS MA AA,7,hlhs_aortic_atresia,514,NaN,148,410,216,NaN,116
+HLHS,HLHS MA AA,8,hlhs_aortic_atresia,358,NaN,148,292,239,72,107
+HLHS,HLHS MA AA,9,hlhs_aortic_atresia,330,NaN,76,298,226,53,105
+HLHS,HLHS MA AA,10,hlhs_aortic_atresia,380,NaN,133,253,198,60,114
 HLHS,HLHS MA AA,11,hlhs_aortic_atresia,423,NaN,211,401,233,28,73
-HLHS,HLHS MA AA,12,hlhs_aortic_atresia,422,NaN,93,NaN,298,NaN,89
-HLHS,HLHS MA AA,13,hlhs_aortic_atresia,367,NaN,102,232,227,NaN,95
-HLHS,HLHS MA AA,14,hlhs_aortic_atresia,419,NaN,168,292,165,NaN,86
+HLHS,HLHS MA AA,12,hlhs_aortic_atresia,509,NaN,140,NaN,243,70,104
+HLHS,HLHS MA AA,13,hlhs_aortic_atresia,422,NaN,93,NaN,298,NaN,89
+HLHS,HLHS MA AA,14,hlhs_aortic_atresia,367,NaN,102,232,227,NaN,95
 HLHS,HLHS DORV,1,double_outlet_right_ventricle,351,42,149,NaN,209,47,123
 HLHS,HLHS DORV,2,double_outlet_right_ventricle,360,87,124,NaN,174,NaN,97
 HLHS,HLHS DORV,3,double_outlet_right_ventricle,200,112,145,185,161,48,104
@@ -101,12 +101,12 @@ TGA,TGA IVS,17,transposition,195,275,137,40,234,105,188
 TGA,TGA IVS,18,transposition,156,203,173,NaN,202,NaN,75
 TGA,TGA IVS,19,transposition,166,274,91,122,294,NaN,163
 TGA,TGA IVS,20,transposition,108,204,228,NaN,274,NaN,128
-TGA,TGA IVS,21,transposition,171,241,143,NaN,171,NaN,111
-TGA,TGA IVS,22,transposition,244,361,215,NaN,322,NaN,105
-TGA,TGA IVS,23,transposition,132,252,97,NaN,197,NaN,125
-TGA,TGA IVS,24,transposition,209,339,136,121,325,NaN,69
-TGA,TGA IVS,25,transposition,155,403,151,43,296,NaN,94
-TGA,TGA IVS,26,transposition,146,255,146,61,211,NaN,104
+TGA,TGA IVS,21,transposition,146,255,146,61,211,NaN,104
+TGA,TGA IVS,22,transposition,171,241,143,NaN,171,NaN,111
+TGA,TGA IVS,23,transposition,244,361,215,NaN,322,NaN,105
+TGA,TGA IVS,24,transposition,132,252,97,NaN,197,NaN,125
+TGA,TGA IVS,25,transposition,209,339,136,121,325,NaN,69
+TGA,TGA IVS,26,transposition,155,403,151,43,296,NaN,94
 TGA,TGA IVS,27,transposition,255,415,144,138,286,240,200
 TGA,TGA IVS,28,transposition,212,395,240,90,246,112,202
 TGA,TGA IVS,29,transposition,NaN,408,171,NaN,293,NaN,135
@@ -122,8 +122,8 @@ TGA,TGA VSD,4,transposition,195,292,280,77,277,NaN,110
 TGA,TGA VSD,5,transposition,189,175,194,NaN,195,55,102
 TGA,TGA VSD,6,transposition,344,185,128,190,226,NaN,141
 TGA,TGA VSD,7,transposition,216,329,167,250,292,82,170
-TGA,TGA VSD,8,transposition,167,306,127,84,262,84,142
-TGA,TGA VSD,9,transposition,153,154,120,NaN,267,NaN,111
+TGA,TGA VSD,8,transposition,153,154,120,NaN,267,NaN,111
+TGA,TGA VSD,9,transposition,167,306,127,84,262,84,142
 TGA,TGA VSD,10,transposition,236,404,203,115,317,120,137
 TGA,TGA VSD,11,transposition,166,155,82,85,240,27,121
 TGA,TGA VSD,12,transposition,110,263,141,NaN,224,NaN,192

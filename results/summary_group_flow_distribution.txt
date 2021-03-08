@@ -8,11 +8,11 @@ Flow Distribution Model
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
     measured, N (ml/min/kg)         40      40      40      39      40      38      40       0       0       0       0       0 
-    measured median (ml/min/kg)    254     204     123     179     245      79     129     NaN     NaN     NaN     NaN     NaN 
+    measured median (ml/min/kg)    252     206     123     176     245      79     131     NaN     NaN     NaN     NaN     NaN 
     derived, N (ml/min/kg)          40      40      40      40      40      40      40      40      40      40      40      40 
-    derived median (ml/min/kg)     254     204     123     181     245      77     129     136     245      14      14     470 
+    derived median (ml/min/kg)     252     206     123     178     245      79     131     133     245      14      14     479 
     measured, N (%CVO)              40      40      40      39      40      38      40       0       0       0       0       0 
-    measured median (%CVO)          53      44      26      38      52      16      26     NaN     NaN     NaN     NaN     NaN 
+    measured median (%CVO)          53      44      27      38      53      16      26     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                    53      44      27      36      53      17      26      30      53       3       3     100 
 
 
@@ -27,10 +27,10 @@ Flow Distribution Model
 
     measured, N (ml/min/kg)         42      11      42      32      42      27      42       0       0       0       0       0 
     measured median (ml/min/kg)    385      87     132     318     227      53     111     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)          42      41      42      42      42      33      42      29      42      41      41      41 
-    derived median (ml/min/kg)     385     -11     132     318     227      56     111     -38     227      12      12     414 
-    measured, N (%CVO)              41      11      41      32      41      26      41       0       0       0       0       0 
-    measured median (%CVO)         100      17      31      81      51      13      27     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)          42      42      42      42      42      32      42      29      42      42      42      42 
+    derived median (ml/min/kg)     385     -11     132     318     227      55     111     -44     227      12      12     414 
+    measured, N (%CVO)              42      11      42      32      42      27      42       0       0       0       0       0 
+    measured median (%CVO)         100      17      31      81      52      14      27     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 

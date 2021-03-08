@@ -3,25 +3,25 @@
 Alpha	0.05							
 								
 "Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	A-?		
-"  Normal vs. HLHS RAS"	-144.0	"-393.7 to 105.7"	No	ns	0.1103	B	"HLHS RAS"	
-"  Normal vs. HLHS MS AS"	-135.6	"-213.9 to -57.25"	Yes	***	0.0004	C	"HLHS MS AS"	
-"  Normal vs. HLHS MS AA"	-119.6	"-202.5 to -36.71"	Yes	**	0.0020	D	"HLHS MS AA"	
-"  Normal vs. HLHS MA AA"	-163.7	"-235.5 to -91.84"	Yes	****	<0.0001	E	"HLHS MA AA"	
-"  Normal vs. HLHS DORV"	-31.85	"-216.4 to 152.7"	No	ns	0.9411	F	"HLHS DORV"	
-"  Normal vs. TGA IVS"	55.69	"17.65 to 93.72"	Yes	***	0.0002	G	"TGA IVS"	
-"  Normal vs. TGA VSD"	59.13	"-5.075 to 123.3"	Yes	*	0.0441	H	"TGA VSD"	
-"  Normal vs. TGA VSD PS"	66.42	"-552.6 to 685.4"	No	ns	0.8203	I	"TGA VSD PS"	
-"  Normal vs. TGA VSD COA"	-61.25	"-162.4 to 39.94"	No	ns	0.2149	J	"TGA VSD COA"	
-"  Normal vs. TOF PS"	161.9	"111.1 to 212.7"	Yes	****	<0.0001	L	"TOF PS"	
+"  Normal vs. HLHS RAS"	-149.8	"-245.7 to -53.81"	Yes	**	0.0020	B	"HLHS RAS"	
+"  Normal vs. HLHS MS AS"	-121.3	"-200.3 to -42.31"	Yes	**	0.0014	C	"HLHS MS AS"	
+"  Normal vs. HLHS MS AA"	-115.6	"-204.2 to -26.92"	Yes	**	0.0046	D	"HLHS MS AA"	
+"  Normal vs. HLHS MA AA"	-165.1	"-241.6 to -88.65"	Yes	****	<0.0001	E	"HLHS MA AA"	
+"  Normal vs. HLHS DORV"	-30.65	"-215.6 to 154.3"	No	ns	0.9515	F	"HLHS DORV"	
+"  Normal vs. TGA IVS"	56.89	"18.37 to 95.41"	Yes	***	0.0002	G	"TGA IVS"	
+"  Normal vs. TGA VSD"	60.33	"-4.285 to 125.0"	Yes	*	0.0403	H	"TGA VSD"	
+"  Normal vs. TGA VSD PS"	67.62	"-551.9 to 687.1"	No	ns	0.8117	I	"TGA VSD PS"	
+"  Normal vs. TGA VSD COA"	-60.05	"-161.6 to 41.54"	No	ns	0.2324	J	"TGA VSD COA"	
+"  Normal vs. TOF PS"	163.1	"112.1 to 214.1"	Yes	****	<0.0001	L	"TOF PS"	
 								
 "Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
-"  Normal vs. HLHS RAS"	256.8	400.8	-144.0	33.48	40	4	4.301	3.243
-"  Normal vs. HLHS MS AS"	256.8	392.3	-135.6	20.53	40	10	6.602	11.12
-"  Normal vs. HLHS MS AA"	256.8	376.3	-119.6	21.21	40	9	5.637	9.748
-"  Normal vs. HLHS MA AA"	256.8	420.4	-163.7	20.29	40	14	8.067	16.12
-"  Normal vs. HLHS DORV"	256.8	288.6	-31.85	31.37	40	5	1.015	4.371
-"  Normal vs. TGA IVS"	256.8	201.1	55.69	12.05	40	33	4.623	56.29
-"  Normal vs. TGA VSD"	256.8	197.6	59.13	18.14	40	13	3.261	15.75
-"  Normal vs. TGA VSD PS"	256.8	190.3	66.42	50.63	40	3	1.312	2.068
-"  Normal vs. TGA VSD COA"	256.8	318.0	-61.25	23.10	40	7	2.652	7.084
-"  Normal vs. TOF PS"	256.8	94.87	161.9	14.90	40	15	10.86	21.05
+"  Normal vs. HLHS RAS"	258.0	407.7	-149.8	21.90	40	7	6.838	7.361
+"  Normal vs. HLHS MS AS"	258.0	379.3	-121.3	19.63	40	8	6.179	9.049
+"  Normal vs. HLHS MS AA"	258.0	373.5	-115.6	22.03	40	8	5.246	8.565
+"  Normal vs. HLHS MA AA"	258.0	423.1	-165.1	21.60	40	14	7.645	16.01
+"  Normal vs. HLHS DORV"	258.0	288.6	-30.65	31.44	40	5	0.9748	4.408
+"  Normal vs. TGA IVS"	258.0	201.1	56.89	12.22	40	33	4.656	58.10
+"  Normal vs. TGA VSD"	258.0	197.6	60.33	18.25	40	13	3.306	16.13
+"  Normal vs. TGA VSD PS"	258.0	190.3	67.62	50.67	40	3	1.335	2.075
+"  Normal vs. TGA VSD COA"	258.0	318.0	-60.05	23.19	40	7	2.590	7.195
+"  Normal vs. TOF PS"	258.0	94.87	163.1	15.04	40	15	10.84	21.77

@@ -7,7 +7,7 @@ Alpha	0.05
 "  Normal vs. HLHS MS AS"	-121.3	"-200.3 to -42.31"	Yes	**	0.0014	C	"HLHS MS AS"	
 "  Normal vs. HLHS MS AA"	-115.6	"-204.2 to -26.92"	Yes	**	0.0046	D	"HLHS MS AA"	
 "  Normal vs. HLHS MA AA"	-165.1	"-241.6 to -88.65"	Yes	****	<0.0001	E	"HLHS MA AA"	
-"  Normal vs. HLHS DORV"	-30.65	"-215.6 to 154.3"	No	ns	0.9515	F	"HLHS DORV"	
+"  Normal vs. HLV DORV"	-30.65	"-215.6 to 154.3"	No	ns	0.9515	F	"HLV DORV"	
 "  Normal vs. TGA IVS"	56.89	"18.37 to 95.41"	Yes	***	0.0002	G	"TGA IVS"	
 "  Normal vs. TGA VSD"	60.33	"-4.285 to 125.0"	Yes	*	0.0403	H	"TGA VSD"	
 "  Normal vs. TGA VSD PS"	67.62	"-551.9 to 687.1"	No	ns	0.8117	I	"TGA VSD PS"	
@@ -19,7 +19,7 @@ Alpha	0.05
 "  Normal vs. HLHS MS AS"	258.0	379.3	-121.3	19.63	40	8	6.179	9.049
 "  Normal vs. HLHS MS AA"	258.0	373.5	-115.6	22.03	40	8	5.246	8.565
 "  Normal vs. HLHS MA AA"	258.0	423.1	-165.1	21.60	40	14	7.645	16.01
-"  Normal vs. HLHS DORV"	258.0	288.6	-30.65	31.44	40	5	0.9748	4.408
+"  Normal vs. HLV DORV"	258.0	288.6	-30.65	31.44	40	5	0.9748	4.408
 "  Normal vs. TGA IVS"	258.0	201.1	56.89	12.22	40	33	4.656	58.10
 "  Normal vs. TGA VSD"	258.0	197.6	60.33	18.25	40	13	3.306	16.13
 "  Normal vs. TGA VSD PS"	258.0	190.3	67.62	50.67	40	3	1.335	2.075

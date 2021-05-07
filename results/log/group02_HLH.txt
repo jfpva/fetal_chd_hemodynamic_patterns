@@ -1,5 +1,5 @@
-Group 02: HLHS
-==============
+Group 02: HLH
+=============
 
 
 Flow Distribution Model
@@ -122,11 +122,11 @@ Measured (ml/min/kg)
     {'HLHS MA AA'}      12      509     NaN     140     NaN     243      70     104 
     {'HLHS MA AA'}      13      422     NaN      93     NaN     298     NaN      89 
     {'HLHS MA AA'}      14      367     NaN     102     232     227     NaN      95 
-    {'HLHS DORV' }       1      351      42     149     NaN     209      47     123 
-    {'HLHS DORV' }       2      360      87     124     NaN     174     NaN      97 
-    {'HLHS DORV' }       3      200     112     145     185     161      48     104 
-    {'HLHS DORV' }       4      288     109     200     268     188      56      64 
-    {'HLHS DORV' }       5      244     161     131     NaN     184     NaN     154 
+    {'HLV DORV'  }       1      351      42     149     NaN     209      47     123 
+    {'HLV DORV'  }       2      360      87     124     NaN     174     NaN      97 
+    {'HLV DORV'  }       3      200     112     145     185     161      48     104 
+    {'HLV DORV'  }       4      288     109     200     268     188      56      64 
+    {'HLV DORV'  }       5      244     161     131     NaN     184     NaN     154 
 
 
 Derived (ml/min/kg)
@@ -171,11 +171,11 @@ Derived (ml/min/kg)
     {'HLHS MA AA'}      12      509     -15     140     439     243      70     104      -70    243      15      15     509 
     {'HLHS MA AA'}      13      422     -13      93     404     298     NaN      89      NaN    298      13      13     422 
     {'HLHS MA AA'}      14      367     -11     102     232     227     NaN      95      NaN    227      11      11     367 
-    {'HLHS DORV' }       1      351      42     149     316     209      47     123      NaN    209      12      12     405 
-    {'HLHS DORV' }       2      360      87     124     211     174     NaN      97      NaN    174      14      14     461 
-    {'HLHS DORV' }       3      200     112     145     185     161      48     104      NaN    161      10      10     322 
-    {'HLHS DORV' }       4      288     109     200     268     188      56      64      NaN    188      12      12     409 
-    {'HLHS DORV' }       5      244     161     131     154     184     NaN     154      NaN    184      13      13     418 
+    {'HLV DORV'  }       1      351      42     149     316     209      47     123      NaN    209      12      12     405 
+    {'HLV DORV'  }       2      360      87     124     211     174     NaN      97      NaN    174      14      14     461 
+    {'HLV DORV'  }       3      200     112     145     185     161      48     104      NaN    161      10      10     322 
+    {'HLV DORV'  }       4      288     109     200     268     188      56      64      NaN    188      12      12     409 
+    {'HLV DORV'  }       5      244     161     131     154     184     NaN     154      NaN    184      13      13     418 
 
 
 Measured (%CVO)
@@ -220,11 +220,11 @@ Measured (%CVO)
     {'HLHS MA AA'}      12      100     NaN      28     NaN      48      14      20 
     {'HLHS MA AA'}      13      100     NaN      22     NaN      71     NaN      21 
     {'HLHS MA AA'}      14      100     NaN      28      63      62     NaN      26 
-    {'HLHS DORV' }       1       87      10      37     NaN      52      12      30 
-    {'HLHS DORV' }       2       78      19      27     NaN      38     NaN      21 
-    {'HLHS DORV' }       3       62      35      45      58      50      15      32 
-    {'HLHS DORV' }       4       70      27      49      65      46      14      16 
-    {'HLHS DORV' }       5       58      39      31     NaN      44     NaN      37 
+    {'HLV DORV'  }       1       87      10      37     NaN      52      12      30 
+    {'HLV DORV'  }       2       78      19      27     NaN      38     NaN      21 
+    {'HLV DORV'  }       3       62      35      45      58      50      15      32 
+    {'HLV DORV'  }       4       70      27      49      65      46      14      16 
+    {'HLV DORV'  }       5       58      39      31     NaN      44     NaN      37 
 
 
 Derived (%CVO)
@@ -269,10 +269,10 @@ Derived (%CVO)
     {'HLHS MA AA'}      12      100      -3      28      86      48      14      20     -14      48      3       3  
     {'HLHS MA AA'}      13      100      -3      22      96      71     NaN      21     NaN      71      3       3  
     {'HLHS MA AA'}      14      100      -3      28      63      62     NaN      26     NaN      62      3       3  
-    {'HLHS DORV' }       1       87      10      37      78      52      12      30     NaN      52      3       3  
-    {'HLHS DORV' }       2       78      19      27      46      38     NaN      21     NaN      38      3       3  
-    {'HLHS DORV' }       3       62      35      45      58      50      15      32     NaN      50      3       3  
-    {'HLHS DORV' }       4       70      27      49      65      46      14      16     NaN      46      3       3  
-    {'HLHS DORV' }       5       58      39      31      37      44     NaN      37     NaN      44      3       3  
+    {'HLV DORV'  }       1       87      10      37      78      52      12      30     NaN      52      3       3  
+    {'HLV DORV'  }       2       78      19      27      46      38     NaN      21     NaN      38      3       3  
+    {'HLV DORV'  }       3       62      35      45      58      50      15      32     NaN      50      3       3  
+    {'HLV DORV'  }       4       70      27      49      65      46      14      16     NaN      46      3       3  
+    {'HLV DORV'  }       5       58      39      31      37      44     NaN      37     NaN      44      3       3  
 
 

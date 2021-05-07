@@ -127,19 +127,19 @@ outputPrismDirPath = fullfile( outputDirPath, 'prism' );
 vesselNames = {'MPASO2','AAoSO2','SVCSO2','DAoSO2','UVSO2'};
 for iV = 1:numel(vesselNames)
     Normal  = T.(vesselNames{iV})(strcmp(T.Group,'Normal'));
-    HLHS    = T.(vesselNames{iV})(strcmp(T.Group,'HLHS'));
+    HLH     = T.(vesselNames{iV})(strcmp(T.Group,'HLH'));
     TGA     = T.(vesselNames{iV})(strcmp(T.Group,'TGA'));
     TOF     = T.(vesselNames{iV})(strcmp(T.Group,'TOF'));
     EA      = T.(vesselNames{iV})(strcmp(T.Group,'EA'));
     TA      = T.(vesselNames{iV})(strcmp(T.Group,'TA'));
-    maxGroupSize = max( [ numel(Normal), numel(HLHS), numel(TGA), numel(TOF), numel(EA), numel(TA) ] );
+    maxGroupSize = max( [ numel(Normal), numel(HLH), numel(TGA), numel(TOF), numel(EA), numel(TA) ] );
     Normal((end+1):maxGroupSize) = NaN;
-    HLHS((end+1):maxGroupSize) = NaN;
+    HLH((end+1):maxGroupSize) = NaN;
     TGA((end+1):maxGroupSize) = NaN;
     TOF((end+1):maxGroupSize) = NaN;
     EA((end+1):maxGroupSize) = NaN;
     TA((end+1):maxGroupSize) = NaN;
-    S = table(Normal,HLHS,TGA,TOF,EA,TA);
+    S = table(Normal,HLH,TGA,TOF,EA,TA);
     outputFileDirPath = fullfile(outputPrismDirPath,sprintf('sao2_group_%s.csv',lower(strrep(vesselNames{iV},'SO2',''))));
     writetable( S,outputFileDirPath );
 end

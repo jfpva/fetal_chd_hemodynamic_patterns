@@ -4,7 +4,7 @@ Alpha	0.05
 								
 "Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	A-?		
 "  Normal vs. HLHS MS AS"	138.1	"64.71 to 211.4"	Yes	***	0.0006	C	"HLHS MS AS"	
-"  Normal vs. HLHS DORV"	101.9	"-3.517 to 207.2"	Yes	*	0.0288	F	"HLHS DORV"	
+"  Normal vs. HLV DORV"	101.9	"-3.517 to 207.2"	Yes	*	0.0288	F	"HLV DORV"	
 "  Normal vs. TGA IVS"	-104.0	"-155.0 to -53.05"	Yes	****	<0.0001	G	"TGA IVS"	
 "  Normal vs. TGA VSD"	-32.64	"-114.7 to 49.43"	No	ns	0.8014	H	"TGA VSD"	
 "  Normal vs. TGA VSD PS"	-46.35	"-239.8 to 147.1"	No	ns	0.7947	I	"TGA VSD PS"	
@@ -17,7 +17,7 @@ Alpha	0.05
 								
 "Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
 "  Normal vs. HLHS MS AS"	204.1	66.00	138.1	16.50	40	6	8.366	6.716
-"  Normal vs. HLHS DORV"	204.1	102.2	101.9	20.26	40	5	5.027	4.846
+"  Normal vs. HLV DORV"	204.1	102.2	101.9	20.26	40	5	5.027	4.846
 "  Normal vs. TGA IVS"	204.1	308.1	-104.0	15.81	40	34	6.582	44.59
 "  Normal vs. TGA VSD"	204.1	236.7	-32.64	22.37	40	13	1.459	14.01
 "  Normal vs. TGA VSD PS"	204.1	250.4	-46.35	32.34	40	5	1.433	4.305

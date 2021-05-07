@@ -1,5 +1,5 @@
-Sub-Group 06: HLHS DORV
-=======================
+Sub-Group 06: HLV DORV
+======================
 
 
 Flow Distribution Model

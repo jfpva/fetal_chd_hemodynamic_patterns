@@ -20,13 +20,13 @@ Analyisis of fetal blood flow distribution patterns and blood oxygen saturations
 ### 1.1 Congenital Heart Disease Sub-Types
 
 * normal (Normal)
-* hypoplastic left heart syndrome (HLHS) 
-    * HLHS with restrictive atrial septum (HLHS RAS)
-    * HLHS with mitral atresia and aortic stenosis (HLHS MA AS)
-    * HLHS with mitral stenosis and aortic stenosis (HLHS MS AS)
-    * HLHS with mitral stenosis and aortic atresia (HLHS MS AA)
-    * HLHS with mitral atresia and aortic atresia (HLHS MA AA)
-    * HLHS with double outlet right ventricle (HLHS DORV)
+* hypoplastic left heart (HLH) 
+    * HLH syndrome with restrictive atrial septum (HLHS RAS)
+    * HLH syndrome with mitral atresia and aortic stenosis (HLHS MA AS)
+    * HLH syndrome with mitral stenosis and aortic stenosis (HLHS MS AS)
+    * HLH syndrome with mitral stenosis and aortic atresia (HLHS MS AA)
+    * HLH syndrome with mitral atresia and aortic atresia (HLHS MA AA)
+    * hypoplastic left ventricle with double outlet right ventricle (HLV DORV)
 * transposition of the great arteries (TGA)
     * TGA with intact ventricular septum (TGA IVS)
     * TGA with ventricular septal defect (TGA VSD)
@@ -127,7 +127,7 @@ __Ebstein's Anomaly with Circular Shunt__
 `Q_FO = -Q_MPA + Q_SVC + Q_IVC + Q_CS`
 
 __Ventricular Septal Defect, Overriding Aorta__  
-HLHS MA AS, HLHS DORV, TGA VSD, TGA VSD PS, TGA VSD COA, TOF  
+HLHS MA AS, HLV DORV, TGA VSD, TGA VSD PS, TGA VSD COA, TOF  
 `Q_FO` unknown
 
 

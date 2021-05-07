@@ -27,7 +27,7 @@ objFn = 'wRMSD';  % Objective function used to model flow distributions
 % Groups (CHD Sub-Types)
           
 groups    = {   'Normal', ...
-                'HLHS', ...
+                'HLH', ...
                 'TGA', ...
                 'TOF', ...
                 'EA', ...
@@ -42,7 +42,7 @@ subGroups = {   'Normal', ...
                 'HLHS MS AS', ...
                 'HLHS MS AA', ...
                 'HLHS MA AA', ...
-                'HLHS DORV', ...
+                'HLV DORV', ...
                 'TGA IVS', ...
                 'TGA VSD', ...
                 'TGA VSD PS', ...
@@ -282,7 +282,7 @@ for iD = 1:size(D,1)
             D.FO(iD) = D.SVC(iD) + D.IVC(iD) + D.CS(iD);
         case 'Ebstein''s Circular Shunt'
             D.FO(iD) = -D.MPA(iD) + D.SVC(iD) + D.IVC(iD) + D.CS(iD);
-        case {'HLHS DORV','TGA VSD','TGA VSD PS','TGA VSD COA','TOF PS','TOF PA'}
+        case {'HLV DORV','TGA VSD','TGA VSD PS','TGA VSD COA','TOF PS','TOF PA'}
             D.FO(iD) = NaN;
     end
 end
@@ -739,7 +739,7 @@ for iS = 1:numel(S)
     A(iR,40:51) = S(iS).Sdist{strcmp(S(iS).Sdist.Properties.RowNames,'model (%CVO)'),:};
     iR = iR + 1;
     if iS < numel(S)
-        if ~strcmp( S(iS).SubGroup(1:3), S(iS+1).SubGroup(1:3) )
+        if ~strcmp( S(iS).SubGroup(1:2), S(iS+1).SubGroup(1:2) )
             iG = iG + 1;
             desc{iR} = sprintf( 'Group: %s', G(iG).Group );
             A(iR,1)     = G(iG).NumCases;
@@ -853,7 +853,7 @@ for iS = 1:numel(S)
     Qcvo(iR) = S(iS).Scalc.CVO(strcmp(S(iS).Scalc.Properties.RowNames,'median'));
     iR = iR + 1;
     if iS < numel(S)
-        if ~strcmp( S(iS).SubGroup(1:3), S(iS+1).SubGroup(1:3) )
+        if ~strcmp( S(iS).SubGroup(1:2), S(iS+1).SubGroup(1:2) )
             iG = iG + 1;
             desc{iR} = sprintf( 'Group: %s', G(iG).Group );
             Qmeas(iR,:) = [ G(iG).SmeasCvo{strcmp(G(iG).Smeas.Properties.RowNames,'median'),:}, NaN ];
@@ -952,13 +952,13 @@ T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
 
 T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
-% HLHS group
+% HLH group
 iR = iR + 1;
 iG = iG + 1;
 T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
 T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
-% HLHS subgroups
+% HLH subgroups
 for iI = 1:5
     iS = iS + 1;
     iR = iR + 1;

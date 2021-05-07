@@ -16,8 +16,8 @@ Flow Distribution Model
     model (%CVO)                    53      44      27      36      53      17      26      30      53       3       3     100 
 
 
-Group 02: HLHS
-==============
+Group 02: HLH
+=============
 
 
 Flow Distribution Model

@@ -3,14 +3,14 @@
 Alpha	0.05							
 								
 "Dunnett's T3 multiple comparisons test"	"Mean Diff."	"95.00% CI of diff."	"Below threshold?"	Summary	"Adjusted P Value"	?-A		
-"  HLHS vs. Normal"	145.8	"109.1 to 182.5"	Yes	****	<0.0001	B	HLHS	
+"  HLH vs. Normal"	145.8	"109.1 to 182.5"	Yes	****	<0.0001	B	HLH	
 "  TGA vs. Normal"	-55.21	"-83.77 to -26.65"	Yes	****	<0.0001	C	TGA	
 "  TOF vs. Normal"	-167.1	"-228.5 to -105.6"	Yes	****	<0.0001	D	TOF	
 "  EA vs. Normal"	-312.3	"-438.2 to -186.4"	Yes	****	<0.0001	E	EA	
 "  TA vs. Normal"	-74.58	"-267.7 to 118.5"	No	ns	0.3670	F	TA	
 								
 "Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
-"  HLHS vs. Normal"	324.8	179.0	145.8	12.64	42	40	11.53	62.22
+"  HLH vs. Normal"	324.8	179.0	145.8	12.64	42	40	11.53	62.22
 "  TGA vs. Normal"	123.8	179.0	-55.21	9.945	55	40	5.552	91.49
 "  TOF vs. Normal"	11.90	179.0	-167.1	19.89	20	40	8.400	22.79
 "  EA vs. Normal"	-133.3	179.0	-312.3	35.70	10	40	8.747	9.517

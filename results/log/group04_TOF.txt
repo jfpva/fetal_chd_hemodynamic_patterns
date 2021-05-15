@@ -141,7 +141,7 @@ Derived (ml/min/kg)
     {'TOF PA'}       4        0     283     139      NaN    236     NaN     103     NaN     236       9       9     292 
     {'TOF PA'}       5        0     380     223      -77    199      77      78     NaN     199      12      12     392 
     {'TOF PA'}       6        0     352      87       -6    259       6     123     NaN     259      11      11     363 
-    {'TOF PA'}       7        0     263      93      -14    156      15      62     NaN     156       8       8     271 
+    {'TOF PA'}       7        0     263      93      -15    156      15      62     NaN     156       8       8     271 
     {'TOF PA'}       8        0     325     146      NaN    366     NaN      96     NaN     366      10      10     335 
     {'TOF PA'}       9        0     367     101      NaN    283     NaN      96     NaN     283      11      11     378 
 
@@ -207,7 +207,7 @@ Derived (%CVO)
     {'TOF PA'}       4        0      97      48     NaN      81     NaN      35     NaN      81       3       3 
     {'TOF PA'}       5        0      97      57     -20      51      20      20     NaN      51       3       3 
     {'TOF PA'}       6        0      97      24      -2      71       2      34     NaN      71       3       3 
-    {'TOF PA'}       7        0      97      34      -5      58       6      23     NaN      58       3       3 
+    {'TOF PA'}       7        0      97      34      -6      58       6      23     NaN      58       3       3 
     {'TOF PA'}       8        0      97      44     NaN     109     NaN      29     NaN     109       3       3 
     {'TOF PA'}       9        0      97      27     NaN      75     NaN      25     NaN      75       3       3 
 

@@ -1166,6 +1166,22 @@ end
 indMissingIVC = isnan(T.IVC);
 T.IVC(indMissingIVC) = F.DAo(indMissingIVC);
 
+% Derive Using Pulmonary Junction in Pulmonary Atresia: Q_PBF = -Q_DA
+
+deriveStr = 'Derived Using Pulmonary Junction in Pulmonary Atresia: Q_PBF = -Q_DA';
+
+% DA
+indMissingDA = isnan(T.DA) & isPA;
+T.DA(indMissingDA) = - F.PBF(indMissingDA);
+if isVerbose && any(indMissingDA&((T.DA<L.DA)|(T.DA>U.DA))), fprintf('\n%s\n\n',deriveStr), disp(T(indMissingDA&((T.DA<L.DA)|(T.DA>U.DA)),{'SubGroup','CaseNo','DA'})), end
+T.DA((indMissingDA)&((T.DA<L.DA)|(T.DA>U.DA))) = NaN;
+
+% PBF
+indMissingPBF = isnan(T.PBF) & isPA;
+T.PBF(indMissingPBF) = - F.DA(indMissingPBF);
+if isVerbose && any(indMissingPBF&((T.PBF<L.PBF)|(T.PBF>U.PBF))), fprintf('\n%s\n\n',deriveStr), disp(T(indMissingPBF&((T.PBF<L.PBF)|(T.PBF>U.PBF)),{'SubGroup','CaseNo','PBF'})), end
+T.PBF((indMissingPBF)&((T.PBF<=0)|(T.PBF<L.PBF)|(T.PBF>U.PBF))) = NaN;
+
 % Derive Using Arch Junction: Q_AAo - Q_SVC + Q_DA = Q_DAo
 
 deriveStr = 'Derived Using Arch Junction: Q_AAo - Q_SVC + Q_DA = Q_DAo';
@@ -1175,8 +1191,6 @@ indMissingAAo = isnan(T.AAo) & ~isAA;
 T.AAo(indMissingAAo) = F.DAo(indMissingAAo) - F.DA(indMissingAAo) + F.SVC(indMissingAAo);
 if isVerbose && any(indMissingAAo&((T.AAo<L.AAo)|(T.AAo>U.AAo))), fprintf('\n%s\n\n',deriveStr), disp(T(indMissingAAo&((T.AAo<L.AAo)|(T.AAo>U.AAo)),{'SubGroup','CaseNo','AAo'})), end
 T.AAo((indMissingAAo)&((T.AAo<=0)|(T.AAo<L.AAo)|(T.AAo>U.AAo))) = NaN;
-
-% TODO: add outlier rejection 
 
 % DAo
 indMissingDAo = isnan(T.DAo);

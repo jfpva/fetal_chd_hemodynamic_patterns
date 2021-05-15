@@ -56,6 +56,15 @@ Outlier Derived Flows
 =====================
 
 
+Derived Using Pulmonary Junction in Pulmonary Atresia: Q_PBF = -Q_DA
+
+               SubGroup                CaseNo    PBF
+    _______________________________    ______    ___
+
+    {'TOF PA'                     }      2       279
+    {'Ebstein's no Circular Shunt'}      3        78
+
+
 Derived Using Arch Junction: Q_AAo - Q_SVC + Q_DA = Q_DAo
 
                SubGroup                CaseNo     DA 

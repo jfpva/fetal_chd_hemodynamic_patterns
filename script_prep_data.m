@@ -12,72 +12,85 @@ csvDataFilePath = 'data/data.csv';
 csvFlowFilePath = 'data/flow.csv';
 
 
-%% Extract Data from Excel File
+%% Load Data
 
-% Load relevant data
+% Extract from Excel file, if available
 
-variableNamesXls = { 'chdSubtype', 'chdCategory', 'uid', 'circulationType', 'gestationalAge', 'dateOfMri', ...
-                  'estimatedFetalWeight', 'Q_MPA', 'Q_AAo', 'Q_SVC', 'Q_DA', 'Q_DAo', 'Q_PBF', 'Q_UV', ...
-                  'SaO2_AAo', 'SaO2_UV', 'SaO2_DAo', 'SaO2_MPA', 'SaO2_SVC' };
+if exist( xlsxFilePath, 'file' )
 
-variableNamesCsv = { 'Group', 'SubGroup', 'CaseNo', 'CirculationType', 'GestationalAge', 'DateOfMRI', ...
-                  'EFW', 'MPAFlow', 'AAoFlow', 'SVCFlow', 'DAFlow', 'DAoFlow', 'PBFFlow', 'UVFlow', ...
-                  'AAoSO2', 'UVSO2', 'DAoSO2', 'MPASO2', 'SVCSO2' };
+    % Load relevant data
 
-sheetNameNrm = 'NORMAL';
-optsNrm = detectImportOptions( xlsxFilePath, 'Sheet', sheetNameNrm );
-optsNrm.SelectedVariableNames = variableNamesXls;
-Tnrm = readtable( xlsxFilePath, optsNrm, 'Sheet', sheetNameNrm );
+    variableNamesXls = { 'chdSubtype', 'chdCategory', 'uid', 'circulationType', 'gestationalAge', 'dateOfMri', ...
+                      'estimatedFetalWeight', 'Q_MPA', 'Q_AAo', 'Q_SVC', 'Q_DA', 'Q_DAo', 'Q_PBF', 'Q_UV', ...
+                      'SaO2_AAo', 'SaO2_UV', 'SaO2_DAo', 'SaO2_MPA', 'SaO2_SVC' };
 
-sheetNameChd = 'CHD';
-optsChd = detectImportOptions( xlsxFilePath, 'Sheet', sheetNameChd );
-optsChd.SelectedVariableNames = variableNamesXls;
-Tchd = readtable( xlsxFilePath, optsChd, 'Sheet', sheetNameChd );
+    variableNamesCsv = { 'Group', 'SubGroup', 'CaseNo', 'CirculationType', 'GestationalAge', 'DateOfMRI', ...
+                      'EFW', 'MPAFlow', 'AAoFlow', 'SVCFlow', 'DAFlow', 'DAoFlow', 'PBFFlow', 'UVFlow', ...
+                      'AAoSO2', 'UVSO2', 'DAoSO2', 'MPASO2', 'SVCSO2' };
 
-% Rename variables
+    sheetNameNrm = 'NORMAL';
+    optsNrm = detectImportOptions( xlsxFilePath, 'Sheet', sheetNameNrm );
+    optsNrm.SelectedVariableNames = variableNamesXls;
+    Tnrm = readtable( xlsxFilePath, optsNrm, 'Sheet', sheetNameNrm );
 
-Tnrm.Properties.VariableNames = variableNamesCsv;
-Tchd.Properties.VariableNames = variableNamesCsv;
+    sheetNameChd = 'CHD';
+    optsChd = detectImportOptions( xlsxFilePath, 'Sheet', sheetNameChd );
+    optsChd.SelectedVariableNames = variableNamesXls;
+    Tchd = readtable( xlsxFilePath, optsChd, 'Sheet', sheetNameChd );
 
-% Remove empty rows
+    % Rename variables
 
-Tnrm = Tnrm(~ismissing(Tnrm.Group),:);  % remove empty rows
-Tchd = Tchd(~ismissing(Tchd.Group),:);  % remove empty rows
+    Tnrm.Properties.VariableNames = variableNamesCsv;
+    Tchd.Properties.VariableNames = variableNamesCsv;
 
-% Combine tables
+    % Remove empty rows
 
-T = vertcat(Tnrm,Tchd);
+    Tnrm = Tnrm(~ismissing(Tnrm.Group),:);  % remove empty rows
+    Tchd = Tchd(~ismissing(Tchd.Group),:);  % remove empty rows
 
-% Round gestational age to weeks
+    % Combine tables
 
-T.GestationalAge = round( T.GestationalAge );
+    T = vertcat(Tnrm,Tchd);
 
-% Check for outliers
+    % Round gestational age to weeks
 
-maxFlow = 1000;  % ml/min/kg
-minSaO2 = 0;
-maxSaO2 = 1;
-variableNamesFlow = {'MPAFlow', 'AAoFlow', 'SVCFlow', 'DAFlow', 'DAoFlow', 'PBFFlow', 'UVFlow'};
-for iF = 1:numel(variableNamesFlow)
-    isOutlier = abs( T.(variableNamesFlow{iF}) ) > maxFlow & ~isnan( T.(variableNamesFlow{iF}) );
-    if any( isOutlier )
-        fprintf( 'Detected %s values out of range.\n\n', variableNamesFlow{iF} )
-        disp(T(isOutlier,{'SubGroup','CaseNo','MPAFlow','AAoFlow','SVCFlow','DAFlow','DAoFlow','PBFFlow','UVFlow'}))
+    T.GestationalAge = round( T.GestationalAge );
+
+    % Check for outliers
+
+    maxFlow = 1000;  % ml/min/kg
+    minSaO2 = 0;
+    maxSaO2 = 1;
+    variableNamesFlow = {'MPAFlow', 'AAoFlow', 'SVCFlow', 'DAFlow', 'DAoFlow', 'PBFFlow', 'UVFlow'};
+    for iF = 1:numel(variableNamesFlow)
+        isOutlier = abs( T.(variableNamesFlow{iF}) ) > maxFlow & ~isnan( T.(variableNamesFlow{iF}) );
+        if any( isOutlier )
+            fprintf( 'Detected %s values out of range.\n\n', variableNamesFlow{iF} )
+            disp(T(isOutlier,{'SubGroup','CaseNo','MPAFlow','AAoFlow','SVCFlow','DAFlow','DAoFlow','PBFFlow','UVFlow'}))
+        end
     end
-end
-variableNamesSaO2 = {'AAoSO2', 'UVSO2', 'DAoSO2', 'MPASO2', 'SVCSO2'};
-for iS = 1:numel(variableNamesSaO2)
-    isOutlier = ( T.(variableNamesSaO2{iS}) < minSaO2 |  T.(variableNamesSaO2{iS}) > maxSaO2 ) & ~isnan( T.(variableNamesSaO2{iS}) ); 
-    if any( isOutlier )
-        fprintf( 'Detected %s values out of range.\n\n', variableNamesSaO2{iS} )
-        disp(T(isOutlier,{'SubGroup','CaseNo','AAoSO2', 'UVSO2', 'DAoSO2', 'MPASO2', 'SVCSO2'}))
+    variableNamesSaO2 = {'AAoSO2', 'UVSO2', 'DAoSO2', 'MPASO2', 'SVCSO2'};
+    for iS = 1:numel(variableNamesSaO2)
+        isOutlier = ( T.(variableNamesSaO2{iS}) < minSaO2 |  T.(variableNamesSaO2{iS}) > maxSaO2 ) & ~isnan( T.(variableNamesSaO2{iS}) ); 
+        if any( isOutlier )
+            fprintf( 'Detected %s values out of range.\n\n', variableNamesSaO2{iS} )
+            disp(T(isOutlier,{'SubGroup','CaseNo','AAoSO2', 'UVSO2', 'DAoSO2', 'MPASO2', 'SVCSO2'}))
+        end
     end
+
+    % Write selected data to csv
+
+    writetable( T, csvDataFilePath )
+
+% Load from csv file if no Excel file available
+
+else
+    
+    % Read data from csv file
+
+    T = readtable( csvDataFilePath );
+    
 end
-
-% Write selected data to csv
-
-writetable( T, csvDataFilePath )
-
 
 %% Extract Measured Flows
 

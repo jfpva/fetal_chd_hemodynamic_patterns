@@ -52,7 +52,8 @@ subGroups = {   'Normal', ...
                 'TOF PA', ...
                 'Ebstein''s no Circular Shunt', ...
                 'Ebstein''s Circular Shunt', ...
-                'TA VA Concordance', ...
+                'TA VA Concordance PS', ...
+                'TA VA Concordance PA', ...
                 'TA VA Discordance' };
 
 subGroupToProcess = 1:numel(subGroups);
@@ -117,7 +118,7 @@ end
 
 %% Define SubGroups with Pulmonary Atresia, Aortic Atresia or Ebstein's Anomaly with Circular Shunt
 
-isPA   = strcmp( M.SubGroup, 'TOF PA' ) | strcmp( M.SubGroup, 'Ebstein''s no Circular Shunt' );
+isPA   = strcmp( M.SubGroup, 'TOF PA' ) | strcmp( M.SubGroup, 'Ebstein''s no Circular Shunt' ) | strcmp( M.SubGroup, 'TA VA Concordance PA' );
 isAA   = strcmp( M.SubGroup, 'HLHS RAS' ) | strcmp( M.SubGroup, 'HLHS MS AA' ) | strcmp( M.SubGroup, 'HLHS MA AA' );
 isEACS = strcmp( M.SubGroup, 'Ebstein''s Circular Shunt' );
 
@@ -157,7 +158,7 @@ for iS = 1:numel(subGroups)
                     Bounds.Lower.(vesselName)(iS) = max( [ 0, Bounds.Lower.(vesselName)(iS) ] );
                 end
              case 'DA'
-                if strcmp( Bounds.Lower.SubGroup(iS), 'TOF PA' ) || strcmp( Bounds.Lower.SubGroup(iS), 'Ebstein''s no Circular Shunt' ) || strcmp( Bounds.Lower.SubGroup(iS), 'Ebstein''s Circular Shunt' )
+                if strcmp( Bounds.Lower.SubGroup(iS), 'TOF PA' ) || strcmp( Bounds.Lower.SubGroup(iS), 'Ebstein''s no Circular Shunt' ) || strcmp( Bounds.Lower.SubGroup(iS), 'Ebstein''s Circular Shunt' ) || strcmp( Bounds.Lower.SubGroup(iS), 'TA VA Concordance PA' )
                     Bounds.Upper.(vesselName)(iS) = min( [ 0, Bounds.Upper.(vesselName)(iS) ] );
                 end
             case {'DAo','SVC','PBF','UV'}
@@ -278,7 +279,7 @@ for iD = 1:size(D,1)
             D.FO(iD) = D.SVC(iD) + D.IVC(iD) - D.AAo(iD);
         case {'HLHS RAS','HLHS MS AA','HLHS MA AA'}
             D.FO(iD) = -D.PBF(iD);
-        case {'TA VA Concordance','TA VA Discordance','Ebstein''s no Circular Shunt'}
+        case {'TA VA Concordance PS','TA VA Concordance PA','TA VA Discordance','Ebstein''s no Circular Shunt'}
             D.FO(iD) = D.SVC(iD) + D.IVC(iD) + D.CS(iD);
         case 'Ebstein''s Circular Shunt'
             D.FO(iD) = -D.MPA(iD) + D.SVC(iD) + D.IVC(iD) + D.CS(iD);
@@ -1015,7 +1016,7 @@ T.type(iR) = sprintf( '%s (n=%i)', G(iG).Group, G(iG).NumCases );
 T(iR,2:end) = extract_flow_summary( G(iG).Tmeas, G(iG).Tcalc, minMeasToSummarize );
 
 % TA subgroups
-for iI = 1:2
+for iI = 1:3
     iS = iS + 1;
     iR = iR + 1;
     T.type(iR)  = sprintf( '%s (n=%i)', S(iS).SubGroup, S(iS).NumCases );

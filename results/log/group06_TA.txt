@@ -7,12 +7,12 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)          4       7       7       5       7       7       7       0       0       0       0       0 
-    measured median (ml/min/kg)    215     326     111      66     177      38      81     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)           6       7       7       5       7       7       7       6       7       6       6       6 
-    derived median (ml/min/kg)     155     326     111      66     177      38      81     311     177      13      13     421 
-    measured, N (%CVO)               4       6       6       5       6       6       6       0       0       0       0       0 
-    measured median (%CVO)          52      64      27      15      43      12      19     NaN     NaN     NaN     NaN     NaN 
+    measured, N (ml/min/kg)          4       7       7       3       7       7       7       0       0       0       0       0 
+    measured median (ml/min/kg)    215     326     111     184     177      38      81     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           7       7       7       7       7       7       7       7       7       7       7       7 
+    derived median (ml/min/kg)     111     326     111      66     177      38      81     315     177      12      12     410 
+    measured, N (%CVO)               4       7       7       3       7       7       7       0       0       0       0       0 
+    measured median (%CVO)          52      73      33      49      48      11      19     NaN     NaN     NaN     NaN     NaN 
     model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
@@ -25,13 +25,13 @@ Measured (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                              4       7       7       5       7       7       7 
-    mean                         212     279     134     104     192      58      77 
-    standard deviation            82     134      42      83      48      31      22 
-    median                       215     326     111      66     177      38      81 
-    median absolute deviation     55      57       7      35      18       7      18 
-    16th - 50th pct.              91     216       6      33      29       6      29 
-    84th - 50th pct.              83      67      82     131      79      60      21 
+    N                              4       7       7       3       7       7       7 
+    mean                         212     279     134     151     192      58      77 
+    standard deviation            82     134      42      74      48      31      22 
+    median                       215     326     111     184     177      38      81 
+    median absolute deviation     55      57       7      19      18       7      18 
+    16th - 50th pct.              91     216       6     118      29       6      29 
+    84th - 50th pct.              83      67      82      19      79      60      21 
 
 
 Derived (ml/min/kg)
@@ -39,13 +39,13 @@ Derived (ml/min/kg)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                              6       7       7       5       7       7       7       6       7       6       6       6 
-    mean                         164     279     134     104     192      58      77     318     192      13      13     424 
-    standard deviation            97     134      42      83      48      31      22      52      48       1       1      41 
-    median                       155     326     111      66     177      38      81     311     177      13      13     421 
-    median absolute deviation     78      57       7      35      18       7      18      47      18       1       1      27 
-    16th - 50th pct.              86     216       6      33      29       6      29      49      29       1       1      40 
-    84th - 50th pct.             118      67      82     131      79      60      21      66      79       1       1      48 
+    N                              7       7       7       7       7       7       7       7       7       7       7       7 
+    mean                         121     279     134      64     192      58      77     339     192      12      12     413 
+    standard deviation           127     134      42     103      48      31      22      76      48       2       2      63 
+    median                       111     326     111      66     177      38      81     315     177      12      12     410 
+    median absolute deviation    111      57       7      98      18       7      18      62      18       2       2      58 
+    16th - 50th pct.             111     216       6     100      29       6      29      48      29       2       2      64 
+    84th - 50th pct.             149      67      82     125      79      60      21      98      79       2       2      74 
 
 
 Measured (%CVO)
@@ -53,13 +53,13 @@ Measured (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV  
                                  ____    ____    ____    ____    ____    ____    ____
 
-    N                              4       6       6       5       6       6       6 
-    mean                          51      57      29      26      43      15      19 
-    standard deviation            23      25       7      22       8       9       6 
-    median                        52      64      27      15      43      12      19 
-    median absolute deviation     17      16       3       7       6       5       4 
-    16th - 50th pct.              25      37       3       6      10       5       6 
-    84th - 50th pct.              21      16      11      36       8      13       6 
+    N                              4       7       7       3       7       7       7 
+    mean                          51      68      32      38      47      14      19 
+    standard deviation            23      32       7      20       9       8       7 
+    median                        52      73      33      49      48      11      19 
+    median absolute deviation     17      24       7       1       6       4       7 
+    16th - 50th pct.              25      43       9      35      12       4       8 
+    84th - 50th pct.              21      24       8       1       7      14       8 
 
 
 Derived (%CVO)
@@ -67,13 +67,13 @@ Derived (%CVO)
                                  MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
                                  ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    N                              6       6       6       5       6       6       6       6       6      6       6  
-    mean                          40      57      29      26      43      15      19      75      43      3       3  
-    standard deviation            25      25       7      22       8       9       6      10       8      0       0  
-    median                        33      64      27      15      43      12      19      79      43      3       3  
-    median absolute deviation     16      16       3       7       6       5       4       5       6      0       0  
-    16th - 50th pct.              16      37       3       6      10       5       6      16      10      0       0  
-    84th - 50th pct.              37      16      11      36       8      13       6       5       8      0       0  
+    N                              7       7       7       7       7       7       7       7       7      7       7  
+    mean                          29      68      32      15      47      14      19      82      47      3       3  
+    standard deviation            32      32       7      26       9       8       7      12       9      0       0  
+    median                        24      73      33      15      48      11      19      83      48      3       3  
+    median absolute deviation     24      24       7      24       6       4       7       5       6      0       0  
+    16th - 50th pct.              24      43       9      24      12       4       8      12      12      0       0  
+    84th - 50th pct.              43      24       8      35       7      14       8      11       7      0       0  
 
 
 Flows
@@ -82,57 +82,57 @@ Flows
 
 Measured (ml/min/kg)
 
-          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
-    _____________________    ______    ____    ____    ____    ____    ____    ____    ____
+            SubGroup            CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    ________________________    ______    ____    ____    ____    ____    ____    ____    ____
 
-    {'TA VA Concordance'}      1       111     329     187      66     177      34      43 
-    {'TA VA Concordance'}      2       NaN     342     110      38     159      38      82 
-    {'TA VA Concordance'}      3       198     269     104     NaN     259      76      81 
-    {'TA VA Concordance'}      4       NaN     475     203     NaN     254      32      58 
-    {'TA VA Concordance'}      5       NaN     326     111      31     194      31      99 
-    {'TA VA Discordance'}      1       231     123     120     184     175     100      70 
-    {'TA VA Discordance'}      2       308      90     105     203     129      96     106 
+    {'TA VA Concordance PS'}      1       111     329     187      66     177      34      43 
+    {'TA VA Concordance PS'}      2       198     269     104     NaN     259      76      81 
+    {'TA VA Concordance PA'}      1       NaN     342     110     NaN     159      38      82 
+    {'TA VA Concordance PA'}      2       NaN     475     203     NaN     254      32      58 
+    {'TA VA Concordance PA'}      3       NaN     326     111     NaN     194      31      99 
+    {'TA VA Discordance'   }      1       231     123     120     184     175     100      70 
+    {'TA VA Discordance'   }      2       308      90     105     203     129      96     106 
 
 
 Derived (ml/min/kg)
 
-          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
-    _____________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+            SubGroup            CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
+    ________________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    {'TA VA Concordance'}      1       111     329     187      66     177      34      43     378     177      14      14     454 
-    {'TA VA Concordance'}      2        76     342     110      38     159      38      82     282     159      13      13     431 
-    {'TA VA Concordance'}      3       198     269     104     NaN     259      76      81     377     259      14      14     481 
-    {'TA VA Concordance'}      4       NaN     475     203     NaN     254      32      58     NaN     254     NaN     NaN     NaN 
-    {'TA VA Concordance'}      5        62     326     111      31     194      31      99     317     194      12      12     400 
-    {'TA VA Discordance'}      1       231     123     120     184     175     100      70     306     175      11      11     365 
-    {'TA VA Discordance'}      2       308      90     105     203     129      96     106     246     129      12      12     410 
+    {'TA VA Concordance PS'}      1       111     329     187      66     177      34      43     378     177      14      14     454 
+    {'TA VA Concordance PS'}      2       198     269     104      94     259      76      81     377     259      14      14     481 
+    {'TA VA Concordance PA'}      1         0     342     110     -38     159      38      82     280     159      11      11     353 
+    {'TA VA Concordance PA'}      2         0     475     203     -32     254      32      58     472     254      15      15     490 
+    {'TA VA Concordance PA'}      3         0     326     111     -31     194      31      99     315     194      10      10     336 
+    {'TA VA Discordance'   }      1       231     123     120     184     175     100      70     306     175      11      11     365 
+    {'TA VA Discordance'   }      2       308      90     105     203     129      96     106     246     129      12      12     410 
 
 
 Measured (%CVO)
 
-          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
-    _____________________    ______    ____    ____    ____    ____    ____    ____    ____
+            SubGroup            CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    ________________________    ______    ____    ____    ____    ____    ____    ____    ____
 
-    {'TA VA Concordance'}      1        24      73      41      15      39       7       9 
-    {'TA VA Concordance'}      2       NaN      79      26       9      37       9      19 
-    {'TA VA Concordance'}      3        41      56      22     NaN      54      16      17 
-    {'TA VA Concordance'}      4       NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TA VA Concordance'}      5       NaN      82      28       8      49       8      25 
-    {'TA VA Discordance'}      1        63      34      33      50      48      27      19 
-    {'TA VA Discordance'}      2        75      22      26      49      31      23      26 
+    {'TA VA Concordance PS'}      1        24      73      41      15      39       7       9 
+    {'TA VA Concordance PS'}      2        41      56      22     NaN      54      16      17 
+    {'TA VA Concordance PA'}      1       NaN      97      31     NaN      45      11      23 
+    {'TA VA Concordance PA'}      2       NaN      97      41     NaN      52       7      12 
+    {'TA VA Concordance PA'}      3       NaN      97      33     NaN      58       9      29 
+    {'TA VA Discordance'   }      1        63      34      33      50      48      27      19 
+    {'TA VA Discordance'   }      2        75      22      26      49      31      23      26 
 
 
 Derived (%CVO)
 
-          SubGroup           CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
-    _____________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+            SubGroup            CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
+    ________________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    {'TA VA Concordance'}      1        24      73      41      15      39       7       9      83      39       3       3 
-    {'TA VA Concordance'}      2        18      79      26       9      37       9      19      65      37       3       3 
-    {'TA VA Concordance'}      3        41      56      22     NaN      54      16      17      78      54       3       3 
-    {'TA VA Concordance'}      4       NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    {'TA VA Concordance'}      5        16      82      28       8      49       8      25      79      49       3       3 
-    {'TA VA Discordance'}      1        63      34      33      50      48      27      19      84      48       3       3 
-    {'TA VA Discordance'}      2        75      22      26      49      31      23      26      60      31       3       3 
+    {'TA VA Concordance PS'}      1        24      73      41      15      39       7       9      83      39      3       3  
+    {'TA VA Concordance PS'}      2        41      56      22      20      54      16      17      78      54      3       3  
+    {'TA VA Concordance PA'}      1         0      97      31     -11      45      11      23      79      45      3       3  
+    {'TA VA Concordance PA'}      2         0      97      41      -7      52       7      12      96      52      3       3  
+    {'TA VA Concordance PA'}      3         0      97      33      -9      58       9      29      94      58      3       3  
+    {'TA VA Discordance'   }      1        63      34      33      50      48      27      19      84      48      3       3  
+    {'TA VA Discordance'   }      2        75      22      26      49      31      23      26      60      31      3       3  
 
 

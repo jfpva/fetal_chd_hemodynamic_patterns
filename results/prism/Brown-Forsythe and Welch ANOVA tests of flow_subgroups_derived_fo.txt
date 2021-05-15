@@ -9,7 +9,7 @@ Alpha	0.05
 "  Normal vs. HLHS MA AA"	201.6	"167.5 to 235.7"	Yes	****	<0.0001	E	"HLHS MA AA"	
 "  Normal vs. TGA IVS"	37.60	"-5.006 to 80.22"	No	ns	0.0650	G	"TGA IVS"	
 "  Normal vs. Ebstein's no Circular Shunt"	-87.77	"-141.2 to -34.33"	Yes	***	0.0004	N	"Ebstein's no Circular Shunt"	
-"  Normal vs. TA VA Concordance"	-200.3	"-337.3 to -63.38"	Yes	**	0.0062	P	"TA VA Concordance"	
+"  Normal vs. TA VA Concordance PA"	-217.3	"-890.6 to 456.1"	No	ns	0.2082	Q	"TA VA Concordance PA"	
 								
 "Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
 "  Normal vs. HLHS RAS"	138.2	-31.17	169.3	9.486	40	6	17.85	28.18
@@ -18,4 +18,4 @@ Alpha	0.05
 "  Normal vs. HLHS MA AA"	138.2	-63.40	201.6	10.80	40	10	18.66	29.26
 "  Normal vs. TGA IVS"	138.2	100.6	37.60	14.06	40	34	2.674	57.84
 "  Normal vs. Ebstein's no Circular Shunt"	138.2	225.9	-87.77	15.46	40	9	5.676	13.71
-"  Normal vs. TA VA Concordance"	138.2	338.5	-200.3	24.85	40	4	8.062	3.656
+"  Normal vs. TA VA Concordance PA"	138.2	355.5	-217.3	59.51	40	3	3.651	2.068

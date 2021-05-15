@@ -23,7 +23,8 @@ Lower
     {'TOF PA'                     }      0       0       0     NaN      41       0      16 
     {'Ebstein's no Circular Shunt'}      0       0       0     NaN      39       5      43 
     {'Ebstein's Circular Shunt'   }    NaN       0       0     NaN       0       0      41 
-    {'TA VA Concordance'          }      0     271      80       7      38      21       1 
+    {'TA VA Concordance PS'       }      0       0       0     NaN       0       0       0 
+    {'TA VA Concordance PA'       }      0     271     107     NaN      38      28       6 
     {'TA VA Discordance'          }      0       0       0     NaN       0       0       0 
 
 
@@ -47,7 +48,8 @@ Upper
     {'TOF PA'                     }    NaN     741     344       0     477      86     176 
     {'Ebstein's no Circular Shunt'}    NaN     469     195       0     225      49     127 
     {'Ebstein's Circular Shunt'   }      0     855     143       0     314     NaN     139 
-    {'TA VA Concordance'          }    NaN     387     142      69     350      47     161 
+    {'TA VA Concordance PS'       }    NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    {'TA VA Concordance PA'       }    NaN     413     115       0     350      36     158 
     {'TA VA Discordance'          }    NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
@@ -86,19 +88,16 @@ Derived Using Arch Junction: Q_AAo - Q_SVC + Q_DA = Q_DAo
     {'Ebstein's no Circular Shunt'}       6        48
     {'Ebstein's no Circular Shunt'}      10         2
     {'Ebstein's no Circular Shunt'}      11        44
-    {'TA VA Concordance'          }       3        94
-    {'TA VA Concordance'          }       4       -18
 
 
 Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
 
-          SubGroup           CaseNo     DA 
-    _____________________    ______    ____
+       SubGroup        CaseNo     DA 
+    _______________    ______    ____
 
-    {'TGA VSD COA'      }      2        181
-    {'TGA VSD COA'      }      3        331
-    {'TOF PS'           }      3       -318
-    {'TA VA Concordance'}      3        122
+    {'TGA VSD COA'}      2        181
+    {'TGA VSD COA'}      3        331
+    {'TOF PS'     }      3       -318
 
 
 Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
@@ -126,7 +125,7 @@ Derived Using Pulmonary Junction: Q_MPA = Q_DA + Q_PBF
 Missing CVO Values
 ==================
 
-    Cannot derive CVO flow in 6 cases.
+    Cannot derive CVO flow in 5 cases.
 
      Group                SubGroup                CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      CVO 
     _______    _______________________________    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____
@@ -136,7 +135,6 @@ Missing CVO Values
     {'TOF'}    {'TOF PS'                     }      12      NaN     418      73     NaN     239     NaN     128     NaN     NaN 
     {'TOF'}    {'TOF PS'                     }      14      NaN     307      60     -24     223     NaN     122     NaN     NaN 
     {'EA' }    {'Ebstein's no Circular Shunt'}       8        0     NaN     173     NaN     201     NaN      43     NaN     NaN 
-    {'TA' }    {'TA VA Concordance'          }       4      NaN     475     203     NaN     254      32      58     NaN     NaN 
 
 
 
@@ -163,11 +161,12 @@ Number of Measured Flows
     {'TOF PA'                     }        9       NaN      9      9      0      9      4      8
     {'Ebstein's no Circular Shunt'}       11       NaN     10     10      2     11      3     10
     {'Ebstein's Circular Shunt'   }        5         0      5      5      1      5      0      5
-    {'TA VA Concordance'          }        5         2      5      5      3      5      5      5
+    {'TA VA Concordance PS'       }        2         2      2      2      1      2      2      2
+    {'TA VA Concordance PA'       }        3         0      3      3      0      3      3      3
     {'TA VA Discordance'          }        2         2      2      2      2      2      2      2
-    {'Number Measured'            }      NaN       159    160    191    123    192    116    190
+    {'Number Measured'            }      NaN       159    160    191    121    192    116    190
     {'Total'                      }      192       172    163    192    192    192    192    192
-    {'Measured as Pct. Total'     }      NaN        92     98     99     64    100     60     99
+    {'Measured as Pct. Total'     }      NaN        92     98     99     63    100     60     99
 
 
 Group Flow Difference, balanced - measured
@@ -208,11 +207,12 @@ Sub-Group Flow Difference, balanced - measured
     13 TOF PA                         NaN       0       0     NaN      -1      -1       0 
     14 Ebstein's no Circular Shunt    NaN       0      -2     NaN      -1      -4       0 
     15 Ebstein's Circular Shunt       NaN     NaN     NaN     NaN     NaN     NaN     NaN 
-    16 TA VA Concordance              NaN      -2       5      -3       4       9       0 
-    17 TA VA Discordance              NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    16 TA VA Concordance PS           NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    17 TA VA Concordance PA           NaN       0       1     NaN       0       2       0 
+    18 TA VA Discordance              NaN     NaN     NaN     NaN     NaN     NaN     NaN 
     mean                                0       0       0       0       0       0       0 
     median                              0       0       0       1       0       0       0 
-    max abs.                            4       3       5       6       4       9       0 
+    max abs.                            4       3       3       6       3       4       0 
 
 
 Summary Flows, absolute units
@@ -240,8 +240,9 @@ Group: TOF                           26      92     357     138      52     250 
 Group: EA                            16             248      80    -206     132      27      87       0     248      80    -118     132      27      87     227     132       8       8     256  
     Ebstein's no Circular Shunt      11             227      88             132      27      85       0     227      88     -27     132      27      85     227     132       7       7     234  
     Ebstein's Circular Shunt          5             357      63             132              90             357      63    -162     132              90             132      11      11     368  
-Group: TA                             7     215     326     111      66     177      38      81     155     326     111      66     177      38      81     311     177      13      13     421  
-    TA VA Concordance                 5             329     111      38     194      34      81      94     329     111      38     194      34      81     347     194      13      13     442  
+Group: TA                             7     215     326     111     184     177      38      81     111     326     111      66     177      38      81     315     177      12      12     410  
+    TA VA Concordance PS              2                                                                                                                                                          
+    TA VA Concordance PA              3             342     111             194      32      82       0     342     111     -32     194      32      82     315     194      11      11     353  
     TA VA Discordance                 2                                                                                                                                                          
 
 
@@ -270,8 +271,9 @@ Group: TOF                           26      20      87      30      10      54 
 Group: EA                            16              97      26     -43      50       9      34       0      97      26     -43      50      10      34      95      50       3       3     100  
     Ebstein's no Circular Shunt      11              97      36              59       9      39       0      97      36     -11      59      10      39      95      59       3       3     100  
     Ebstein's Circular Shunt          5              97      17              32              26              97      17     -44      32              26              32       3       3     100  
-Group: TA                             7      52      64      27      15      43      12      19      33      64      27      15      43      12      19      79      43       3       3     100  
-    TA VA Concordance                 5              76      27       9      44       8      18      21      76      27       9      44       8      18      79      44       3       3     100  
+Group: TA                             7      52      73      33      49      48      11      19      24      73      33      15      48      11      19      83      48       3       3     100  
+    TA VA Concordance PS              2                                                                                                                                                     100  
+    TA VA Concordance PA              3              97      33              52       9      23       0      97      33      -9      52       9      23      94      52       3       3     100  
     TA VA Discordance                 2                                                                                                                                                     100  
 
 
@@ -301,7 +303,8 @@ Group: EA                            16                                         
     Ebstein's no Circular Shunt      11       0      97      34      -5      58       5      39      95      58       3       3     100  
     Ebstein's Circular Shunt          5                                                                                                  
 Group: TA                             7                                                                                                  
-    TA VA Concordance                 5      23      74      32       6      48      17      18      60      48       3       3     100  
+    TA VA Concordance PS              2                                                                                                  
+    TA VA Concordance PA              3       0      97      34     -11      52      11      23      89      52       3       3     100  
     TA VA Discordance                 2                                                                                                  
 
 
@@ -331,7 +334,8 @@ Group: EA                           ?          ?          ?          ?          
     Ebstein's no Circular Shunt  [  0    ]    97       { 34, -2}  [ -5    ]  { 58, -1}  {  5, -4}    39       [ 95    ]  
     Ebstein's Circular Shunt        ?          ?          ?          ?          ?          ?          ?          ?       
 Group: TA                           ?          ?          ?          ?          ?          ?          ?          ?       
-    TA VA Concordance            [ 23    ]  { 74, -2}  { 32, +5}  {  6, -3}  { 48, +4}  { 17, +9}    18       [ 60    ]  
+    TA VA Concordance PS            ?          ?          ?          ?          ?          ?          ?          ?       
+    TA VA Concordance PA         [  0    ]    97       { 34, +1}  [-11    ]    52       { 11, +2}    23       [ 89    ]  
     TA VA Discordance               ?          ?          ?          ?          ?          ?          ?          ?       
 
              ?           flow distribution model undetermined
@@ -361,7 +365,8 @@ Group: EA                        
     Ebstein's no Circular Shunt    0.00    1.07    0.61   -0.07    0.53    0.14    0.73    1.54  
     Ebstein's Circular Shunt     
 Group: TA                        
-    TA VA Concordance              0.40    1.55    1.09    0.15    0.84    0.92    0.64    1.85  
+    TA VA Concordance PS         
+    TA VA Concordance PA           0.00    1.62    0.93   -0.22    0.72    0.48    0.65    2.18  
     TA VA Discordance            
 
 

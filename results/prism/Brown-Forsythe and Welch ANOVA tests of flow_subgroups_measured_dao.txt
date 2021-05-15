@@ -16,7 +16,7 @@ Alpha	0.05
 "  Normal vs. TOF PA"	-8.467	"-100.8 to 83.84"	No	ns	>0.9999	M	"TOF PA"	
 "  Normal vs. Ebstein's no Circular Shunt"	107.3	"63.28 to 151.3"	Yes	****	<0.0001	N	"Ebstein's no Circular Shunt"	
 "  Normal vs. Ebstein's Circular Shunt"	119.8	"2.450 to 237.2"	Yes	*	0.0229	O	"Ebstein's Circular Shunt"	
-"  Normal vs. TA VA Concordance"	37.60	"-76.72 to 151.9"	No	ns	0.6753	P	"TA VA Concordance"	
+"  Normal vs. TA VA Concordance PA"	43.87	"-326.3 to 414.1"	No	ns	0.7800	Q	"TA VA Concordance PA"	
 								
 "Test details"	"Mean 1"	"Mean 2"	"Mean Diff."	"SE of diff."	n1	n2	t	DF
 "  Normal vs. HLHS RAS"	246.2	210.6	35.63	25.63	40	7	1.390	6.667
@@ -32,4 +32,4 @@ Alpha	0.05
 "  Normal vs. TOF PA"	246.2	254.7	-8.467	21.89	40	9	0.3868	9.252
 "  Normal vs. Ebstein's no Circular Shunt"	246.2	138.9	107.3	12.05	40	11	8.906	16.62
 "  Normal vs. Ebstein's Circular Shunt"	246.2	126.4	119.8	21.71	40	5	5.517	4.640
-"  Normal vs. TA VA Concordance"	246.2	208.6	37.60	21.15	40	5	1.777	4.678
+"  Normal vs. TA VA Concordance PA"	246.2	202.3	43.87	28.34	40	3	1.548	2.180

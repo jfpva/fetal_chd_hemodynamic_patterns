@@ -1,0 +1,65 @@
+Sub-Group 16: TA VA Concordance PS
+==================================
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)          2       2       2       1       2       2       2       0       0       0       0       0 
+    measured median (ml/min/kg)    NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           2       2       2       2       2       2       2       2       2       2       2       2 
+    derived median (ml/min/kg)     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    measured, N (%CVO)               2       2       2       1       2       2       2       0       0       0       0       0 
+    measured median (%CVO)         NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+
+
+Summary
+-------
+
+
+Number of cases (2) < minimum for summary (3)
+
+
+Flows
+-----
+
+
+Measured (ml/min/kg)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    ______    ____    ____    ____    ____    ____    ____    ____
+
+      1       111     329     187      66     177      34      43 
+      2       198     269     104     NaN     259      76      81 
+
+
+Derived (ml/min/kg)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS      CVO 
+    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+      1       111     329     187      66     177      34      43     378     177      14      14     454 
+      2       198     269     104      94     259      76      81     377     259      14      14     481 
+
+
+Measured (%CVO)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV  
+    ______    ____    ____    ____    ____    ____    ____    ____
+
+      1        24      73      41      15      39       7       9 
+      2        41      56      22     NaN      54      16      17 
+
+
+Derived (%CVO)
+
+    CaseNo    MPA     AAo     SVC     DA      DAo     PBF     UV      FO      IVC     CA      CS  
+    ______    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+      1        24      73      41      15      39       7       9      83      39      3       3  
+      2        41      56      22      20      54      16      17      78      54      3       3  
+
+

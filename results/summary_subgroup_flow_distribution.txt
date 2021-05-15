@@ -278,8 +278,8 @@ Flow Distribution Model
 ] 
 
 
-Sub-Group 16: TA VA Concordance
-===============================
+Sub-Group 16: TA VA Concordance PS
+==================================
 
 
 Flow Distribution Model
@@ -287,16 +287,37 @@ Flow Distribution Model
                                    MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
                                    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
 
-    measured, N (ml/min/kg)          2       5       5       3       5       5       5       0       0       0       0       0 
-    measured median (ml/min/kg)    NaN     329     111      38     194      34      81     NaN     NaN     NaN     NaN     NaN 
-    derived, N (ml/min/kg)           4       5       5       3       5       5       5       4       5       4       4       4 
-    derived median (ml/min/kg)      94     329     111      38     194      34      81     347     194      13      13     442 
-    measured, N (%CVO)               2       4       4       3       4       4       4       0       0       0       0       0 
-    measured median (%CVO)         NaN      76      27       9      44       8      18     NaN     NaN     NaN     NaN     NaN 
-    model (%CVO)                    23      74      32       6      48      17      18      60      48       3       3     100 
+    measured, N (ml/min/kg)          2       2       2       1       2       2       2       0       0       0       0       0 
+    measured median (ml/min/kg)    NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           2       2       2       2       2       2       2       2       2       2       2       2 
+    derived median (ml/min/kg)     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    measured, N (%CVO)               2       2       2       1       2       2       2       0       0       0       0       0 
+    measured median (%CVO)         NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                   NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN 
 
 
-Sub-Group 17: TA VA Discordance
+Note: too few measurements to summarize
+
+
+Sub-Group 17: TA VA Concordance PA
+==================================
+
+
+Flow Distribution Model
+
+                                   MPA     AAo     SVC     DA      DAo     PBF     UV      ICS     IVC     CA      CS      CVO 
+                                   ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____    ____
+
+    measured, N (ml/min/kg)          0       3       3       0       3       3       3       0       0       0       0       0 
+    measured median (ml/min/kg)    NaN     342     111     NaN     194      32      82     NaN     NaN     NaN     NaN     NaN 
+    derived, N (ml/min/kg)           3       3       3       3       3       3       3       3       3       3       3       3 
+    derived median (ml/min/kg)       0     342     111     -32     194      32      82     315     194      11      11     353 
+    measured, N (%CVO)               0       3       3       0       3       3       3       0       0       0       0       0 
+    measured median (%CVO)         NaN      97      33     NaN      52       9      23     NaN     NaN     NaN     NaN     NaN 
+    model (%CVO)                     0      97      34     -11      52      11      23      89      52       3       3     100 
+
+
+Sub-Group 18: TA VA Discordance
 ===============================
 
 

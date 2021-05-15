@@ -40,7 +40,8 @@ Analyisis of fetal blood flow distribution patterns and blood oxygen saturations
     * EA with functional pulmonary atresia with no circular shunt (Ebstein's no Circular Shunt)
     * EA with a circular shunt (Ebstein's Circular Shunt)
 * tricuspid atresia (TA)
-    * TA with ventriculo-arterial concordance (TA VA Concordance)
+    * TA with ventriculo-arterial concordance and pulmonary stenosis (TA VA Concordance PS)
+    * TA with ventriculo-arterial concordance and pulmonary atresia (TA VA Concordance PA)
     * TA with ventriculo-arterial discordance (TA VA Discordance)
 
 ### 1.2 Fetal Vessels

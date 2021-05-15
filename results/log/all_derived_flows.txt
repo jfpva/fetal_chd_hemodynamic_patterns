@@ -186,11 +186,11 @@
     {'EA'    }    {'Ebstein's Circular Shunt'   }       3      NaN     357      63     -162    132     NaN      97      NaN    132      11      11     368 
     {'EA'    }    {'Ebstein's Circular Shunt'   }       4      NaN     299      80     -129     90     NaN      79      NaN     90       9       9     308 
     {'EA'    }    {'Ebstein's Circular Shunt'   }       5      NaN     469     109     -209    173     NaN     123      NaN    173      15      15     484 
-    {'TA'    }    {'TA VA Concordance'          }       1      111     329     187       66    177      34      43      378    177      14      14     454 
-    {'TA'    }    {'TA VA Concordance'          }       2       76     342     110       38    159      38      82      282    159      13      13     431 
-    {'TA'    }    {'TA VA Concordance'          }       3      198     269     104      NaN    259      76      81      377    259      14      14     481 
-    {'TA'    }    {'TA VA Concordance'          }       4      NaN     475     203      NaN    254      32      58      NaN    254     NaN     NaN     NaN 
-    {'TA'    }    {'TA VA Concordance'          }       5       62     326     111       31    194      31      99      317    194      12      12     400 
+    {'TA'    }    {'TA VA Concordance PS'       }       1      111     329     187       66    177      34      43      378    177      14      14     454 
+    {'TA'    }    {'TA VA Concordance PS'       }       2      198     269     104       94    259      76      81      377    259      14      14     481 
+    {'TA'    }    {'TA VA Concordance PA'       }       1        0     342     110      -38    159      38      82      280    159      11      11     353 
+    {'TA'    }    {'TA VA Concordance PA'       }       2        0     475     203      -32    254      32      58      472    254      15      15     490 
+    {'TA'    }    {'TA VA Concordance PA'       }       3        0     326     111      -31    194      31      99      315    194      10      10     336 
     {'TA'    }    {'TA VA Discordance'          }       1      231     123     120      184    175     100      70      306    175      11      11     365 
     {'TA'    }    {'TA VA Discordance'          }       2      308      90     105      203    129      96     106      246    129      12      12     410 
 

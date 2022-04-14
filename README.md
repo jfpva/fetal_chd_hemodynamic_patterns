@@ -2,6 +2,14 @@
 
 Analyisis of fetal blood flow distribution patterns and blood oxygen saturations, measured using MRI, in late gestation human fetuses with a spectrum of congenital heart disease (CHD) subtypes presenting with neonatal cyanosis and age-matched fetuses with normal hearts.
 
+### Citation
+
+Please cite the following paper if using the material in this repo:
+
+> Sun L, van Amerom JFP, Marini D, Portnoy S, Lee F-T, Saini BS, Lim JM, Aguet J, Jaeggi E, Kingdom JC, Macgowan CK, Miller SP, Huang G, Seed M. Characterization of hemodynamic patterns in human fetuses with cyanotic congenital heart disease using MRI. Ultrasound Obstet Gynecol. 2021; DOI: [10.1002/UOG.23707](https://doi.org/10.1002/UOG.23707).
+
+### Files
+
 `script_prep_data.m` – Matlab script to prepare data
 
 `script_analyze_fetal_chd_flows.m` – Matlab script to run the flow analysis
